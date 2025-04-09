@@ -1,0 +1,19 @@
+$color-graphite: #2d3436; // для основных элементов и заголовков
+$color-silver: #c8d6e5; // для акцентов и интерактивных элементов
+$color-milky: #f8f9fa; // для фонов и светлых областей
+
+// Дополнительные оттенки
+$color-dark-graphite: #222831; // для футера и контрастных элементов
+$color-light-silver: #dfe6e9; // для разделителей и второстепенных элементов
+$color-warm-milky: #ffeaa7; // для мягких акцентов
+
+$font-main: "Arial", sans-serif;
+$font-headings: "Georgia", serif;
+
+// Размеры
+$container-width: 1200px;
+$gutter: 20px;
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

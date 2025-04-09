@@ -1,0 +1,72 @@
+@use "sass:color";
+@use "../variables" as v;
+
+.footer {
+  background-color: v.$color-dark-graphite;
+  color: v.$color-light-silver;
+  padding: 40px 0 20px;
+
+  &__container {
+    max-width: v.$container-width;
+    margin: 0 auto;
+    padding: 0 v.$gutter;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid color.adjust(v.$color-light-silver, $alpha: -0.8);
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &__title {
+    color: v.$color-milky;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      color: v.$color-light-silver;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: v.$color-silver;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+
+    a {
+      color: v.$color-light-silver;
+      font-size: 20px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: v.$color-milky;
+      }
+    }
+  }
+}

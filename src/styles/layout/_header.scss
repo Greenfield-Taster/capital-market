@@ -1,0 +1,55 @@
+@use "../variables" as v;
+
+.header {
+  background-color: v.$color-graphite;
+  color: v.$color-milky;
+  padding: 20px 0;
+
+  &__container {
+    max-width: v.$container-width;
+    margin: 0 auto;
+    padding: 0 v.$gutter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: v.$color-milky;
+    text-decoration: none;
+
+    &:hover {
+      color: v.$color-silver;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: v.$color-light-silver;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &.active {
+        color: v.$color-milky;
+      }
+    }
+  }
+
+  @media (max-width: v.$breakpoint-tablet) {
+    &__container {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__nav {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
