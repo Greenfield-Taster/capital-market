@@ -1,14 +1,42 @@
-$color-graphite: #2d3436; // для основных элементов и заголовков
-$color-silver: #c8d6e5; // для акцентов и интерактивных элементов
-$color-milky: #f8f9fa; // для фонов и светлых областей
+@use "sass:color";
+
+// Основная палитра
+$color-dark-blue: rgba(0, 0, 0, 0.7); // почти черный с синим оттенком
+$color-blue-graphite: #051621; // темно-синий графит
+$color-medium-gray: #5d6564; // средний серый с оттенком
+$color-light-gray: #acbbbd; // светло-серый с голубым оттенком
+$color-off-white: #f8f8f8e3; // почти белый
+
+// Альтернативные имена для улучшения читаемости кода
+$color-graphite: $color-dark-blue; // для основных элементов и заголовков
+$color-silver: $color-light-gray; // для акцентов и интерактивных элементов
+$color-milky: $color-off-white; // для фонов и светлых областей
 
 // Дополнительные оттенки
-$color-dark-graphite: #222831; // для футера и контрастных элементов
-$color-light-silver: #dfe6e9; // для разделителей и второстепенных элементов
-$color-warm-milky: #ffeaa7; // для мягких акцентов
+$color-dark-graphite: $color-blue-graphite; // для футера и контрастных элементов
+$color-light-silver: color.adjust(
+  $color-light-gray,
+  $lightness: 10%
+); // для разделителей
+$color-warm-milky: color.adjust(
+  $color-off-white,
+  $saturation: 5%,
+  $lightness: -2%
+); // для мягких акцентов
 
-$font-main: "Arial", sans-serif;
-$font-headings: "Georgia", serif;
+// Акцентные цвета
+$color-primary: $color-medium-gray; // основной акцент для интерактивных элементов
+$color-secondary: $color-light-gray; // вторичный акцент
+$color-accent: color.adjust(
+  $color-light-gray,
+  $saturation: 10%,
+  $lightness: -5%
+); // для подсветки
+
+// Шрифт
+$font-main: "Manrope", sans-serif;
+$font-headings: "Manrope", sans-serif;
+$font-logo: "Manrope", sans-serif;
 
 // Размеры
 $container-width: 1200px;
@@ -17,3 +45,8 @@ $gutter: 20px;
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
+
+// Тени и эффекты
+$box-shadow-light: 0 2px 10px rgba(0, 0, 0, 0.05);
+$box-shadow-medium: 0 4px 15px rgba(0, 0, 0, 0.1);
+$transition-default: all 0.3s ease;

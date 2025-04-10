@@ -1,55 +1,198 @@
+@use "sass:color";
 @use "../variables" as v;
 
 .header {
-  background-color: v.$color-graphite;
-  color: v.$color-milky;
-  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4); // More transparent background
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); // for Safari
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
 
-  &__container {
+  // Add a subtle shadow when scrolling
+  &.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
     max-width: v.$container-width;
     margin: 0 auto;
     padding: 0 v.$gutter;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
-  &__logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: v.$color-milky;
-    text-decoration: none;
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &:hover {
-      color: v.$color-silver;
+    @media (max-width: v.$breakpoint-tablet) {
+      flex-direction: column;
+      gap: 15px;
     }
   }
 
-  &__nav {
+  .logo {
+    font-family: v.$font-logo;
+    font-size: 26px;
+    font-weight: 800; // Extra bold font for logo
+    color: v.$color-off-white;
+    letter-spacing: 0.5px;
+    transition: v.$transition-default;
     display: flex;
-    gap: 20px;
+    align-items: center;
 
     a {
-      color: v.$color-light-silver;
+      color: inherit;
       text-decoration: none;
-      transition: color 0.3s ease;
+      display: inline-block;
+      position: relative;
 
-      &:hover,
-      &.active {
-        color: v.$color-milky;
+      &:hover {
+        color: v.$color-light-gray;
       }
     }
   }
 
-  @media (max-width: v.$breakpoint-tablet) {
-    &__container {
-      flex-direction: column;
-      gap: 15px;
+  .nav {
+    margin: 0 20px;
+
+    @media (max-width: v.$breakpoint-tablet) {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+
+    @media (max-width: v.$breakpoint-tablet) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
-    &__nav {
-      width: 100%;
-      justify-content: center;
+    @media (max-width: v.$breakpoint-mobile) {
+      gap: 15px;
+    }
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    font-family: v.$font-headings;
+    font-size: 15px;
+    font-weight: 600;
+    color: v.$color-light-gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 0;
+    transition: v.$transition-default;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+
+    .nav-icon {
+      font-size: 16px;
+      transition: v.$transition-default;
+    }
+
+    &:hover {
+      color: v.$color-off-white;
+
+      .nav-icon {
+        color: v.$color-off-white;
+      }
+    }
+
+    // Active page indicator - bottom line
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: v.$color-light-gray;
+      transition: width 0.3s ease;
+      opacity: 0.9;
+    }
+
+    &.active {
+      color: v.$color-off-white;
+
+      .nav-icon {
+        color: v.$color-off-white;
+      }
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: v.$breakpoint-mobile) {
+      font-size: 14px;
+
+      .nav-icon {
+        font-size: 18px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 8px;
+
+    @media (max-width: v.$breakpoint-tablet) {
+      margin-top: 5px;
+    }
+  }
+
+  .lang-btn {
+    font-family: v.$font-main;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 10px;
+    background-color: transparent;
+    border: 1px solid rgba(v.$color-light-gray, 0.3);
+    border-radius: 3px;
+    color: v.$color-light-gray;
+    cursor: pointer;
+    transition: v.$transition-default;
+
+    &:hover,
+    &.active {
+      background-color: v.$color-medium-gray;
+      color: v.$color-off-white;
+      border-color: v.$color-medium-gray;
+    }
+
+    &.active {
+      background-color: v.$color-medium-gray;
+    }
+
+    @media (max-width: v.$breakpoint-mobile) {
+      padding: 5px 8px;
+      font-size: 12px;
     }
   }
 }

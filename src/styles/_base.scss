@@ -1,18 +1,19 @@
 @use "sass:color";
 @use "variables" as v;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: v.$font-main;
-  font-size: 16px;
-  line-height: 1.5;
-  color: v.$color-graphite;
-  background-color: v.$color-milky;
+  color: v.$color-medium-gray;
+  line-height: 1.6;
+  background-color: v.$color-off-white;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: v.$breakpoint-tablet) {
+    padding-top: 130px;
+  }
 }
 
 h1,
@@ -22,57 +23,121 @@ h4,
 h5,
 h6 {
   font-family: v.$font-headings;
-  margin-bottom: 1rem;
-  color: v.$color-graphite;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-p {
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.3;
+  color: v.$color-dark-blue;
 }
 
 a {
-  color: v.$color-graphite;
-  text-decoration: underline;
+  text-decoration: none;
+  color: v.$color-medium-gray;
+  transition: v.$transition-default;
 
   &:hover {
-    color: color.adjust(v.$color-graphite, $lightness: -10%);
+    color: color.adjust(v.$color-medium-gray, $lightness: -15%);
   }
 }
 
+// Общие классы-хелперы
 .container {
   max-width: v.$container-width;
   margin: 0 auto;
   padding: 0 v.$gutter;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.text-center {
+.section {
+  padding: 70px 0;
+
+  @media (max-width: v.$breakpoint-tablet) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: v.$breakpoint-mobile) {
+    padding: 40px 0;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: v.$color-medium-gray;
+  }
+
+  @media (max-width: v.$breakpoint-tablet) {
+    font-size: 32px;
+  }
+
+  @media (max-width: v.$breakpoint-mobile) {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+}
+
+// Кнопки
+.btn {
+  display: inline-block;
+  font-family: v.$font-headings;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
   text-align: center;
-}
+  transition: v.$transition-default;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 
-.mb-1 {
-  margin-bottom: 0.5rem;
-}
+  &-primary {
+    background-color: v.$color-medium-gray;
+    color: v.$color-off-white;
 
-.mb-2 {
-  margin-bottom: 1rem;
-}
+    &:hover {
+      background-color: color.adjust(v.$color-medium-gray, $lightness: -10%);
+      color: v.$color-off-white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
 
-.mb-3 {
-  margin-bottom: 1.5rem;
-}
+  &-secondary {
+    background-color: v.$color-light-gray;
+    color: v.$color-dark-blue;
 
-.mb-4 {
-  margin-bottom: 2rem;
+    &:hover {
+      background-color: color.adjust(v.$color-light-gray, $lightness: -10%);
+      color: v.$color-dark-blue;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    border: 2px solid v.$color-medium-gray;
+    color: v.$color-medium-gray;
+
+    &:hover {
+      background-color: v.$color-medium-gray;
+      color: v.$color-off-white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: v.$breakpoint-mobile) {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
