@@ -93,7 +93,34 @@
   }
 }
 
-// Philosophy section styling
+.history-section {
+  position: relative;
+  padding: 30px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(
+      to bottom,
+      v.$color-light-silver,
+      v.$color-accent,
+      v.$color-light-silver
+    );
+
+    @media (max-width: v.$breakpoint-tablet) {
+      left: -20px;
+    }
+
+    @media (max-width: v.$breakpoint-mobile) {
+      display: none;
+    }
+  }
+}
+
 .philosophy-section {
   background-color: v.$color-warm-milky;
   padding: 40px;

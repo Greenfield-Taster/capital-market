@@ -18,6 +18,15 @@ const About = () => {
           </div>
         </section>
 
+        <section className="about-section history-section">
+          <h2 className="section-title">{t("about.history.title")}</h2>
+          <div className="about-content">
+            <p className="about-text">{t("about.history.paragraph1")}</p>
+            <p className="about-text">{t("about.history.paragraph2")}</p>
+            <p className="about-text">{t("about.history.paragraph3")}</p>
+          </div>
+        </section>
+
         <section className="about-section philosophy-section">
           <h2 className="section-title">{t("about.philosophy.title")}</h2>
           <div className="about-content">
