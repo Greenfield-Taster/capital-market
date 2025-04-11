@@ -1,0 +1,228 @@
+@use "sass:color";
+@use "sass:math";
+@use "../variables" as v;
+
+.faq {
+  padding: 90px 0;
+  background-color: v.$color-milky;
+
+  @media (max-width: v.$breakpoint-tablet) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: v.$breakpoint-mobile) {
+    padding: 40px 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @media (max-width: v.$breakpoint-mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-family: v.$font-headings;
+    font-size: 42px;
+    font-weight: 700;
+    color: v.$color-graphite;
+    margin: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background-color: v.$color-primary;
+      bottom: -16px;
+      left: 0;
+    }
+
+    @media (max-width: v.$breakpoint-tablet) {
+      font-size: 36px;
+    }
+
+    @media (max-width: v.$breakpoint-mobile) {
+      font-size: 28px;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: v.$box-shadow-light;
+    overflow: hidden;
+    transition: v.$transition-default;
+
+    &:hover {
+      box-shadow: v.$box-shadow-medium;
+    }
+
+    &.active {
+      .faq__toggle-icon {
+        transform: rotate(180deg);
+
+        &::after {
+          opacity: 0;
+        }
+      }
+
+      .faq__answer {
+        max-height: 1000px;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__question {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: v.$transition-default;
+
+    &:hover {
+      background-color: color.adjust(v.$color-milky, $alpha: 0.5);
+    }
+
+    @media (max-width: v.$breakpoint-mobile) {
+      padding: 20px 16px;
+    }
+  }
+
+  &__question-text {
+    font-family: v.$font-headings;
+    font-size: 18px;
+    font-weight: 600;
+    color: v.$color-graphite;
+    margin: 0;
+    padding-right: 20px;
+
+    @media (max-width: v.$breakpoint-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__toggle {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__toggle-icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: v.$transition-default;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: v.$color-primary;
+      transition: v.$transition-default;
+    }
+
+    &::before {
+      width: 16px;
+      height: 2px;
+      top: 7px;
+      left: 0;
+    }
+
+    &::after {
+      width: 2px;
+      height: 16px;
+      top: 0;
+      left: 7px;
+    }
+  }
+
+  &__answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__answer-content {
+    padding: 0 32px 24px;
+    color: v.$color-medium-gray;
+    font-family: v.$font-main;
+    font-size: 16px;
+    line-height: 1.6;
+
+    @media (max-width: v.$breakpoint-mobile) {
+      padding: 0 16px 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__answer-text {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 8px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: v.$color-primary;
+      left: -16px;
+      top: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__additional-info {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+}

@@ -171,5 +171,146 @@
         }
       }
     }
+  },
+  "faq": {
+    "title": "Questions and Answers",
+    "items": [
+      {
+        "id": 1,
+        "question": "How does \"TD Stolytsia Market\" differ from other construction companies?",
+        "answer": "We combine 9+ years of experience with modern technologies (BIM-modeling, in-house production of materials) and adhere to international standards (ISO 9001, ISO 45001). Our key advantages are turnkey solutions, individual approach to each project, and participation in Ukraine's infrastructure restoration."
+      },
+      {
+        "id": 2,
+        "question": "What services do you offer?",
+        "answer": "We specialize in:",
+        "listItems": [
+          "Construction (residential/non-residential buildings, shelters, reconstruction);",
+          "Manufacturing (metal structures, concrete fortification elements);",
+          "Design (from concept to implementation);",
+          "Trade (materials, participation in government procurement)."
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Do you have quality certificates?",
+        "answer": "Yes, our work complies with international standards:",
+        "listItems": [
+          "ISO 9001 (quality management);",
+          "ISO 45001 (occupational safety);",
+          "ISO 14001 (environmental responsibility)."
+        ],
+        "additionalInfo": "All products are manufactured according to Ukrainian state standards."
+      },
+      {
+        "id": 4,
+        "question": "What projects have you implemented since 2022?",
+        "answer": "We have participated in:",
+        "listItems": [
+          "Construction of protective structures and bunkers;",
+          "Restoration of destroyed infrastructure;",
+          "Supply of fortification structures (concrete blocks, metal barriers)."
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Do you participate in tenders?",
+        "answer": "Yes, we successfully implement government and commercial contracts. Our advantages are transparent conditions, adherence to deadlines, and support at all stages."
+      },
+      {
+        "id": 6,
+        "question": "Do you provide guarantees for your projects?",
+        "answer": "Yes, all work is accompanied by warranty obligations. The term depends on the type of project and is discussed individually."
+      },
+      {
+        "id": 7,
+        "question": "How is employee safety organized during artillery attacks?",
+        "answer": "All construction sites are equipped with:",
+        "listItems": [
+          "Underground shelters with water/food supplies;",
+          "Satellite communication;",
+          "Medical and psychological support in teams."
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Do you use foreign technologies?",
+        "answer": "We adapt international experience:",
+        "listItems": [
+          "German energy efficiency standards;",
+          "Finnish methods for rapid construction in winter conditions;",
+          "Polish workplace safety training programs."
+        ]
+      },
+      {
+        "id": 9,
+        "question": "What are the advantages of cooperation for construction material suppliers?",
+        "listItems": [
+          "Monthly procurement volume exceeding 1 million euros",
+          "Readiness to develop brand dealership networks in Ukraine",
+          "Integration of materials into project solutions",
+          "Flexible payment and logistics terms",
+          "Brand promotion through our projects"
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Are you ready to act as an official distributor of construction materials in Ukraine?",
+        "answer": "Yes, we are open to strategic partnerships with manufacturers and ready to develop a dealer network for your products, ensuring their promotion, logistics, and presence in key projects throughout Ukraine."
+      },
+      {
+        "id": 11,
+        "question": "Do you provide design services?",
+        "answer": "Yes, our specialists perform a full cycle of design — from concept to implementation, taking into account safety, energy efficiency, and the possibility of deep integration of new materials or solutions into the structure of the object."
+      },
+      {
+        "id": 12,
+        "question": "In which regions of Ukraine do you operate?",
+        "answer": "We work throughout Ukraine. Our logistics are optimized to ensure fast delivery of materials and efficient project implementation regardless of geography."
+      },
+      {
+        "id": 13,
+        "question": "What volume of work can the company perform monthly?",
+        "answer": "Our company is capable of processing projects with a procurement volume of over 1 million euros per month, thanks to our own production facilities, logistics, and experienced team."
+      },
+      {
+        "id": 14,
+        "question": "How many employees work in your company?",
+        "answer": "Our team consists of over 100 qualified specialists, including engineers, architects, designers, logistics experts, technical workers, and administrative staff."
+      },
+      {
+        "id": 15,
+        "question": "Do you participate in public procurement?",
+        "answer": "Yes. We actively work with the Prozorro system, participate in open tenders, and have successful cases of implementing government contracts in construction and reconstruction."
+      },
+      {
+        "id": 16,
+        "question": "What goods and materials do you purchase most often?",
+        "answer": "We regularly purchase:",
+        "listItems": [
+          "cement and concrete mixtures",
+          "reinforcement steel, metal products",
+          "waterproofing and thermal insulation materials",
+          "electrical equipment",
+          "materials for fortification structures",
+          "cladding and facade systems"
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Do you work on a \"turnkey construction\" basis?",
+        "answer": "Yes. We provide a full cycle of services: from design and approvals — to implementation, quality control, project handover, and its further support."
+      },
+      {
+        "id": 18,
+        "question": "How to become your supplier or partner?",
+        "answer": "Simply send us a brief presentation or commercial proposal. We review all requests and are open to long-term relationships with suppliers, distributors, and manufacturers focused on quality and reliability."
+      },
+      {
+        "id": 19,
+        "question": "Do you provide reconstruction services for war-damaged objects?",
+        "answer": "Yes. One of our priorities is infrastructure restoration. We have experience in reconstructing residential buildings, administrative and social facilities, including reinforcement of foundations and load-bearing structures."
+      }
+    ]
   }
 }
