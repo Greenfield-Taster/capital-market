@@ -9,13 +9,10 @@ const Header = () => {
   const location = useLocation();
 
   const isActive = (path) => {
-    if (
-      path === "/capital-market/" &&
-      location.pathname === "/capital-market/"
-    ) {
+    if (path === "/" && location.pathname === "/") {
       return true;
     }
-    if (path !== "/capital-market/" && location.pathname.startsWith(path)) {
+    if (path !== "/" && location.pathname.startsWith(path)) {
       return true;
     }
     return false;
@@ -30,19 +27,17 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <Link to="/capital-market/">CAPITAL MARKET</Link>
+            <Link to="/">CAPITAL MARKET</Link>
           </div>
 
           <nav className="nav">
             <ul className="nav-list">
               <li className="nav-item">
                 <Link
-                  to="/capital-market/"
-                  className={`nav-link ${
-                    isActive("/capital-market/") ? "active" : ""
-                  }`}
+                  to="/"
+                  className={`nav-link ${isActive("/") ? "active" : ""}`}
                 >
-                  <span>{t("header.home", "Головна")}</span>
+                  <span>{t("header.home")}</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -50,7 +45,7 @@ const Header = () => {
                   to="/about"
                   className={`nav-link ${isActive("/about") ? "active" : ""}`}
                 >
-                  <span>{t("header.about", "О нас")}</span>
+                  <span>{t("header.about")}</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -58,7 +53,7 @@ const Header = () => {
                   to="/gallery"
                   className={`nav-link ${isActive("/gallery") ? "active" : ""}`}
                 >
-                  <span>{t("header.gallery", "Галерея")}</span>
+                  <span>{t("header.gallery")}</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -66,7 +61,7 @@ const Header = () => {
                   to="/contact"
                   className={`nav-link ${isActive("/contact") ? "active" : ""}`}
                 >
-                  <span>{t("header.contacts", "Контакти")}</span>
+                  <span>{t("header.contacts")}</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -74,7 +69,7 @@ const Header = () => {
                   to="/faq"
                   className={`nav-link ${isActive("/faq") ? "active" : ""}`}
                 >
-                  <span>{t("header.faq", "FAQ")}</span>
+                  <span>{t("header.faq")}</span>
                 </Link>
               </li>
             </ul>

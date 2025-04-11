@@ -4,7 +4,6 @@
   padding-top: 0;
 }
 
-// Hero section styles
 .hero {
   position: relative;
   height: 89vh;
@@ -16,7 +15,6 @@
   display: flex;
   margin-top: 0;
 
-  // Apply a subtle parallax effect
   &::before {
     content: "";
     position: absolute;
@@ -31,7 +29,6 @@
     z-index: -1;
   }
 
-  // Split screen overlay - darker gradient on left, blurred panel on right
   .hero-overlay {
     position: absolute;
     top: 0;
@@ -167,11 +164,10 @@
   }
 }
 
-// Responsive adjustments for smaller screens
 @media (max-width: v.$breakpoint-tablet) {
   .hero {
     .hero-blur-panel {
-      width: 60%; // Wider panel on tablet
+      width: 60%;
     }
   }
 }
@@ -179,7 +175,7 @@
 @media (max-width: v.$breakpoint-mobile) {
   .hero {
     .hero-blur-panel {
-      width: 100%; // Full width panel on mobile
+      width: 100%;
     }
 
     .hero-overlay {
@@ -188,36 +184,6 @@
         rgba(0, 0, 0, 0.3) 0%,
         rgba(0, 0, 0, 0.2) 100%
       );
-    }
-  }
-}
-
-// Aluminum systems section
-.aluminum-systems {
-  padding: 80px 0;
-  background-color: v.$color-off-white;
-
-  .container {
-    max-width: v.$container-width;
-    margin: 0 auto;
-    padding: 0 v.$gutter;
-  }
-
-  h2 {
-    font-family: v.$font-headings;
-    font-size: 36px;
-    font-weight: 700;
-    color: v.$color-dark-blue;
-    text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-
-    @media (max-width: v.$breakpoint-tablet) {
-      font-size: 30px;
-    }
-
-    @media (max-width: v.$breakpoint-mobile) {
-      font-size: 24px;
     }
   }
 }
