@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import "../styles/pages/_Main.scss";
-import mainBgImage from "../assets/main-bg.png";
+import "../../src/styles/pages/_Main.scss";
+import ActivityDirections from "../components/main/ActivityDirections/ActivityDirections";
+import Benefits from "../components/main/Benefits/Benefits";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -36,16 +37,9 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="aluminum-systems">
-        <div className="container">
-          <h2>
-            {t(
-              "main.aluminumSystems.title",
-              "АЛЮМІНІЄВІ СИСТЕМИ CAPITAL BUILD"
-            )}
-          </h2>
-        </div>
-      </section>
+      <ActivityDirections />
+
+      <Benefits />
     </main>
   );
 };

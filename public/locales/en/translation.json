@@ -1,4 +1,59 @@
 {
-  "welcome": "Welcome to the application",
-  "greeting": "Hello, {{name}}!"
+  "main": {
+    "hero": {
+      "title": "Construction is the art of creating the future with materials.",
+      "description": "We are TD Capital Market company - specializing in construction of residential and non-residential buildings, reconstruction of infrastructure destroyed by war, construction of shelters and underground complexes. We use metal structures and concrete solutions to ensure safety and durability. Our projects combine modern technologies, quality materials and a responsible approach.",
+      "learnMore": "LEARN MORE"
+    },
+    "activityDirections": {
+      "title": "Activity Directions",
+      "activities": {
+        "construction": {
+          "title": "Construction",
+          "description": "Construction of residential and non-residential buildings, reconstruction of infrastructure destroyed by war, construction of shelters and underground facilities. Use of modern technologies and materials to ensure safety and durability."
+        },
+        "manufacturing": {
+          "title": "Manufacturing",
+          "description": "Production of fortification structures: metal structures and concrete barrier pyramids. All products comply with DSTU B V.2.6-2:2009 standards."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Development of building and structure concepts taking into account safety requirements and state standards. Complete design cycle - from idea to implementation."
+        },
+        "trade": {
+          "title": "Trade",
+          "description": "Comprehensive provision, participation in public procurement, execution of contracts with public and private customers. Fast delivery and logistics optimization to minimize costs and time."
+        }
+      }
+    },
+    "benefits": {
+      "title": "Our Benefits",
+      "items": {
+        "experience": {
+          "title": "9+ years of experience"
+        },
+        "approach": {
+          "title": "Individual approach"
+        },
+        "partners": {
+          "title": "Reliable partner network"
+        },
+        "certificates": {
+          "title": "ISO 9001(2015), ISO 45001(2019), 14001(2015) certificates"
+        },
+        "turnkey": {
+          "title": "Turnkey solutions"
+        },
+        "technologies": {
+          "title": "Modern technologies and materials"
+        },
+        "tenders": {
+          "title": "Success in tenders"
+        },
+        "logistics": {
+          "title": "Fast logistics"
+        }
+      }
+    }
+  }
 }
