@@ -1,0 +1,278 @@
+@use "../../styles/variables" as v;
+
+.about-wrapper {
+  font-family: v.$font-main;
+  color: v.$color-graphite;
+  background-color: v.$color-milky;
+  padding: 90px 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: v.$container-width;
+  margin: 0 auto;
+  padding: 0 v.$gutter;
+}
+
+.about-section {
+  margin-bottom: 60px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: v.$color-light-silver;
+    opacity: 0.5;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.about-title {
+  font-family: v.$font-headings;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: v.$color-graphite;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: v.$color-accent;
+  }
+}
+
+.section-title {
+  font-family: v.$font-headings;
+  font-size: 2rem;
+  font-weight: 600;
+  color: v.$color-graphite;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: v.$color-accent;
+  }
+}
+
+.about-content {
+  margin-bottom: 30px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: v.$color-medium-gray;
+
+  strong {
+    font-weight: 600;
+    color: v.$color-dark-blue;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Philosophy section styling
+.philosophy-section {
+  background-color: v.$color-warm-milky;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: v.$box-shadow-light;
+}
+
+// Strategy section styling
+.strategy-subtitle,
+.values-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 30px 0 20px;
+  color: v.$color-graphite;
+}
+
+.strategy-goals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.strategy-goal {
+  background-color: v.$color-warm-milky;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: v.$box-shadow-light;
+  transition: v.$transition-default;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: v.$box-shadow-medium;
+  }
+}
+
+.goal-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: v.$color-dark-blue;
+}
+
+.goal-list {
+  padding-left: 20px;
+  list-style: none;
+
+  li {
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: v.$color-accent;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.value-item {
+  background-color: v.$color-off-white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: v.$box-shadow-light;
+  transition: v.$transition-default;
+  border-left: 3px solid v.$color-accent;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: v.$box-shadow-medium;
+  }
+}
+
+.value-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: v.$color-dark-blue;
+}
+
+.value-description {
+  font-size: 0.95rem;
+  color: v.$color-medium-gray;
+}
+
+// Stats section styling
+.stats-section {
+  text-align: center;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  background-color: v.$color-warm-milky;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: v.$box-shadow-light;
+  transition: v.$transition-default;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: v.$box-shadow-medium;
+  }
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: v.$color-accent;
+  margin-bottom: 10px;
+}
+
+.stat-description {
+  font-size: 1rem;
+  color: v.$color-medium-gray;
+}
+
+// Responsive styles
+@media (max-width: v.$breakpoint-tablet) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .strategy-goals,
+  .values-container {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-section {
+    padding: 25px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: v.$breakpoint-mobile) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-wrapper {
+    padding: 20px 0;
+  }
+
+  .about-section {
+    margin-bottom: 40px;
+  }
+}
