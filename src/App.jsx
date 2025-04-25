@@ -4,6 +4,7 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Main from "./pages/Main";
 import Gallery from "./pages/Gallery";
+import ProjectDetail from "./components/gallery/ProjectDetail";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -24,6 +25,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/gallery/:slug" element={<ProjectDetail />} />
           </Routes>
         </main>
         <Footer />

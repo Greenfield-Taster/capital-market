@@ -39,105 +39,10 @@ a {
   }
 }
 
-// Общие классы-хелперы
 .container {
   max-width: v.$container-width;
   margin: 0 auto;
   padding: 0 v.$gutter;
   width: 100%;
   box-sizing: border-box;
-}
-
-.section {
-  padding: 70px 0;
-
-  @media (max-width: v.$breakpoint-tablet) {
-    padding: 50px 0;
-  }
-
-  @media (max-width: v.$breakpoint-mobile) {
-    padding: 40px 0;
-  }
-}
-
-.section-title {
-  font-size: 36px;
-  margin-bottom: 30px;
-  position: relative;
-  padding-bottom: 15px;
-  font-weight: 700;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background-color: v.$color-medium-gray;
-  }
-
-  @media (max-width: v.$breakpoint-tablet) {
-    font-size: 32px;
-  }
-
-  @media (max-width: v.$breakpoint-mobile) {
-    font-size: 26px;
-    margin-bottom: 25px;
-  }
-}
-
-// Кнопки
-.btn {
-  display: inline-block;
-  font-family: v.$font-headings;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 4px;
-  text-align: center;
-  transition: v.$transition-default;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-
-  &-primary {
-    background-color: v.$color-medium-gray;
-    color: v.$color-off-white;
-
-    &:hover {
-      background-color: color.adjust(v.$color-medium-gray, $lightness: -10%);
-      color: v.$color-off-white;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  &-secondary {
-    background-color: v.$color-light-gray;
-    color: v.$color-dark-blue;
-
-    &:hover {
-      background-color: color.adjust(v.$color-light-gray, $lightness: -10%);
-      color: v.$color-dark-blue;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  &-outline {
-    background-color: transparent;
-    border: 2px solid v.$color-medium-gray;
-    color: v.$color-medium-gray;
-
-    &:hover {
-      background-color: v.$color-medium-gray;
-      color: v.$color-off-white;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  @media (max-width: v.$breakpoint-mobile) {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
 }

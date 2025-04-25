@@ -1,0 +1,280 @@
+[
+  {
+    "id": 1,
+    "title": "Соборный 151",
+    "slug": "soborny-151",
+    "description": "Проект реконструкции исторического здания на улице Соборная, 151. Реставрация фасада и внутренних помещений с сохранением исторической ценности объекта.",
+    "mainImage": "assets/projects/soborny-151/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/soborny-151/photo-1.jpg",
+        "alt": "Фасад здания Соборный 151",
+        "description": "Восстановленный исторический фасад здания"
+      },
+      {
+        "url": "assets/projects/soborny-151/photo-2.jpg",
+        "alt": "Внутренний холл Соборный 151",
+        "description": "Реконструированный главный холл с сохранением оригинальных элементов"
+      },
+      {
+        "url": "assets/projects/soborny-151/photo-3.jpg",
+        "alt": "Лестница Соборный 151",
+        "description": "Парадная лестница после реставрации"
+      },
+      {
+        "url": "assets/projects/soborny-151/photo-4.jpg",
+        "alt": "Офисное помещение Соборный 151",
+        "description": null
+      },
+      {
+        "url": "assets/projects/soborny-151/photo-5.jpg",
+        "alt": "Конференц-зал Соборный 151",
+        "description": "Современный конференц-зал в историческом здании"
+      },
+      {
+        "url": "assets/projects/soborny-151/photo-6.jpg",
+        "alt": "Детали интерьера Соборный 151",
+        "description": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Соборный 44",
+    "slug": "soborny-44",
+    "description": "Комплексный проект реконструкции исторического здания на улице Соборная, 44. Включал восстановление фасада, укрепление фундамента и модернизацию всех инженерных систем.",
+    "mainImage": "assets/projects/soborny-44/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/soborny-44/photo-1.jpg",
+        "alt": "Фасад здания Соборный 44",
+        "description": "Фасад после реконструкции"
+      },
+      {
+        "url": "assets/projects/soborny-44/photo-2.jpg",
+        "alt": "Внутренний двор Соборный 44",
+        "description": "Благоустройство внутреннего двора"
+      },
+      {
+        "url": "assets/projects/soborny-44/photo-3.jpg",
+        "alt": "Входная группа Соборный 44",
+        "description": null
+      },
+      {
+        "url": "assets/projects/soborny-44/photo-4.jpg",
+        "alt": "Внутренние помещения Соборный 44",
+        "description": "Восстановленные интерьеры с современными элементами"
+      },
+      {
+        "url": "assets/projects/soborny-44/photo-5.jpg",
+        "alt": "Декоративные элементы Соборный 44",
+        "description": "Восстановленные декоративные элементы фасада"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Парк Садского – дерево",
+    "slug": "park-sadskogo",
+    "description": "Проект реконструкции и благоустройства парка Садского с фокусом на сохранение и восстановление исторического древесного фонда. Проект включал лечение вековых деревьев, создание новых посадок и ландшафтный дизайн.",
+    "mainImage": "assets/projects/park-sadskogo/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/park-sadskogo/photo-1.jpg",
+        "alt": "Центральная аллея парка Садского",
+        "description": "Восстановленная историческая аллея с вековыми деревьями"
+      },
+      {
+        "url": "assets/projects/park-sadskogo/photo-2.jpg",
+        "alt": "Вековой дуб в парке Садского",
+        "description": "Сохраненный и вылеченный 300-летний дуб"
+      },
+      {
+        "url": "assets/projects/park-sadskogo/photo-3.jpg",
+        "alt": "Зона отдыха в парке Садского",
+        "description": null
+      },
+      {
+        "url": "assets/projects/park-sadskogo/photo-4.jpg",
+        "alt": "Новые посадки в парке Садского",
+        "description": "Молодые деревья редких пород для будущих поколений"
+      },
+      {
+        "url": "assets/projects/park-sadskogo/photo-5.jpg",
+        "alt": "Система полива в парке Садского",
+        "description": "Современная система полива и ухода за растениями"
+      },
+      {
+        "url": "assets/projects/park-sadskogo/photo-6.jpg",
+        "alt": "Ландшафтный дизайн парка Садского",
+        "description": null
+      },
+      {
+        "url": "assets/projects/park-sadskogo/photo-7.jpg",
+        "alt": "Детская площадка в парке Садского",
+        "description": "Экологичная детская площадка из натуральных материалов"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "ДК Металлургов",
+    "slug": "dk-metallurgov",
+    "description": "Масштабный проект реконструкции Дворца культуры Металлургов. Включал реставрацию фасада, полное обновление внутренних помещений, модернизацию сценического оборудования и акустики концертного зала.",
+    "mainImage": "assets/projects/dk-metallurgov/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/dk-metallurgov/photo-1.jpg",
+        "alt": "Фасад ДК Металлургов",
+        "description": "Отреставрированный фасад в стиле советского модернизма"
+      },
+      {
+        "url": "assets/projects/dk-metallurgov/photo-2.jpg",
+        "alt": "Концертный зал ДК Металлургов",
+        "description": "Обновленный зрительный зал на 800 мест"
+      },
+      {
+        "url": "assets/projects/dk-metallurgov/photo-3.jpg",
+        "alt": "Вестибюль ДК Металлургов",
+        "description": null
+      },
+      {
+        "url": "assets/projects/dk-metallurgov/photo-4.jpg",
+        "alt": "Сцена ДК Металлургов",
+        "description": "Модернизированная сцена с современным оборудованием"
+      },
+      {
+        "url": "assets/projects/dk-metallurgov/photo-5.jpg",
+        "alt": "Малый зал ДК Металлургов",
+        "description": "Многофункциональный малый зал для мероприятий"
+      },
+      {
+        "url": "assets/projects/dk-metallurgov/photo-6.jpg",
+        "alt": "Гримерные ДК Металлургов",
+        "description": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Укрытия – Соборный 151",
+    "slug": "ukrytiya-soborny-151",
+    "description": "Проект создания современных защитных укрытий в историческом здании на улице Соборная, 151. Проект включал адаптацию подвальных помещений под безопасные укрытия с сохранением исторической ценности объекта.",
+    "mainImage": "assets/projects/ukrytiya-soborny-151/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/ukrytiya-soborny-151/photo-1.jpg",
+        "alt": "Вход в укрытие",
+        "description": "Реконструированный вход в подвальное укрытие"
+      },
+      {
+        "url": "assets/projects/ukrytiya-soborny-151/photo-2.jpg",
+        "alt": "Внутреннее пространство укрытия",
+        "description": "Оборудованное пространство с системами жизнеобеспечения"
+      },
+      {
+        "url": "assets/projects/ukrytiya-soborny-151/photo-3.jpg",
+        "alt": "Система вентиляции укрытия",
+        "description": "Современная система фильтрации и вентиляции"
+      },
+      {
+        "url": "assets/projects/ukrytiya-soborny-151/photo-4.jpg",
+        "alt": "Аварийное освещение укрытия",
+        "description": null
+      },
+      {
+        "url": "assets/projects/ukrytiya-soborny-151/photo-5.jpg",
+        "alt": "Санитарная зона укрытия",
+        "description": "Зона с необходимыми санитарными удобствами"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Больница №1",
+    "slug": "bolnitsa-1",
+    "description": "Проект модернизации городской больницы №1. Включал обновление фасада, замену коммуникаций, перепланировку и оборудование медицинских кабинетов в соответствии с современными требованиями.",
+    "mainImage": "assets/projects/bolnitsa-1/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/bolnitsa-1/photo-1.jpg",
+        "alt": "Фасад больницы №1",
+        "description": "Обновленный фасад главного корпуса"
+      },
+      {
+        "url": "assets/projects/bolnitsa-1/photo-2.jpg",
+        "alt": "Приемное отделение больницы №1",
+        "description": "Модернизированное приемное отделение"
+      },
+      {
+        "url": "assets/projects/bolnitsa-1/photo-3.jpg",
+        "alt": "Операционная больницы №1",
+        "description": "Операционная с современным оборудованием"
+      },
+      {
+        "url": "assets/projects/bolnitsa-1/photo-4.jpg",
+        "alt": "Палата больницы №1",
+        "description": null
+      },
+      {
+        "url": "assets/projects/bolnitsa-1/photo-5.jpg",
+        "alt": "Лаборатория больницы №1",
+        "description": "Новая лаборатория с диагностическим оборудованием"
+      },
+      {
+        "url": "assets/projects/bolnitsa-1/photo-6.jpg",
+        "alt": "Входная группа больницы №1",
+        "description": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Каменское. Красноград – подземные школы",
+    "slug": "kamenskoe-krasnograd",
+    "description": "Уникальный проект создания безопасных подземных учебных помещений в школах городов Каменское и Красноград. Проект включал инженерные решения по обеспечению безопасности, комфорта и полноценного учебного процесса в подземных условиях.",
+    "mainImage": "assets/projects/kamenskoe-krasnograd/main.png",
+    "photos": [
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-1.jpg",
+        "alt": "Вход в подземную школу",
+        "description": "Безопасный вход в подземные учебные помещения"
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-2.jpg",
+        "alt": "Учебный класс подземной школы",
+        "description": "Полностью оборудованный учебный класс"
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-3.jpg",
+        "alt": "Система вентиляции подземной школы",
+        "description": "Современная система очистки и циркуляции воздуха"
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-4.jpg",
+        "alt": "Освещение подземной школы",
+        "description": null
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-5.jpg",
+        "alt": "Коридор подземной школы",
+        "description": "Безопасный эвакуационный коридор с аварийным освещением"
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-6.jpg",
+        "alt": "Спортивный зал подземной школы",
+        "description": "Адаптированный спортивный зал в подземных условиях"
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-7.jpg",
+        "alt": "Столовая подземной школы",
+        "description": null
+      },
+      {
+        "url": "assets/projects/kamenskoe-krasnograd/photo-8.jpg",
+        "alt": "Технические помещения подземной школы",
+        "description": "Технические помещения с инженерными системами"
+      }
+    ]
+  }
+]
