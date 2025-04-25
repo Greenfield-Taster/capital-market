@@ -18,7 +18,7 @@
   "main": {
     "hero": {
       "title": "Construction is the art of creating the future with materials.",
-      "description": "We are TD Capital Market company - specializing in construction of residential and non-residential buildings, reconstruction of infrastructure destroyed by war, construction of shelters and underground complexes. We use metal structures and concrete solutions to ensure safety and durability. Our projects combine modern technologies, quality materials and a responsible approach.",
+      "description": "We are TD Capital Market company - specializing in construction of residential and non-residential buildings, reconstruction of infrastructure destroyed by war, construction of shelters and underground complexes. Our projects combine modern technologies, quality materials and a responsible approach.",
       "learnMore": "LEARN MORE"
     },
     "activityDirections": {
@@ -70,6 +70,11 @@
           "title": "Fast logistics"
         }
       }
+    },
+    "stats": {
+      "yearsOnMarket": "years in the commercial market",
+      "qualifiedEmployees": "qualified employees",
+      "isoCertificates": "ISO certificates"
     }
   },
   "about": {
