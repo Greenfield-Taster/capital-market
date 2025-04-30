@@ -58,7 +58,6 @@ const Contact = () => {
             {partnersData.map((partner) => (
               <a
                 key={partner.id}
-                href={partner.url}
                 className="partner-card"
                 target="_blank"
                 rel="noopener noreferrer"
