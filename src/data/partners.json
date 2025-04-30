@@ -1,0 +1,48 @@
+[
+  { "id": 1, "logo": "assets/partners/BM.png", "url": "https://partner1.com" },
+  {
+    "id": 2,
+    "logo": "assets/partners/BUDEKO.png",
+    "url": "https://partner2.com"
+  },
+  {
+    "id": 3,
+    "logo": "assets/partners/Motor_Sich.png",
+    "url": "https://partner3.com"
+  },
+  {
+    "id": 4,
+    "logo": "assets/partners/tbe.zp.ua.png",
+    "url": "https://partner4.com"
+  },
+  {
+    "id": 5,
+    "logo": "assets/partners/ULMA.png",
+    "url": "https://partner5.com"
+  },
+  {
+    "id": 6,
+    "logo": "assets/partners/ZLMZ.png",
+    "url": "https://partner6.com"
+  },
+  {
+    "id": 7,
+    "logo": "assets/partners/metal-group.png",
+    "url": "https://partner7.com"
+  },
+  {
+    "id": 8,
+    "logo": "assets/partners/met-invest.png",
+    "url": "https://partner8.com"
+  },
+  {
+    "id": 9,
+    "logo": "assets/partners/ugostal.png",
+    "url": "https://partner9.com"
+  },
+  {
+    "id": 10,
+    "logo": "assets/partners/pershii-dim.png",
+    "url": "https://partner10.com"
+  }
+]

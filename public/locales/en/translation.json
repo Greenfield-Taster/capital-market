@@ -317,5 +317,24 @@
         "answer": "Yes. One of our priorities is infrastructure restoration. We have experience in reconstructing residential buildings, administrative and social facilities, including reinforcement of foundations and load-bearing structures."
       }
     ]
+  },
+  "contact": {
+    "title": "CONTACTS",
+    "phones": "phones",
+    "officeAddress": "office address",
+    "zaporizhzhiaRegion": "Zaporizhzhia region",
+    "zaporizhzhiaCity": "Zaporizhzhia city",
+    "independenceStreet": "Nezalezhna Ukraina str.",
+    "building": "bldg.",
+    "office": "office",
+    "email": "email",
+    "workingHours": "working hours",
+    "mondayToFriday": "Mon-Fri",
+    "saturdaySunday": "Sat-Sun",
+    "weekend": "Weekend",
+    "workingManAlt": "construction worker",
+    "ourPartners": "OUR PARTNERS",
+    "partnerLogo": "Partner logo",
+    "visitPartnerSite": "Visit partner website"
   }
 }

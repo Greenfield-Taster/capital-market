@@ -27,6 +27,7 @@
   position: relative;
   max-width: v.$container-width;
   margin: 0 auto;
+  padding: 0 v.$gutter 50px v.$gutter;
   z-index: 2;
 }
 
@@ -42,7 +43,18 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    transition: v.$transition-default;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background-color: v.$color-primary;
+    }
   }
 }
 
@@ -50,6 +62,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 60px;
 
   @media (max-width: v.$breakpoint-tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -61,20 +74,30 @@
 }
 
 .contact-card {
-  height: 250px;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: v.$transition-default;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: v.$box-shadow-medium;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: v.$color-primary;
+    opacity: 0.8;
   }
 }
 
 .contact-card-inner {
-  height: 100%;
-  padding: 10px;
+  flex: 1;
+  padding: 25px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,16 +106,28 @@
 
   h2 {
     font-family: v.$font-headings;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     letter-spacing: 1px;
     color: v.$color-primary;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 2px;
+      background-color: color.adjust(v.$color-primary, $lightness: 20%);
+    }
   }
 
   p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 10px;
     color: v.$color-graphite;
 
@@ -102,20 +137,88 @@
   }
 }
 
+/* Стилі для секції партнерів */
+.partners-section {
+  margin-top: 70px;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    display: inline-block;
+    font-family: v.$font-headings;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: v.$color-graphite;
+    position: relative;
+    padding-bottom: 15px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 3px;
+      background-color: v.$color-primary;
+    }
+  }
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  @media (max-width: v.$breakpoint-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: v.$breakpoint-mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.partner-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: v.$transition-default;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  height: 120px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+}
+
 @media (max-width: v.$breakpoint-tablet) {
   .contact-header h1 {
     font-size: 24px;
   }
 
-  .contact-card {
-    height: auto;
-    min-height: 200px;
+  .partner-card {
+    height: 100px;
   }
 }
 
 @media (max-width: v.$breakpoint-mobile) {
   .contact-container {
-    padding: 20px v.$gutter;
+    padding: 30px v.$gutter;
   }
 
   .contact-header {
@@ -124,6 +227,18 @@
     h1 {
       font-size: 20px;
       padding: 8px 20px;
+    }
+  }
+
+  .partners-header h2 {
+    font-size: 20px;
+  }
+
+  .partner-card {
+    height: 90px;
+
+    img {
+      max-height: 60px;
     }
   }
 }
