@@ -1,0 +1,240 @@
+@use "../../../styles/variables" as v;
+
+.latest-projects {
+  padding: v.$spacing-4xl 0;
+  background-color: v.$almost-white;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: v.$breakpoint-md) {
+    padding: v.$spacing-3xl 0;
+  }
+
+  @media (max-width: v.$breakpoint-sm) {
+    padding: v.$spacing-2xl 0;
+  }
+
+  // Декоративний елемент (лінія по діагоналі)
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 400px;
+    background-color: v.$graphite-dark-10;
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+
+  // Другий декоративний елемент
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: v.$dark-blue-10;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-family: v.$font-primary;
+    font-size: v.$font-size-3xl;
+    font-weight: v.$font-weight-bold;
+    color: v.$graphite-dark;
+    text-align: center;
+    margin-bottom: v.$spacing-md;
+    text-transform: uppercase;
+    position: relative;
+
+    @media (max-width: v.$breakpoint-md) {
+      font-size: v.$font-size-2xl;
+    }
+
+    @media (max-width: v.$breakpoint-sm) {
+      font-size: v.$font-size-xl;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto v.$spacing-3xl;
+    font-size: v.$font-size-md;
+    color: v.$graphite-medium;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: v.$dark-blue;
+    }
+
+    @media (max-width: v.$breakpoint-md) {
+      font-size: v.$font-size-base;
+      margin-bottom: v.$spacing-2xl;
+    }
+  }
+
+  .projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: v.$spacing-xl;
+    margin-bottom: v.$spacing-3xl;
+
+    @media (max-width: v.$breakpoint-md) {
+      display: flex;
+      flex-direction: column;
+      gap: v.$spacing-xl;
+    }
+  }
+
+  .project-card {
+    border-radius: v.$border-radius-lg;
+    overflow: hidden;
+    box-shadow: v.$shadow-md;
+    background-color: v.$milk;
+    transition: all v.$transition-medium;
+    grid-column: span 4;
+
+    &--featured {
+      grid-column: span 4;
+      margin-top: -30px;
+
+      @media (max-width: v.$breakpoint-md) {
+        margin-top: 0;
+      }
+
+      .project-card__image {
+        height: 350px;
+
+        @media (max-width: v.$breakpoint-md) {
+          height: 280px;
+        }
+      }
+    }
+
+    &:first-child {
+      margin-top: 60px;
+
+      @media (max-width: v.$breakpoint-md) {
+        margin-top: 0;
+      }
+    }
+
+    &:last-child {
+      margin-top: 30px;
+
+      @media (max-width: v.$breakpoint-md) {
+        margin-top: 0;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: v.$shadow-lg;
+
+      .project-card__image img {
+        transform: scale(1.05);
+      }
+
+      .project-card__overlay {
+        opacity: 1;
+      }
+    }
+
+    &__image {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform v.$transition-medium;
+      }
+
+      @media (max-width: v.$breakpoint-md) {
+        height: 280px;
+      }
+
+      @media (max-width: v.$breakpoint-sm) {
+        height: 220px;
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(v.$graphite-dark, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity v.$transition-medium;
+    }
+
+    &__btn {
+      display: inline-block;
+      padding: v.$spacing-sm v.$spacing-lg;
+      background-color: v.$dark-blue;
+      color: v.$milk;
+      font-size: v.$font-size-sm;
+      font-weight: v.$font-weight-semibold;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: v.$border-radius-sm;
+      transition: all v.$transition-fast;
+
+      &:hover {
+        background-color: v.$terracotta;
+        color: v.$milk;
+      }
+    }
+
+    &__content {
+      padding: v.$spacing-lg;
+    }
+
+    &__title {
+      font-family: v.$font-primary;
+      font-size: v.$font-size-lg;
+      font-weight: v.$font-weight-semibold;
+      color: v.$graphite-dark;
+      margin-bottom: v.$spacing-sm;
+
+      @media (max-width: v.$breakpoint-sm) {
+        font-size: v.$font-size-md;
+      }
+    }
+
+    &__description {
+      font-size: v.$font-size-sm;
+      color: v.$graphite-medium;
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+  }
+
+  &__action {
+    text-align: center;
+    margin-top: v.$spacing-xl;
+  }
+}

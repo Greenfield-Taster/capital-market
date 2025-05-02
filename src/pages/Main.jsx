@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ActivityDirections from "../components/main/ActivityDirections/ActivityDirections";
 import Benefits from "../components/main/Benefits/Benefits";
+import LatestProjects from "../components/main/LatestProjects/LatestProjects";
+import useScrollAnimation from "../utils/useScrollAnimation";
+import "../styles/pages/_Main.scss";
 
 const CounterItem = ({ endValue, text, suffix = "", icon }) => {
   const [count, setCount] = useState(0);
@@ -46,6 +49,9 @@ const CounterItem = ({ endValue, text, suffix = "", icon }) => {
 const Main = () => {
   const { t } = useTranslation();
 
+  // Використовуємо хук для анімацій
+  useScrollAnimation();
+
   return (
     <main className="main">
       <section className="hero">
@@ -59,29 +65,23 @@ const Main = () => {
                 {t("main.hero.learnMore")}
               </Link>
 
-              <div className="stats-container">
+              <div className="stats-container animate-on-scroll slide-up">
                 <div className="stats-grid">
                   <CounterItem
                     endValue={9}
-                    text={
-                      t("main.stats.yearsOnMarket") ||
-                      "років на комерційному ринку"
-                    }
+                    text={t("main.stats.yearsOnMarket")}
                     suffix="+"
                     icon={<i className="fas fa-calendar-alt"></i>}
                   />
                   <CounterItem
                     endValue={100}
-                    text={
-                      t("main.stats.qualifiedEmployees") ||
-                      "кваліфікованих співробітників"
-                    }
+                    text={t("main.stats.qualifiedEmployees")}
                     suffix="+"
                     icon={<i className="fas fa-users"></i>}
                   />
                   <CounterItem
                     endValue={3}
-                    text={t("main.stats.isoCertificates") || "ISO сертифікати"}
+                    text={t("main.stats.isoCertificates")}
                     icon={<i className="fas fa-certificate"></i>}
                   />
                 </div>
@@ -93,6 +93,7 @@ const Main = () => {
 
       <ActivityDirections />
       <Benefits />
+      <LatestProjects />
     </main>
   );
 };

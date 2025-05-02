@@ -1,0 +1,171 @@
+@use "../../variables" as v;
+
+@use "./hero";
+@use "./stats";
+@use "./quote";
+@use "./featured";
+@use "./history";
+@use "./process";
+@use "./philosophy";
+@use "./team";
+@use "./strategy";
+@use "./cta";
+@use "./decorative";
+
+// Base about wrapper styles
+.about-wrapper {
+  position: relative;
+  font-family: v.$font-secondary;
+  color: v.$graphite-medium;
+  background: linear-gradient(
+    145deg,
+    v.$milk 0%,
+    v.$almost-white 85%,
+    rgba(v.$dark-blue, 0.03) 100%
+  );
+  padding: 90px 0 60px;
+  line-height: 1.6;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      v.$dark-blue 20%,
+      v.$dark-blue 80%,
+      transparent 100%
+    );
+    opacity: 0.1;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: v.$container-max-width;
+  margin: 0 auto;
+  padding: 0 v.$spacing-xl;
+  z-index: 1;
+
+  @media (max-width: v.$breakpoint-sm) {
+    padding: 0 v.$spacing-md;
+  }
+}
+
+// Common styles shared between sections
+.about-section {
+  margin-bottom: v.$spacing-4xl;
+  position: relative;
+
+  @media (max-width: v.$breakpoint-md) {
+    margin-bottom: v.$spacing-3xl;
+  }
+
+  @media (max-width: v.$breakpoint-sm) {
+    margin-bottom: v.$spacing-2xl;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: v.$spacing-2xl * -0.5;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      v.$graphite-light 30%,
+      v.$graphite-light 70%,
+      transparent 100%
+    );
+    opacity: 0.2;
+
+    @media (max-width: v.$breakpoint-md) {
+      bottom: v.$spacing-xl * -0.5;
+    }
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// Common text styles
+.about-text {
+  margin-bottom: v.$spacing-md;
+  font-size: v.$font-size-base;
+  color: v.$graphite-medium;
+  line-height: 1.8;
+
+  strong {
+    font-weight: v.$font-weight-semibold;
+    color: v.$graphite-dark;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Animation classes - these will apply to all components
+.animate-on-scroll {
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: transform, opacity;
+
+  &.slide-up {
+    transform: translateY(50px);
+  }
+
+  &.slide-right {
+    transform: translateX(-50px);
+  }
+
+  &.slide-left {
+    transform: translateX(50px);
+  }
+
+  &.scale-in {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  &.rotate-in {
+    transform: rotate(-5deg) scale(0.9);
+    opacity: 0;
+  }
+
+  &.fade-in {
+    opacity: 0;
+  }
+
+  &.visible {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0);
+  }
+}
+
+// Parallax effect
+.parallax {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+// Image loading effect
+img {
+  opacity: 0.6;
+  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+
+  &.loaded {
+    opacity: 1;
+  }
+}

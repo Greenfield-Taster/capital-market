@@ -1,0 +1,126 @@
+@use "../../variables" as v;
+
+// Team section
+.team-section {
+  position: relative;
+  margin: v.$spacing-3xl 0 v.$spacing-4xl;
+
+  .section-title {
+    margin-bottom: v.$spacing-xl;
+  }
+
+  .team-image-container {
+    position: relative;
+    border-radius: v.$border-radius-lg;
+    overflow: hidden;
+    box-shadow: v.$shadow-md;
+    margin-bottom: v.$spacing-xl;
+
+    // Full width beyond container
+    margin-left: calc((100vw - 100%) / -2);
+    margin-right: calc((100vw - 100%) / -2);
+    width: 100vw;
+    max-height: 500px;
+
+    @media (max-width: v.$breakpoint-md) {
+      margin-left: -#{v.$spacing-xl};
+      margin-right: -#{v.$spacing-xl};
+      width: calc(100% + #{v.$spacing-xl} * 2);
+    }
+
+    @media (max-width: v.$breakpoint-sm) {
+      margin-left: -#{v.$spacing-md};
+      margin-right: -#{v.$spacing-md};
+      width: calc(100% + #{v.$spacing-md} * 2);
+    }
+
+    img.team-image {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.8s ease;
+      filter: brightness(0.9);
+
+      &.loaded {
+        filter: brightness(1);
+      }
+    }
+
+    &:hover img.team-image {
+      transform: scale(1.02);
+    }
+  }
+
+  .team-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(v.$graphite-dark, 0.8) 0%,
+      transparent 100%
+    );
+    padding: v.$spacing-2xl v.$spacing-xl v.$spacing-xl;
+  }
+
+  .team-quote {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      color: v.$milk;
+      font-family: v.$font-primary;
+      font-size: v.$font-size-xl;
+      font-style: italic;
+      line-height: 1.6;
+      margin: 0;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: v.$breakpoint-md) {
+        font-size: v.$font-size-lg;
+      }
+
+      @media (max-width: v.$breakpoint-sm) {
+        font-size: v.$font-size-md;
+      }
+    }
+  }
+
+  .team-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: v.$spacing-xl;
+    margin-top: v.$spacing-lg;
+
+    @media (max-width: v.$breakpoint-md) {
+      grid-template-columns: 1fr;
+    }
+
+    .about-text {
+      font-size: v.$font-size-base;
+      line-height: 1.7;
+
+      &:first-of-type {
+        position: relative;
+        padding-right: v.$spacing-md;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          background: linear-gradient(to bottom, v.$terracotta-20, transparent);
+
+          @media (max-width: v.$breakpoint-md) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

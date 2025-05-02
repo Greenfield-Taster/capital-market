@@ -1,52 +1,135 @@
 @use "sass:color";
 
-// Основная палитра
-$color-dark-blue: rgba(0, 0, 0, 0.7); // почти черный с синим оттенком
-$color-blue-graphite: #051621; // темно-синий графит
-$color-medium-gray: #5d6564; // средний серый с оттенком
-$color-light-gray: #acbbbd; // светло-серый с голубым оттенком
-$color-off-white: #f8f8f8e3; // почти белый
+// Основна палітра
+$graphite-dark: #2a2a2a; // темний графіт для заголовків та основних елементів
+$graphite-medium: #4a4a4a; // середній графіт для текстів
+$graphite-light: #757575; // світлий графіт для другорядних елементів
+$dark-blue: #1a3c5a; // темно-синій для акцентів
+$terracotta: #c96e4f; // терракотовий для виділення важливих елементів
+$milk: #f5f5f0; // молочний для фонів
+$light-gray: #e0e0e0; // світло-сірий для розділювачів
+$almost-white: #fafafa; // майже білий для фонів контенту
 
-// Альтернативные имена для улучшения читаемости кода
-$color-graphite: $color-dark-blue; // для основных элементов и заголовков
-$color-silver: $color-light-gray; // для акцентов и интерактивных элементов
-$color-milky: $color-off-white; // для фонов и светлых областей
+// Для сумісності зі старим кодом (буде поступово замінено)
+$color-dark-blue: $dark-blue;
+$color-blue-graphite: $graphite-dark;
+$color-medium-gray: $graphite-medium;
+$color-light-gray: $light-gray;
+$color-off-white: $milk;
+$color-graphite: $graphite-dark;
+$color-silver: $light-gray;
+$color-milky: $milk;
+$color-dark-graphite: $graphite-dark;
+$color-light-silver: $light-gray;
+$color-warm-milky: $milk;
+$color-primary: $graphite-medium;
+$color-secondary: $light-gray;
+$color-accent: $terracotta;
 
-// Дополнительные оттенки
-$color-dark-graphite: $color-blue-graphite; // для футера и контрастных элементов
-$color-light-silver: color.adjust(
-  $color-light-gray,
-  $lightness: 10%
-); // для разделителей
-$color-warm-milky: color.adjust(
-  $color-off-white,
-  $saturation: 5%,
-  $lightness: -2%
-); // для мягких акцентов
+// Прозорі версії основних кольорів
+$graphite-dark-90: rgba($graphite-dark, 0.9);
+$graphite-dark-80: rgba($graphite-dark, 0.8);
+$graphite-dark-60: rgba($graphite-dark, 0.6);
+$graphite-dark-40: rgba($graphite-dark, 0.4);
+$graphite-dark-20: rgba($graphite-dark, 0.2);
+$graphite-dark-10: rgba($graphite-dark, 0.1);
 
-// Акцентные цвета
-$color-primary: $color-medium-gray; // основной акцент для интерактивных элементов
-$color-secondary: $color-light-gray; // вторичный акцент
-$color-accent: color.adjust(
-  $color-light-gray,
-  $saturation: 10%,
-  $lightness: -5%
-); // для подсветки
+$dark-blue-90: rgba($dark-blue, 0.9);
+$dark-blue-80: rgba($dark-blue, 0.8);
+$dark-blue-60: rgba($dark-blue, 0.6);
+$dark-blue-40: rgba($dark-blue, 0.4);
+$dark-blue-20: rgba($dark-blue, 0.2);
+$dark-blue-10: rgba($dark-blue, 0.1);
+$dark-blue-5: rgba($dark-blue, 0.05);
 
-// Шрифт
-$font-main: "Manrope", sans-serif;
-$font-headings: "Manrope", sans-serif;
-$font-logo: "Manrope", sans-serif;
+$terracotta-10: rgba($terracotta, 0.1);
+$terracotta-20: rgba($terracotta, 0.2);
 
-// Размеры
-$container-width: 1200px;
+// Шрифти
+$font-primary: "Manrope", sans-serif;
+$font-secondary: "Manrope", sans-serif;
+
+// Сумісність зі старими стилями
+$font-main: $font-secondary;
+$font-headings: $font-primary;
+$font-logo: $font-primary;
+
+// Розміри шрифтів
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-md: 1.125rem; // 18px
+$font-size-lg: 1.25rem; // 20px
+$font-size-xl: 1.5rem; // 24px
+$font-size-2xl: 2rem; // 32px
+$font-size-3xl: 2.5rem; // 40px
+$font-size-4xl: 3rem; // 48px
+
+// Ваги шрифтів
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Відступи
+$spacing-xs: 0.25rem; // 4px
+$spacing-sm: 0.5rem; // 8px
+$spacing-md: 1rem; // 16px
+$spacing-lg: 1.5rem; // 24px
+$spacing-xl: 2rem; // 32px
+$spacing-2xl: 3rem; // 48px
+$spacing-3xl: 4rem; // 64px
+$spacing-4xl: 6rem; // 96px
+
+// Брейкпоінти
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1440px;
+
+// Сумісність зі старими стилями
+$breakpoint-mobile: $breakpoint-xs;
+$breakpoint-tablet: $breakpoint-sm;
+$breakpoint-desktop: $breakpoint-lg;
+
+// Контейнер
+$container-max-width: 1200px;
 $gutter: 20px;
 
-$breakpoint-mobile: 480px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+// Для сумісності
+$container-width: $container-max-width;
 
-// Тени и эффекты
-$box-shadow-light: 0 2px 10px rgba(0, 0, 0, 0.05);
-$box-shadow-medium: 0 4px 15px rgba(0, 0, 0, 0.1);
-$transition-default: all 0.3s ease;
+// Анімації
+$transition-fast: 0.2s ease;
+$transition-medium: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Для сумісності
+$transition-default: $transition-medium;
+
+// Z-індекси
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// Тіні
+$shadow-sm: 0 1px 2px rgba($graphite-dark, 0.05);
+$shadow-md: 0 4px 6px rgba($graphite-dark, 0.1);
+$shadow-lg: 0 10px 15px rgba($graphite-dark, 0.1);
+
+// Для сумісності
+$box-shadow-light: $shadow-sm;
+$box-shadow-medium: $shadow-md;
+
+// Радіуси
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+$border-radius-xl: 12px;
+$border-radius-full: 9999px;

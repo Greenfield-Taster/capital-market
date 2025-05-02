@@ -1,0 +1,72 @@
+@use "../variables" as v;
+
+// Section title styles
+.section-title {
+  font-family: v.$font-primary;
+  font-size: v.$font-size-2xl;
+  font-weight: v.$font-weight-semibold;
+  color: v.$dark-blue;
+  margin-bottom: v.$spacing-lg;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to right, v.$terracotta, v.$dark-blue);
+    transition: width v.$transition-medium;
+  }
+
+  &:hover::after {
+    width: 60px;
+  }
+
+  @media (max-width: v.$breakpoint-md) {
+    font-size: v.$font-size-xl;
+  }
+
+  @media (max-width: v.$breakpoint-sm) {
+    font-size: v.$font-size-lg;
+  }
+
+  // Modifiers
+  &.center {
+    text-align: center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.light {
+    color: v.$milk;
+
+    &::after {
+      background: linear-gradient(to right, v.$milk, v.$terracotta-80);
+    }
+  }
+
+  &.large {
+    font-size: v.$font-size-3xl;
+
+    @media (max-width: v.$breakpoint-md) {
+      font-size: v.$font-size-2xl;
+    }
+
+    @media (max-width: v.$breakpoint-sm) {
+      font-size: v.$font-size-xl;
+    }
+  }
+
+  &.small {
+    font-size: v.$font-size-lg;
+
+    @media (max-width: v.$breakpoint-md) {
+      font-size: v.$font-size-md;
+    }
+  }
+}

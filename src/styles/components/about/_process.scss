@@ -1,0 +1,114 @@
+@use "../../variables" as v;
+
+// Process section
+.process-section {
+  margin: v.$spacing-4xl 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: v.$spacing-2xl;
+  align-items: center;
+
+  @media (max-width: v.$breakpoint-md) {
+    grid-template-columns: 1fr;
+    gap: v.$spacing-xl;
+  }
+
+  .process-image-container {
+    position: relative;
+
+    .process-image {
+      border-radius: v.$border-radius-lg;
+      overflow: hidden;
+      box-shadow: v.$shadow-md;
+
+      img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      width: 70%;
+      height: 70%;
+      background-color: rgba(v.$dark-blue, 0.07);
+      border-radius: v.$border-radius-lg;
+      z-index: -1;
+    }
+  }
+
+  .process-content {
+    .section-title {
+      margin-bottom: v.$spacing-xl;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: v.$spacing-lg;
+    }
+
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      gap: v.$spacing-md;
+      position: relative;
+
+      .step-number {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        background-color: v.$terracotta;
+        color: white;
+        font-family: v.$font-primary;
+        font-weight: v.$font-weight-bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: v.$font-size-lg;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 3px 6px rgba(v.$terracotta, 0.2);
+      }
+
+      .step-content {
+        .step-title {
+          font-family: v.$font-primary;
+          font-size: v.$font-size-lg;
+          font-weight: v.$font-weight-semibold;
+          color: v.$dark-blue;
+          margin-bottom: v.$spacing-xs;
+        }
+
+        .step-description {
+          font-size: v.$font-size-base;
+          color: v.$graphite-medium;
+        }
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        width: 1px;
+        height: calc(100% + #{v.$spacing-lg});
+        background: linear-gradient(
+          to bottom,
+          v.$terracotta,
+          rgba(v.$terracotta, 0.2)
+        );
+        z-index: 0;
+      }
+    }
+  }
+}

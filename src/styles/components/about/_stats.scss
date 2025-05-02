@@ -1,0 +1,101 @@
+@use "../../variables" as v;
+
+// Stats container
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin: v.$spacing-3xl 0;
+  gap: v.$spacing-md;
+
+  @media (max-width: v.$breakpoint-sm) {
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: v.$spacing-lg;
+    background: linear-gradient(135deg, v.$almost-white, v.$milk);
+    border-radius: v.$border-radius-lg;
+    box-shadow: v.$shadow-sm;
+    transition: all v.$transition-medium;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(to right, v.$terracotta, v.$dark-blue);
+    border-image-slice: 1;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 80%
+      );
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: v.$shadow-md;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: v.$breakpoint-sm) {
+      flex-basis: calc(50% - v.$spacing-md);
+      margin-bottom: v.$spacing-md;
+    }
+
+    .stat-number {
+      display: block;
+      font-family: v.$font-primary;
+      font-size: v.$font-size-3xl;
+      font-weight: v.$font-weight-bold;
+      color: v.$dark-blue;
+      margin-bottom: v.$spacing-xs;
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 2px 4px rgba(v.$dark-blue, 0.1);
+    }
+
+    .stat-title {
+      display: block;
+      font-size: v.$font-size-sm;
+      color: v.$graphite-medium;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:nth-child(1) {
+      border-image: linear-gradient(to right, v.$terracotta, v.$dark-blue-60);
+      border-image-slice: 1;
+    }
+
+    &:nth-child(2) {
+      border-image: linear-gradient(to right, v.$dark-blue-60, v.$terracotta);
+      border-image-slice: 1;
+    }
+
+    &:nth-child(3) {
+      border-image: linear-gradient(to right, v.$terracotta, v.$dark-blue);
+      border-image-slice: 1;
+    }
+
+    &:nth-child(4) {
+      border-image: linear-gradient(to right, v.$dark-blue, v.$terracotta);
+      border-image-slice: 1;
+    }
+  }
+}

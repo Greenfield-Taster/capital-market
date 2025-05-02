@@ -1,0 +1,88 @@
+@use "../../variables" as v;
+
+// Decorative elements
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+
+  &.circle-1 {
+    width: 350px;
+    height: 350px;
+    left: -150px;
+    top: 15%;
+    background: radial-gradient(
+      circle,
+      rgba(v.$terracotta, 0.03) 0%,
+      rgba(v.$terracotta, 0.01) 70%,
+      transparent 100%
+    );
+  }
+
+  &.circle-2 {
+    width: 250px;
+    height: 250px;
+    right: -100px;
+    top: 35%;
+    background: radial-gradient(
+      circle,
+      rgba(v.$dark-blue, 0.04) 0%,
+      rgba(v.$dark-blue, 0.01) 70%,
+      transparent 100%
+    );
+  }
+
+  &.circle-3 {
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    bottom: 20%;
+    background: radial-gradient(
+      circle,
+      rgba(v.$graphite-light, 0.03) 0%,
+      rgba(v.$graphite-light, 0.01) 70%,
+      transparent 100%
+    );
+  }
+}
+
+.decorative-line {
+  position: absolute;
+  height: 2px;
+  width: 400px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    v.$dark-blue-20 50%,
+    transparent 100%
+  );
+
+  &.line-1 {
+    top: 25%;
+    right: -200px;
+    transform: rotate(45deg);
+  }
+
+  &.line-2 {
+    bottom: 30%;
+    left: -200px;
+    transform: rotate(-45deg);
+  }
+}
+
+.decorative-text {
+  position: absolute;
+  right: -100px;
+  top: 60%;
+  font-family: v.$font-primary;
+  font-size: 120px;
+  font-weight: 700;
+  color: rgba(v.$dark-blue, 0.02);
+  transform: rotate(90deg);
+  white-space: nowrap;
+  pointer-events: none;
+
+  @media (max-width: v.$breakpoint-lg) {
+    display: none;
+  }
+}

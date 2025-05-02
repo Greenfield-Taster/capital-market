@@ -7,7 +7,7 @@ import Gallery from "./pages/Gallery";
 import ProjectDetail from "./components/gallery/ProjectDetail";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
+import About from "./components/about/index";
 import ScrollToTop from "./utils/ScrollToTop";
 
 import "./styles/main.scss";

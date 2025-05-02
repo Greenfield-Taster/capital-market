@@ -1,0 +1,117 @@
+@use "../../variables" as v;
+
+// Philosophy section
+.philosophy-section {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    v.$almost-white,
+    rgba(v.$dark-blue, 0.03)
+  );
+  padding: v.$spacing-2xl;
+  border-radius: v.$border-radius-lg;
+  box-shadow: v.$shadow-sm;
+  overflow: hidden;
+  margin-top: v.$spacing-4xl;
+  margin-bottom: v.$spacing-4xl;
+
+  // Decorative elements
+  &::before,
+  &::after {
+    content: '"';
+    position: absolute;
+    font-family: v.$font-primary;
+    font-weight: v.$font-weight-bold;
+    color: v.$dark-blue-10;
+    line-height: 1;
+    transition: transform v.$transition-slow, opacity v.$transition-slow;
+  }
+
+  &::before {
+    top: -20px;
+    left: 10px;
+    font-size: 150px;
+  }
+
+  &::after {
+    bottom: -80px;
+    right: 10px;
+    font-size: 150px;
+    transform: rotate(180deg);
+  }
+
+  &:hover::before {
+    transform: translateY(10px);
+    opacity: 0.8;
+  }
+
+  &:hover::after {
+    transform: rotate(180deg) translateY(10px);
+    opacity: 0.8;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: v.$spacing-xl;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .philosophy-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: v.$spacing-xl;
+
+    @media (max-width: v.$breakpoint-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .philosophy-item {
+    position: relative;
+    padding-left: v.$spacing-xl;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 4px;
+      height: 30px;
+      background: linear-gradient(to bottom, v.$terracotta, v.$dark-blue);
+      transition: height v.$transition-medium;
+    }
+
+    &:hover::before {
+      height: 50px;
+    }
+
+    .about-text {
+      margin-bottom: v.$spacing-md;
+      font-size: v.$font-size-base;
+      line-height: 1.7;
+    }
+  }
+
+  .philosophy-image {
+    margin-top: v.$spacing-lg;
+    border-radius: v.$border-radius-lg;
+    overflow: hidden;
+    box-shadow: v.$shadow-sm;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      min-height: 180px;
+    }
+
+    &:hover img {
+      transform: scale(1.03);
+    }
+  }
+}

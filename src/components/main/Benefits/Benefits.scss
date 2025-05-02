@@ -1,24 +1,51 @@
 @use "../../../styles/variables" as v;
 
 .benefits {
-  padding: 80px 0;
-  background: linear-gradient(180deg, #e6ebee 0%, #f0f3f5 100%);
-  color: v.$color-dark-blue;
+  padding: v.$spacing-4xl 0;
+  background: linear-gradient(180deg, v.$light-gray 0%, v.$milk 100%);
+  color: v.$graphite-dark;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: v.$breakpoint-md) {
+    padding: v.$spacing-3xl 0;
+  }
+
+  @media (max-width: v.$breakpoint-sm) {
+    padding: v.$spacing-2xl 0;
+  }
+
+  // Декоративна лінія
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(v.$graphite-light, 0.3) 20%,
+      rgba(v.$graphite-light, 0.3) 80%,
+      transparent 100%
+    );
+    z-index: 1;
+  }
 
   .container {
-    max-width: v.$container-width;
-    margin: 0 auto;
-    padding: 0 v.$gutter;
+    position: relative;
+    z-index: 2;
   }
 
   h2 {
-    font-family: v.$font-headings;
-    font-size: 36px;
-    font-weight: 700;
+    font-family: v.$font-primary;
+    font-size: v.$font-size-3xl;
+    font-weight: v.$font-weight-bold;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: v.$spacing-3xl;
     text-transform: uppercase;
-    color: v.$color-dark-blue;
+    color: v.$dark-blue;
     position: relative;
 
     &::after {
@@ -29,56 +56,79 @@
       transform: translateX(-50%);
       width: 60px;
       height: 3px;
-      background-color: v.$color-blue-graphite;
+      background-color: v.$dark-blue;
     }
 
-    @media (max-width: v.$breakpoint-tablet) {
-      font-size: 30px;
+    @media (max-width: v.$breakpoint-md) {
+      font-size: v.$font-size-2xl;
+      margin-bottom: v.$spacing-2xl;
     }
 
-    @media (max-width: v.$breakpoint-mobile) {
-      font-size: 24px;
+    @media (max-width: v.$breakpoint-sm) {
+      font-size: v.$font-size-xl;
+      margin-bottom: v.$spacing-xl;
     }
   }
 
   .benefits-layout {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: v.$spacing-2xl;
     align-items: flex-start;
 
-    @media (max-width: 992px) {
+    @media (max-width: v.$breakpoint-md) {
       flex-direction: column;
       align-items: center;
     }
   }
 
   .benefits-photo {
-    width: 32%;
+    width: 35%;
     flex-shrink: 0;
+    position: relative;
+    z-index: 2;
 
     img {
-      border-radius: 20px;
+      border-radius: v.$border-radius-lg;
       width: 100%;
       height: auto;
       object-fit: cover;
-      box-shadow: v.$box-shadow-medium;
+      box-shadow: v.$shadow-lg;
+      transform: rotate(-2deg);
+      transition: transform v.$transition-medium;
+
+      &:hover {
+        transform: rotate(0);
+      }
     }
 
-    @media (max-width: 992px) {
+    // Декоративний елемент за фото
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100%;
+      height: 100%;
+      background-color: v.$dark-blue-20;
+      border-radius: v.$border-radius-lg;
+      z-index: -1;
+    }
+
+    @media (max-width: v.$breakpoint-md) {
       width: 100%;
       max-width: 600px;
-      margin: 0 auto 20px;
+      margin: 0 auto v.$spacing-xl;
     }
   }
 
   .benefits-content {
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: v.$spacing-xl;
 
-    @media (max-width: 992px) {
+    @media (max-width: v.$breakpoint-md) {
       width: 100%;
     }
   }
@@ -86,86 +136,113 @@
   .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: v.$spacing-lg;
+    position: relative;
+    z-index: 2;
 
-    @media (max-width: 992px) {
+    @media (max-width: v.$breakpoint-md) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: v.$breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-sm) {
       grid-template-columns: 1fr;
     }
   }
 
   .benefits-bottom {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: v.$spacing-lg;
+    margin-top: v.$spacing-sm;
+    position: relative;
+    z-index: 2;
 
-    @media (max-width: 992px) {
-      flex-direction: row;
+    @media (max-width: v.$breakpoint-md) {
+      display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .benefit-item {
-      width: calc(33% - 10px);
-
-      @media (max-width: 992px) {
-        width: calc(50% - 10px);
+      @media (max-width: v.$breakpoint-md) {
+        width: calc(50% - v.$spacing-md);
       }
 
-      @media (max-width: v.$breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-sm) {
         width: 100%;
       }
     }
   }
 
   .benefit-item {
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
+    background-color: v.$milk;
+    border-radius: v.$border-radius-lg;
+    padding: v.$spacing-lg;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: v.$transition-default;
-    border: 1px solid v.$color-light-gray;
-    box-shadow: v.$box-shadow-light;
+    transition: all v.$transition-medium;
+    border: 1px solid rgba(v.$graphite-light, 0.2);
+    box-shadow: v.$shadow-sm;
+    position: relative;
+    overflow: hidden;
+
+    // Декоративний елемент (градієнтний кут)
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, v.$dark-blue, v.$terracotta);
+      opacity: 0;
+      transition: opacity v.$transition-medium;
+    }
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: v.$box-shadow-medium;
-      border-color: v.$color-medium-gray;
+      transform: translateY(-8px);
+      box-shadow: v.$shadow-md;
+      border-color: rgba(v.$graphite-light, 0.4);
+
+      &::before {
+        opacity: 1;
+      }
 
       .benefit-icon {
-        background-color: v.$color-medium-gray;
+        background-color: v.$dark-blue;
+
+        img {
+          filter: brightness(2);
+        }
       }
     }
   }
 
   .benefit-icon {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: v.$spacing-md;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: v.$color-light-gray;
-    transition: v.$transition-default;
+    background-color: v.$graphite-light;
+    transition: all v.$transition-medium;
 
     img {
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
       object-fit: contain;
+      transition: filter v.$transition-medium;
     }
   }
 
   .benefit-title {
-    font-size: 16px;
+    font-size: v.$font-size-md;
     line-height: 1.4;
-    font-weight: 500;
-    color: v.$color-dark-blue;
+    font-weight: v.$font-weight-semibold;
+    color: v.$graphite-dark;
   }
 }
