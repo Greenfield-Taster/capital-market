@@ -80,33 +80,71 @@
   "about": {
     "title": "About Us",
     "main": {
-      "paragraph1": "TD Stolytsya Market is a team of professionals specializing in the construction of residential and non-residential buildings, infrastructure reconstruction, and the construction of shelters and underground complexes. Since 2016, we have successfully implemented projects of any complexity, using modern technologies, quality materials, and innovative approaches. Our experience allows us to ensure high quality and reliability of each facility, from small structures to large-scale infrastructure solutions.",
-      "paragraph2": "One of our key areas is the production of metal structures and concrete solutions that ensure safety and durability. We work responsibly and adhere to international standards, which is confirmed by our certified management system: (ISO 9001(2015), ISO 45001(2019), 14001(2015).",
-      "paragraph3": "Our team consists of more than 100 qualified employees who make daily efforts to implement the most complex tasks. We have all the necessary licenses to conduct business, including EL01:8020-2630-9976-1706, which guarantees our clients transparency and compliance with all regulatory requirements.",
-      "paragraph4": "The company's annual turnover is 1 billion hryvnias, which indicates our stability and customer trust. We are proud that each of our projects is a combination of modern technologies, quality materials, and a responsible approach. Our goal is to create spaces that provide comfort, safety, and durability for everyone."
+      "paragraph1": "TD Stolytsya Market is a team of professionals specializing in construction of residential and non-residential buildings, infrastructure reconstruction, shelters, and underground complexes. Since 2016, we have successfully implemented projects of any complexity, using modern technologies, quality materials, and innovative approaches. Our experience allows us to ensure high quality and reliability for each facility, from small structures to large-scale infrastructure solutions.",
+      "paragraph2": "One of our key areas is the production of metal structures and concrete solutions that provide safety and durability. We work responsibly and adhere to international standards, which is confirmed by our certified management system: ISO 9001(2015), ISO 45001(2019), and 14001(2015).",
+      "paragraph3": "Our team consists of over 100 qualified employees who work daily to implement the most challenging tasks. We have all necessary licenses to conduct our business, including EL01:8020-2630-9976-1706, which guarantees our clients transparency and compliance with all regulatory requirements.",
+      "paragraph4": "The company's annual turnover is 1 billion hryvnias, which demonstrates our stability and client trust. We take pride in the fact that each of our projects combines modern technologies, quality materials, and a responsible approach. Our goal is to create spaces that provide comfort, safety, and durability for everyone."
+    },
+    "mainQuote": "We build not just structures — we create a reliable future",
+    "stats": {
+      "years": "Years of experience",
+      "specialists": "Specialists",
+      "revenue": "billion UAH turnover",
+      "certificates": "Quality certificates"
+    },
+    "featuredProject": {
+      "title": "Our Flagship Project",
+      "description": "A complex of protective structures and shelters, implemented in 2023 for the defense sector. The project included the construction of underground facilities using innovative materials that provide maximum level of protection and comfort simultaneously."
+    },
+    "process": {
+      "title": "How We Work",
+      "steps": {
+        "step1": {
+          "title": "Analysis and Planning",
+          "description": "Detailed study of client needs, concept development, and cost estimation."
+        },
+        "step2": {
+          "title": "Design",
+          "description": "Creation of technical documentation, 3D modeling of objects, and coordination of all details."
+        },
+        "step3": {
+          "title": "Production and Construction",
+          "description": "Manufacturing of metal structures, preparation of materials, and construction of the facility under engineer supervision."
+        },
+        "step4": {
+          "title": "Quality Control and Delivery",
+          "description": "Strict control of each stage of work and facility delivery with complete documentation and warranty."
+        }
+      }
     },
     "history": {
       "title": "Company History",
-      "paragraph1": "TD Stolytsya Market was founded in 2016 by a group of construction engineers who aimed to create high-quality and reliable structures using modern technologies. Initially, we implemented small commercial and residential projects, but thanks to clear planning and a responsible approach, we quickly expanded the scope of our activities.",
-      "paragraph2": "By 2019, the company had already established itself as a reliable contractor for complex construction work, received ISO 9001(2015), ISO 45001(2019), 14001(2015) certificates, and launched its own production of metal structures and concrete solutions. Further development was accompanied by participation in government tenders, infrastructure reconstruction, and the construction of defense facilities after the start of the full-scale war.",
-      "paragraph3": "Today, TD Stolytsya Market is a team of over 100 specialists implementing projects of any complexity. Our experience, modern technologies, and adherence to international standards allow us to guarantee the quality and durability of each object. We continue to develop while maintaining our key values — reliability, innovation, and responsibility to clients and society."
+      "paragraph1": "TD Stolytsya Market was founded in 2016 by a group of civil engineers who aimed to create high-quality and reliable facilities using modern technologies. Initially, we implemented small commercial and residential projects, but thanks to clear planning and a responsible approach, we quickly expanded our scope of activities.",
+      "paragraph2": "By 2019, the company had already established itself as a reliable executor of complex construction works, received ISO 9001(2015), ISO 45001(2019), and 14001(2015) certificates, and launched its own production of metal structures and concrete solutions. Further development was accompanied by participation in government tenders, infrastructure reconstruction, and construction of defensive structures after the beginning of the full-scale war.",
+      "paragraph3": "Today, TD Stolytsya Market is a team of over 100 specialists implementing projects of any complexity. Our experience, modern technologies, and adherence to international standards allow us to guarantee the quality and durability of each facility. We continue to develop while maintaining our key values — reliability, innovation, and responsibility to clients and society."
     },
     "philosophy": {
       "title": "Company Philosophy",
-      "paragraph1": "We believe that construction is not just about creating objects, but about forming spaces that affect people's quality of life. Each of our projects is a combination of innovation, reliability, and responsibility. We strive not only to meet the needs of clients but also to exceed expectations by creating solutions that withstand time and challenges.",
+      "paragraph1": "We believe that construction is not just about creating objects, but forming spaces that affect people's quality of life. Each of our projects combines innovation, reliability, and responsibility. We strive not only to meet client needs but to exceed expectations by creating solutions that withstand time and challenges.",
       "paragraph2": "Our mission is to build a future where each facility becomes a testament to quality, safety, and durability. We understand that our work affects people's lives, so we approach each project with maximum dedication and attention to detail.",
-      "paragraph3": "For us, not only technical parameters are important, but also client trust, environmental responsibility, and social significance. We don't just build buildings — we create conditions for development, protection, and comfort.",
-      "paragraph4": "Our philosophy is a combination of professional experience, modern technologies, and the belief that every project matters. We don't just build facilities — we build trust."
+      "paragraph3": "For us, not only technical parameters are important, but also client trust, environmental responsibility, and social significance. We build not just buildings — we create conditions for development, protection, and comfort.",
+      "paragraph4": "Our philosophy is a combination of professional experience, modern technologies, and belief that each project matters. We build not just objects — we build trust."
+    },
+    "team": {
+      "title": "Our Team",
+      "quote": "Our success is based on the professionalism, dedication, and innovative thinking of each team member.",
+      "paragraph1": "Our team consists of over 100 qualified employees who work daily to implement the most challenging tasks. These are professionals in various fields: engineers, architects, technologists, managers, safety and logistics specialists.",
+      "paragraph2": "We continuously improve the qualifications of our specialists, implement new approaches to work, and provide comfortable conditions for the development of each team member. Our employees have access to modern technologies and the opportunity to realize their potential in significant projects."
     },
     "strategy": {
       "title": "Strategy",
-      "intro": "Our strategy is aimed at achieving leadership in the field of construction, production, and infrastructure reconstruction through innovation, quality, and a responsible approach. We strive to become a reliable partner for our clients, offering comprehensive solutions that ensure safety, durability, and efficiency.",
-      "goalsTitle": "Main Objectives:",
+      "intro": "Our strategy is aimed at achieving leadership in construction, manufacturing, and infrastructure reconstruction through innovation, quality, and a responsible approach. We strive to become a reliable partner for our clients by offering comprehensive solutions that ensure safety, durability, and efficiency.",
+      "goalsTitle": "Main Goals:",
       "goals": {
         "goal1": {
-          "title": "Expanding the Range of Services",
+          "title": "Expanding Service Range",
           "items": [
-            "Implementation of new directions, such as smart construction and environmentally oriented projects.",
+            "Implementation of new directions such as smart construction and environmentally oriented projects.",
             "Development of production of innovative fortification materials."
           ]
         },
@@ -120,26 +158,26 @@
         "goal3": {
           "title": "Strengthening Market Position",
           "items": [
-            "Active participation in public and private tenders.",
-            "Expanding the geography of activities and entering new markets."
+            "Active participation in government and private tenders.",
+            "Expanding geography of activities and entering new markets."
           ]
         },
         "goal4": {
-          "title": "Developing Partnerships",
+          "title": "Developing Partnership Relations",
           "items": [
             "Creating strategic alliances with reliable suppliers and contractors.",
-            "Expanding the partner network to optimize logistics and reduce costs."
+            "Expanding the network of partners to optimize logistics and reduce costs."
           ]
         },
         "goal5": {
           "title": "Social and Environmental Responsibility",
           "items": [
             "Implementation of environmentally friendly technologies in construction.",
-            "Support for social initiatives aimed at restoring infrastructure and helping those affected by the war."
+            "Supporting social initiatives aimed at infrastructure restoration and assistance to those affected by the war."
           ]
         }
       },
-      "valuesTitle": "Our Strategy Values:",
+      "valuesTitle": "Our Strategic Values:",
       "values": {
         "value1": {
           "title": "Reliability",
@@ -151,30 +189,14 @@
         },
         "value3": {
           "title": "Responsibility",
-          "description": "We work with consideration for the interests of clients, society, and the environment."
+          "description": "We work considering the interests of clients, society, and the environment."
         }
       }
     },
-    "stats": {
-      "title": "Key Indicators",
-      "items": {
-        "founded": {
-          "number": "2016",
-          "description": "Year of establishment"
-        },
-        "employees": {
-          "number": "100+",
-          "description": "Qualified employees"
-        },
-        "revenue": {
-          "number": "1 bln",
-          "description": "Hryvnias annual turnover"
-        },
-        "certifications": {
-          "number": "3",
-          "description": "ISO certifications"
-        }
-      }
+    "cta": {
+      "title": "Ready to Implement Your Project?",
+      "text": "Entrust us with the implementation of your construction ideas. Our team will ensure high-quality execution of work in compliance with all standards and deadlines.",
+      "button": "Contact Us"
     }
   },
   "faq": {
@@ -317,5 +339,30 @@
         "answer": "Yes. One of our priorities is infrastructure restoration. We have experience in reconstructing residential buildings, administrative and social facilities, including reinforcement of foundations and load-bearing structures."
       }
     ]
+  },
+  "contact": {
+    "title": "CONTACTS",
+    "phones": "phones",
+    "officeAddress": "office address",
+    "zaporizhzhiaRegion": "Zaporizhzhia region",
+    "zaporizhzhiaCity": "Zaporizhzhia city",
+    "independenceStreet": "Nezalezhna Ukraina str.",
+    "building": "bldg.",
+    "office": "office",
+    "email": "email",
+    "workingHours": "working hours",
+    "mondayToFriday": "Mon-Fri",
+    "saturdaySunday": "Sat-Sun",
+    "weekend": "Weekend",
+    "workingManAlt": "construction worker",
+    "ourPartners": "OUR PARTNERS",
+    "partnerLogo": "Partner logo",
+    "visitPartnerSite": "Visit partner website"
+  },
+  "latestProjects": {
+    "title": "Our Latest Projects",
+    "subtitle": "Explore our most recent construction and reconstruction work",
+    "viewDetails": "View Details",
+    "viewAll": "View All Projects"
   }
 }
