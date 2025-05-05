@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { ImageWithFallback } from "../../../utils/imageUtils";
 import projectsData from "../../../data/projects.json";
 import "./LatestProjects.scss";
 
@@ -32,7 +33,10 @@ const LatestProjects = () => {
               key={project.id}
             >
               <div className="project-card__image">
-                <img src={project.mainImage} alt={project.title} />
+                <ImageWithFallback
+                  src={project.mainImage}
+                  alt={project.title}
+                />
                 <div className="project-card__overlay">
                   <Link
                     to={`/gallery/${project.slug}`}
