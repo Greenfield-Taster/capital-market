@@ -43,6 +43,15 @@
     );
     opacity: 0.1;
   }
+
+  img {
+    opacity: 0.6;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
 }
 
 .container {
@@ -158,14 +167,4 @@
 .parallax {
   will-change: transform;
   transition: transform 0.1s linear;
-}
-
-// Image loading effect
-img {
-  opacity: 0.6;
-  transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
-
-  &.loaded {
-    opacity: 1;
-  }
 }

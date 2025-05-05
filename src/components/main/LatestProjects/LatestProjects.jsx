@@ -7,7 +7,6 @@ import "./LatestProjects.scss";
 const LatestProjects = () => {
   const { t } = useTranslation();
 
-  // Взяти 3 останні проекти
   const latestProjects = projectsData.slice(0, 3);
 
   return (

@@ -210,7 +210,7 @@
     }
 
     &__content {
-      padding: v.$spacing-lg;
+      padding: v.$spacing-md;
     }
 
     &__title {
@@ -219,6 +219,7 @@
       font-weight: v.$font-weight-semibold;
       color: v.$graphite-dark;
       margin-bottom: v.$spacing-sm;
+      padding: 0;
 
       @media (max-width: v.$breakpoint-sm) {
         font-size: v.$font-size-md;

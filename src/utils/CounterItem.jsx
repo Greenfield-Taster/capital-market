@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "../../styles/common/_animated-counter.scss";
+import { useEffect, useState } from "react";
 
-const AnimatedCounter = ({ endValue, title, suffix = "", className = "" }) => {
+const CounterItem = ({ endValue, text, suffix = "", icon }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -29,14 +28,15 @@ const AnimatedCounter = ({ endValue, title, suffix = "", className = "" }) => {
   }, [endValue]);
 
   return (
-    <div className={`stat-item ${className}`}>
-      <span className="stat-number">
+    <div className="stats-item">
+      {icon && <div className="stats-icon">{icon}</div>}
+      <div className="stats-number">
         {count}
         {suffix}
-      </span>
-      {title && <span className="stat-title">{title}</span>}
+      </div>
+      <div className="stats-text">{text}</div>
     </div>
   );
 };
 
-export default AnimatedCounter;
+export default CounterItem;

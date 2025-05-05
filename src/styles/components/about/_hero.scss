@@ -1,6 +1,5 @@
 @use "../../variables" as v;
 
-// Main section / Hero
 .main-section {
   .about-content {
     display: grid;
@@ -58,7 +57,6 @@
       pointer-events: none;
     }
 
-    // Decorative element behind image
     &::before {
       content: "";
       position: absolute;
@@ -76,7 +74,6 @@
       transform: translate(-10px, -10px) scale(1.05);
     }
 
-    // Light animation
     &::after {
       content: "";
       position: absolute;
@@ -112,7 +109,6 @@
     }
   }
 
-  // Image caption
   .about-image-caption {
     position: absolute;
     bottom: 20px;
@@ -149,12 +145,11 @@
   }
 }
 
-// Additional content
 .additional-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: v.$spacing-xl;
-  margin-top: v.$spacing-xl;
+  margin-top: v.$spacing-2xl;
 
   @media (max-width: v.$breakpoint-md) {
     grid-template-columns: 1fr;
@@ -203,7 +198,6 @@
   }
 }
 
-// Title styles
 .about-title {
   font-family: v.$font-primary;
   font-size: v.$font-size-3xl;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ActivityDirections from "../components/main/ActivityDirections/ActivityDirections";
@@ -6,50 +6,11 @@ import Benefits from "../components/main/Benefits/Benefits";
 import LatestProjects from "../components/main/LatestProjects/LatestProjects";
 import useScrollAnimation from "../utils/useScrollAnimation";
 import "../styles/pages/_Main.scss";
-
-const CounterItem = ({ endValue, text, suffix = "", icon }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let startTime;
-    let animationFrame;
-
-    const updateCounter = (timestamp) => {
-      if (!startTime) startTime = timestamp;
-      const progress = timestamp - startTime;
-      const duration = 2000;
-      const percentage = Math.min(progress / duration, 1);
-
-      setCount(Math.floor(percentage * endValue));
-
-      if (percentage < 1) {
-        animationFrame = requestAnimationFrame(updateCounter);
-      }
-    };
-
-    animationFrame = requestAnimationFrame(updateCounter);
-
-    return () => {
-      cancelAnimationFrame(animationFrame);
-    };
-  }, [endValue]);
-
-  return (
-    <div className="stats-item">
-      {icon && <div className="stats-icon">{icon}</div>}
-      <div className="stats-number">
-        {count}
-        {suffix}
-      </div>
-      <div className="stats-text">{text}</div>
-    </div>
-  );
-};
+import CounterItem from "../utils/CounterItem";
 
 const Main = () => {
   const { t } = useTranslation();
 
-  // Використовуємо хук для анімацій
   useScrollAnimation();
 
   return (
