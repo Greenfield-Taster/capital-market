@@ -92,7 +92,7 @@
   .projects-gallery {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: v.$spacing-xl;
+    grid-gap: v.$spacing-2xl;
     margin-bottom: v.$spacing-3xl;
 
     @media (max-width: v.$breakpoint-md) {
@@ -113,17 +113,14 @@
     &--featured {
       grid-column: span 4;
       margin-top: -30px;
+      margin-bottom: 55px;
 
       @media (max-width: v.$breakpoint-md) {
         margin-top: 0;
       }
 
       .project-card__image {
-        height: 350px;
-
-        @media (max-width: v.$breakpoint-md) {
-          height: 280px;
-        }
+        height: 280px;
       }
     }
 
