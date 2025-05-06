@@ -8,7 +8,4 @@ export default defineConfig({
     outDir: "dist",
     copyPublicDir: true,
   },
-  server: {
-    open: true,
-  },
 });

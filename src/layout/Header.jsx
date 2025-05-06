@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import mainLogo from "../assets/logo.svg";
 
 import "../styles/layout/_header.scss";
 
@@ -27,7 +28,9 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <Link to="/">CAPITAL MARKET</Link>
+            <Link to="/">
+              <img src={mainLogo} alt="main logo" />
+            </Link>
           </div>
 
           <nav className="nav">
