@@ -159,9 +159,20 @@
   }
 }
 
-// Установка затримки для анімацій
 @for $i from 1 through 10 {
   .delay-#{$i} {
     transition-delay: #{$i * 0.1}s;
+  }
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(18px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(18px);
   }
 }

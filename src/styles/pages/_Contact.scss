@@ -1,5 +1,6 @@
 @use "../variables" as v;
 @use "sass:color";
+@use "../common//animations";
 
 .contact-page {
   position: relative;
@@ -14,12 +15,24 @@
 .contact-banner {
   position: relative;
   width: 100%;
+  height: 300px;
   overflow: hidden;
 
-  img {
+  img.background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .working-man-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 70%;
+    top: 2%;
+    max-height: 350px;
+    z-index: 2;
+    animation: floatAnimation 3s infinite;
   }
 }
 
@@ -33,7 +46,8 @@
 
 .contact-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  margin-top: 50px;
 
   h1 {
     display: inline-block;
@@ -61,7 +75,7 @@
 .contact-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 60px;
 
   @media (max-width: v.$breakpoint-tablet) {
@@ -70,6 +84,7 @@
 
   @media (max-width: v.$breakpoint-mobile) {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
@@ -77,84 +92,209 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  border-radius: 8px;
-  transition: v.$transition-default;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(v.$graphite-dark, 0.08);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(v.$light-gray, 0.5);
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(v.$graphite-dark, 0.12);
+
+    &:before {
+      transform: translateX(0);
+    }
+
+    .contact-card-inner {
+      background-position: right bottom;
+    }
+  }
 
   &:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: v.$color-primary;
-    opacity: 0.8;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      v.$terracotta,
+      color.adjust(v.$terracotta, $lightness: 15%)
+    );
+    transform: translateX(-4px);
+    transition: transform 0.3s ease;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, v.$terracotta-10 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0.6;
+    z-index: 0;
+  }
+
+  &:nth-child(1) {
+    &:before {
+      background: linear-gradient(
+        to bottom,
+        v.$terracotta,
+        color.adjust(v.$terracotta, $lightness: 15%)
+      );
+    }
+
+    &:after {
+      background: radial-gradient(circle, v.$terracotta-10 0%, transparent 70%);
+      top: -30px;
+      right: -30px;
+    }
+  }
+
+  &:nth-child(2) {
+    &:before {
+      background: linear-gradient(
+        to bottom,
+        v.$dark-blue,
+        color.adjust(v.$dark-blue, $lightness: 15%)
+      );
+    }
+
+    &:after {
+      background: radial-gradient(circle, v.$dark-blue-10 0%, transparent 70%);
+      bottom: -30px;
+      right: -30px;
+      top: auto;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &:nth-child(3) {
+    &:before {
+      background: linear-gradient(
+        to bottom,
+        v.$graphite-medium,
+        color.adjust(v.$graphite-medium, $lightness: 15%)
+      );
+    }
+
+    &:after {
+      background: radial-gradient(
+        circle,
+        v.$graphite-dark-10 0%,
+        transparent 70%
+      );
+      top: 50%;
+      right: -50px;
+      transform: translateY(-50%);
+    }
   }
 }
 
 .contact-card-inner {
   flex: 1;
-  padding: 25px 20px;
+  padding: 35px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  h2 {
-    font-family: v.$font-headings;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-    color: v.$color-primary;
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 30px;
-      height: 2px;
-      background-color: color.adjust(v.$color-primary, $lightness: 20%);
-    }
-  }
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(120deg, transparent, rgba(v.$almost-white, 0.5));
+  background-size: 200% 200%;
+  background-position: left top;
+  transition: all 0.5s ease;
 
   p {
     font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: v.$color-graphite;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: v.$graphite-medium;
+    position: relative;
+    padding-left: 5px;
+    transition: color 0.3s ease;
 
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:hover {
+      color: v.$graphite-dark;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0.07;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 20px;
+    bottom: 20px;
+    transition: opacity 0.3s ease;
   }
 }
 
-/* Стилі для секції партнерів */
-.partners-section {
-  margin-top: 70px;
+.contact-card:nth-child(1) .contact-card-inner:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232a2a2a' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
+}
+
+.contact-card:nth-child(2) .contact-card-inner:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232a2a2a' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E");
+}
+
+.contact-card:nth-child(3) .contact-card-inner:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%232a2a2a' viewBox='0 0 24 24'%3E%3Cpath d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z'/%3E%3Cpath d='M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z'/%3E%3C/svg%3E");
+}
+
+.contact-card:hover {
+  .contact-card-inner:before {
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: v.$breakpoint-tablet) {
+  .contact-card-inner {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: v.$breakpoint-mobile) {
+  .contact-card-inner {
+    padding: 25px 20px;
+
+    p {
+      font-size: 15px;
+    }
+  }
 }
 
 .partners-header {
   text-align: center;
   margin-bottom: 40px;
 
-  h2 {
+  h1 {
     display: inline-block;
+    padding: 10px 30px;
     font-family: v.$font-headings;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    letter-spacing: 1.5px;
-    color: v.$color-graphite;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     position: relative;
-    padding-bottom: 15px;
 
     &:after {
       content: "";
@@ -162,7 +302,7 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 40px;
+      width: 50px;
       height: 3px;
       background-color: v.$color-primary;
     }
@@ -214,6 +354,14 @@
   .partner-card {
     height: 100px;
   }
+
+  .contact-banner {
+    height: 250px;
+
+    .working-man-image {
+      max-height: 280px;
+    }
+  }
 }
 
 @media (max-width: v.$breakpoint-mobile) {
@@ -239,6 +387,15 @@
 
     img {
       max-height: 60px;
+    }
+  }
+
+  .contact-banner {
+    height: 200px;
+
+    .working-man-image {
+      max-height: 220px;
+      left: 60%;
     }
   }
 }
