@@ -2,10 +2,10 @@
 @use "../variables" as v;
 
 .header {
-  background-color: rgba(0, 0, 0, 0.603);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  padding: 10px 0;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,26 +40,24 @@
   }
 
   .logo {
+    font-family: v.$font-logo;
+    font-size: 26px;
+    font-weight: 800;
+    color: v.$color-off-white;
+    letter-spacing: 0.5px;
+    transition: v.$transition-default;
     display: flex;
     align-items: center;
 
     a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
+      color: inherit;
 
-      img {
-        height: 66px;
-        width: auto;
-        transition: all 0.3s ease;
-        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
-      }
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
 
       &:hover {
-        img {
-          transform: scale(1.05);
-          opacity: 0.9;
-        }
+        color: v.$color-light-gray;
       }
     }
   }
