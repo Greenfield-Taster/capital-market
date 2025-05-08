@@ -1,11 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../utils/useScrollAnimation";
 import workingManImage from "../assets/working-man.png";
 import partnersData from "../data/partners.json";
 import "../styles/pages/_Contact.scss";
 
 const Contact = () => {
   const { t } = useTranslation();
+
+  useScrollAnimation();
 
   return (
     <div className="contact-page">

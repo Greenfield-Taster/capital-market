@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import useScrollAnimation from "../utils/useScrollAnimation";
 import "../styles/pages/_FAQ.scss";
 
 const FAQ = () => {
+  useScrollAnimation();
+
   const { t } = useTranslation();
   const [activeItem, setActiveItem] = useState(null);
 

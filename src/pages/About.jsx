@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import useScrollAnimation from "../../utils/useScrollAnimation";
-import "../../styles/components/About/_about.scss";
+import useScrollAnimation from "../utils/useScrollAnimation";
+import "../styles/components/about/_about.scss";
 
-import DecorativeElements from "./DecorativeElements";
-import AboutHero from "./AboutHero";
-import AboutQuote from "./AboutQuote";
-import AboutFeaturedProject from "./AboutFeaturedProject";
-import AboutHistory from "./AboutHistory";
-import AboutProcess from "./AboutProcess";
-import AboutPhilosophy from "./AboutPhilosophy";
-import AboutTeam from "./AboutTeam";
-import AboutStrategy from "./AboutStrategy";
-import AboutCTA from "./AboutCTA";
+import DecorativeElements from "../components/about/DecorativeElements";
+import AboutHero from "../components/about/AboutHero";
+import AboutQuote from "../components/about/AboutQuote";
+import AboutFeaturedProject from "../components/about/AboutFeaturedProject";
+import AboutHistory from "../components/about/AboutHistory";
+import AboutProcess from "../components/about/AboutProcess";
+import AboutPhilosophy from "../components/about/AboutPhilosophy";
+import AboutTeam from "../components/about/AboutTeam";
+import AboutStrategy from "../components/about/AboutStrategy";
+import AboutCTA from "../components/about/AboutCTA";
 
 const About = () => {
   const { t } = useTranslation();

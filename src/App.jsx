@@ -7,8 +7,9 @@ import Gallery from "./pages/Gallery";
 import ProjectDetail from "./components/gallery/ProjectDetail";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
-import About from "./components/about/index";
+import About from "./pages/About";
 import ScrollToTop from "./utils/ScrollToTop";
+import Preloader from "./components/common/Preloader";
 
 import "./styles/main.scss";
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <div className="app">
+        <Preloader />
         <ScrollToTop />
         <Header />
         <main className="main-content">

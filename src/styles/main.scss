@@ -1,6 +1,8 @@
 @use "./variables";
 @use "./base";
 
+@use "./common/preloader";
+
 @use "./layout/Header";
 @use "./layout/Footer";
 

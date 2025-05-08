@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { usePreloader } from "../components/common/Preloader";
 
 import "../styles/layout/_header.scss";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const { initialLoadComplete } = usePreloader();
+  const [logoVisible, setLogoVisible] = useState(false);
 
   const isActive = (path) => {
     if (path === "/" && location.pathname === "/") {
@@ -22,11 +25,24 @@ const Header = () => {
     i18n.changeLanguage(lng);
   };
 
+  useEffect(() => {
+    if (initialLoadComplete) {
+      setLogoVisible(true);
+    } else {
+      const timer = setTimeout(() => {
+        setLogoVisible(true);
+      }, 2200);
+      return () => clearTimeout(timer);
+    }
+  }, [initialLoadComplete]);
+
   return (
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo">
+          <div
+            className={`logo ${logoVisible ? "logo-animation" : "logo-hidden"}`}
+          >
             <Link to="/">CAPITAL MARKET</Link>
           </div>
 
