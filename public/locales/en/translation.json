@@ -8,12 +8,15 @@
   },
   "footer": {
     "about_company": "ABOUT COMPANY",
+    "information": "INFORMATION",
+
     "gallery": "GALLERY",
     "about": "ABOUT COMPANY",
     "faq": "FAQ",
     "contacts": "CONTACTS",
     "address": "Zaporizhzhia, 68A Nezalezhnoyi Ukrayiny str., room 26",
-    "phone": "+38 (098) 603 25 92"
+    "phone": "+38 (098) 603 25 92",
+    "workingHours": "Working hours: Mon-Fri from 9am to 6pm"
   },
   "main": {
     "hero": {
