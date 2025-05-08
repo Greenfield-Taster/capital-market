@@ -37,7 +37,6 @@ const ProjectRow = ({ project, index }) => {
 const Gallery = () => {
   const { t } = useTranslation();
 
-  // Обробник анімації при прокрутці
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(".project-appear");
@@ -50,13 +49,10 @@ const Gallery = () => {
       });
     };
 
-    // Виклик обробника при першому завантаженні
     handleScroll();
 
-    // Додавання слухача подій прокрутки
     window.addEventListener("scroll", handleScroll);
 
-    // Очищення слухача при розмонтуванні компонента
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
