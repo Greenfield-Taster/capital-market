@@ -2,15 +2,19 @@
   "header": {
     "home": "Home",
     "about": "About Us",
-    "gallery": "Gallery",
+    "gallery": "Projects",
     "contacts": "Contacts",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "construction": "Construction",
+    "manufacturing": "Manufacturing",
+    "design": "Design",
+    "trade": "Trade"
   },
   "footer": {
     "about_company": "ABOUT COMPANY",
     "information": "INFORMATION",
 
-    "gallery": "GALLERY",
+    "gallery": "PROJECTS",
     "about": "ABOUT COMPANY",
     "faq": "FAQ",
     "contacts": "CONTACTS",
