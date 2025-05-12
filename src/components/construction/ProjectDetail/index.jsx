@@ -149,7 +149,7 @@ const ProjectDetail = () => {
               "На жаль, запитуваний проект не існує."
             )}
           </p>
-          <Link to="/gallery" className="project-detail__back-btn">
+          <Link to="/construction" className="project-detail__back-btn">
             {t("gallery.backToGallery", "Повернутися до галереї")}
           </Link>
         </div>
@@ -166,7 +166,7 @@ const ProjectDetail = () => {
 
       {/* Фіксована кнопка "Назад" */}
       <div className="floating-back-button">
-        <Link to="/gallery" className="project-detail__back-btn">
+        <Link to="/construction" className="project-detail__back-btn">
           <span className="back-icon">←</span>
           <span className="back-text">
             {t("gallery.backToGallery", "Галерея")}
@@ -229,7 +229,7 @@ const ProjectDetail = () => {
               .slice(0, 3)
               .map((item, index) => (
                 <Link
-                  to={`/gallery/${item.slug}`}
+                  to={`/construction/${item.slug}`}
                   className={`other-project-card delay-${index}`}
                   key={item.id}
                 >
@@ -244,7 +244,7 @@ const ProjectDetail = () => {
           </div>
 
           <div className="projects-action">
-            <Link to="/gallery" className="view-all-btn">
+            <Link to="/construction" className="view-all-btn">
               {t("latestProjects.viewAll", "Переглянути всі проекти")}
             </Link>
           </div>

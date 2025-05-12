@@ -1,10 +1,11 @@
-import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Main from "./pages/Main";
-import Gallery from "./pages/Gallery";
-import ProjectDetail from "./components/gallery/ProjectDetail";
+import Construction from "./components/construction/Construction";
+import ProjectDetail from "./components/construction/ProjectDetail";
+import Manufacturing from "./components/manufacturing/Manufacturing";
+import Design from "./components/design/Design";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -26,8 +27,12 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/gallery/:slug" element={<ProjectDetail />} />
+            <Route path="/construction" element={<Construction />} />
+            <Route path="/construction/:slug" element={<ProjectDetail />} />
+            <Route path="/manufacturing" element={<Manufacturing />} />
+            {/* <Route path="/manufacturing/:slug" element={<ProjectDetail />} /> */}
+            <Route path="/design" element={<Design />} />
+            {/* <Route path="/design/:slug" element={<ProjectDetail />} /> */}
           </Routes>
         </main>
         <Footer />

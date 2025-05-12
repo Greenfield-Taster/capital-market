@@ -111,6 +111,91 @@
     position: relative;
   }
 
+  // Стили для выпадающего меню
+  .nav-item-with-dropdown {
+    position: relative;
+
+    // Стиль для стрелки
+    .nav-icon {
+      font-size: 10px;
+      margin-left: 5px;
+      transition: transform 0.3s ease;
+      display: inline-block;
+      transform: translateY(-1px);
+
+      &.dropdown-open {
+        transform: rotate(180deg) translateY(1px);
+      }
+    }
+
+    // Выпадающее меню
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: -15px;
+      min-width: 120px;
+      background-color: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      margin-top: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      z-index: 110;
+      animation: fadeIn 0.2s ease;
+
+      // Треугольник сверху выпадающего меню
+      &::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 20px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .dropdown-item {
+        display: block;
+        padding: 12px 15px;
+        color: v.$color-light-gray;
+        text-decoration: none;
+        transition: v.$transition-default;
+        font-family: v.$font-headings;
+        font-size: 14px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: v.$color-off-white;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    // Обработка ховера (как альтернативный вариант открытия)
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
   .nav-link {
     font-family: v.$font-headings;
     font-size: 15px;
@@ -162,6 +247,11 @@
       &::after {
         width: 100%;
       }
+    }
+
+    // Стиль для ссылки с выпадающим меню
+    &.dropdown-toggle {
+      cursor: pointer;
     }
 
     @media (max-width: v.$breakpoint-mobile) {

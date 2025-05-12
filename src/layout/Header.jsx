@@ -10,6 +10,7 @@ const Header = () => {
   const location = useLocation();
   const { initialLoadComplete } = usePreloader();
   const [logoVisible, setLogoVisible] = useState(false);
+  const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(false);
 
   const isActive = (path) => {
     if (path === "/" && location.pathname === "/") {
@@ -25,6 +26,20 @@ const Header = () => {
     i18n.changeLanguage(lng);
   };
 
+  // Закрываем выпадающее меню при клике вне его
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".nav-item-with-dropdown")) {
+        setGalleryDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   useEffect(() => {
     if (initialLoadComplete) {
       setLogoVisible(true);
@@ -35,6 +50,16 @@ const Header = () => {
       return () => clearTimeout(timer);
     }
   }, [initialLoadComplete]);
+
+  // Закрыть выпадающее меню при изменении маршрута
+  useEffect(() => {
+    setGalleryDropdownOpen(false);
+  }, [location.pathname]);
+
+  const toggleGalleryDropdown = (e) => {
+    e.preventDefault();
+    setGalleryDropdownOpen(!galleryDropdownOpen);
+  };
 
   return (
     <header className="header">
@@ -64,13 +89,39 @@ const Header = () => {
                   <span>{t("header.about")}</span>
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  to="/gallery"
-                  className={`nav-link ${isActive("/gallery") ? "active" : ""}`}
+              <li className="nav-item nav-item-with-dropdown">
+                <a
+                  href="#"
+                  onClick={toggleGalleryDropdown}
+                  className={`nav-link dropdown-toggle ${
+                    isActive("/gallery") ? "active" : ""
+                  }`}
                 >
                   <span>{t("header.gallery")}</span>
-                </Link>
+                  <i
+                    className={`nav-icon ${
+                      galleryDropdownOpen ? "dropdown-open" : ""
+                    }`}
+                  >
+                    ▼
+                  </i>
+                </a>
+                {galleryDropdownOpen && (
+                  <div className="dropdown-menu">
+                    <Link to="/construction" className="dropdown-item">
+                      {t("header.construction")}
+                    </Link>
+                    <Link to="/manufacturing" className="dropdown-item">
+                      {t("header.manufacturing")}
+                    </Link>
+                    <Link to="/design" className="dropdown-item">
+                      {t("header.design")}
+                    </Link>
+                    <Link to="/contact" className="dropdown-item">
+                      {t("header.trade")}
+                    </Link>
+                  </div>
+                )}
               </li>
               <li className="nav-item">
                 <Link

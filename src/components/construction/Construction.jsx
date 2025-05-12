@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ImageWithFallback } from "../utils/imageUtils";
-import projectsData from "../data/projects.json";
-import "../styles/pages/_Gallery.scss";
+import { ImageWithFallback } from "../../utils/imageUtils";
+import projectsData from "../../data/projects.json";
+import "./_construction.scss";
 
 const ProjectRow = ({ project, index }) => {
   const { t } = useTranslation();
@@ -18,7 +18,10 @@ const ProjectRow = ({ project, index }) => {
             ? project.description.substring(0, 160) + "..."
             : project.description}
         </p>
-        <Link to={`/gallery/${project.slug}`} className="project-row__button">
+        <Link
+          to={`/construction/${project.slug}`}
+          className="project-row__button"
+        >
           {t("latestProjects.viewDetails", "Детальніше")}
         </Link>
       </div>
