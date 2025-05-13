@@ -7,7 +7,7 @@
     "mainImage": "src/assets/constructions/bolnitsa-1/photo-1.JPG",
     "photos": [
       {
-        "url": "../assets/assets/constructions/bolnitsa-1/photo-1.JPG",
+        "url": "src/assets/constructions/bolnitsa-1/photo-1.JPG",
         "alt": "Фото проекту лікарні №1"
       },
       {

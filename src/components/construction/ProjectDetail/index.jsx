@@ -2,80 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ImageWithFallback, StylishImage } from "../../../utils/imageUtils";
-import "./ProjectDetail.scss";
 import projectsData from "../../../data/projects.json";
-
-const PhotoGallery = ({ photos }) => {
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
-  const [visible, setVisible] = useState(false);
-
-  // Застосовуємо анімацію після завантаження
-  useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 300);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const openPhoto = (photo) => {
-    setSelectedPhoto(photo);
-    // Заблокувати прокрутку сторінки при відкритому модальному вікні
-    document.body.style.overflow = "hidden";
-  };
-
-  const closePhoto = () => {
-    setSelectedPhoto(null);
-    // Розблокувати прокрутку сторінки після закриття модального вікна
-    document.body.style.overflow = "";
-  };
-
-  return (
-    <div className={`photo-gallery ${visible ? "visible" : ""}`}>
-      <div className="photo-gallery__grid">
-        {photos.map((photo, index) => (
-          <div
-            className={`photo-gallery__item delay-${index % 5}`}
-            key={index}
-            onClick={() => openPhoto(photo)}
-          >
-            <StylishImage
-              src={photo.url}
-              alt={photo.alt}
-              className="photo-gallery__image"
-              aspectRatio="4/3"
-            />
-            {photo.description && (
-              <div className="photo-gallery__caption">
-                <span>{photo.description}</span>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {selectedPhoto && (
-        <div className="photo-gallery__modal" onClick={closePhoto}>
-          <div
-            className="photo-gallery__modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button className="photo-gallery__close-btn" onClick={closePhoto}>
-              &times;
-            </button>
-            <ImageWithFallback
-              src={selectedPhoto.url}
-              alt={selectedPhoto.alt}
-              className="photo-gallery__modal-image"
-            />
-            {selectedPhoto.description && (
-              <p className="photo-gallery__modal-description">
-                {selectedPhoto.description}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
+import PhotoGallery from "../PhotoGallery/PhotoGallery";
+import "./ProjectDetail.scss";
 
 const ProjectDetail = () => {
   const { t } = useTranslation();
@@ -90,7 +19,6 @@ const ProjectDetail = () => {
   });
 
   useEffect(() => {
-    // Імітація завантаження даних
     setTimeout(() => {
       const foundProject = projectsData.find((p) => p.slug === slug);
       setProject(foundProject || null);
@@ -159,12 +87,10 @@ const ProjectDetail = () => {
 
   return (
     <div className="project-detail">
-      {/* Декоративні елементи */}
       <div className="decorative-element circle-1"></div>
       <div className="decorative-element circle-2"></div>
       <div className="decorative-element line-1"></div>
 
-      {/* Фіксована кнопка "Назад" */}
       <div className="floating-back-button">
         <Link to="/construction" className="project-detail__back-btn">
           <span className="back-icon">←</span>
@@ -217,7 +143,6 @@ const ProjectDetail = () => {
           <PhotoGallery photos={project.photos} />
         </div>
 
-        {/* Секція "Інші проекти" */}
         <div className="other-projects animate-on-scroll fade-in">
           <h2 className="section-title">
             {t("gallery.otherProjects", "Інші проекти")}
