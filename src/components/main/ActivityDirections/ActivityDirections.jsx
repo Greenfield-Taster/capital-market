@@ -5,6 +5,7 @@ import constructionImage from "../../../assets/constructionImage.png";
 import manufacturingImage from "../../../assets/manufacturingImage.png";
 import designImage from "../../../assets/designImage.png";
 import tradeImage from "../../../assets/tradeImage.png";
+import { useNavigate } from "react-router-dom";
 
 const activityImages = {
   construction: constructionImage,
@@ -15,6 +16,14 @@ const activityImages = {
 
 const ActivityDirections = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const activityPaths = {
+    construction: "/construction",
+    manufacturing: "/manufacturing",
+    design: "/design",
+    trade: "/contact",
+  };
 
   const activities = [
     {
@@ -35,13 +44,22 @@ const ActivityDirections = () => {
     },
   ];
 
+  const handleActivityClick = (activityId) => {
+    navigate(activityPaths[activityId]);
+  };
+
   return (
     <section className="activity-directions">
       <div className="container">
         <h2>{t("main.activityDirections.title")}</h2>
         <div className="activity-blocks">
           {activities.map((activity) => (
-            <div key={activity.id} className="activity-block">
+            <div
+              key={activity.id}
+              className="activity-block"
+              onClick={() => handleActivityClick(activity.id)}
+              style={{ cursor: "pointer" }}
+            >
               <img
                 src={activity.image}
                 alt={t(
