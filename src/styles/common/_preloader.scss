@@ -1,6 +1,5 @@
 @use "../variables" as v;
 
-// Стилі для головного прелоадера
 .main-preloader {
   position: fixed;
   top: 0;
@@ -8,99 +7,34 @@
   width: 100%;
   height: 100%;
   background-color: v.$dark-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 9999;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
   opacity: 1;
   visibility: visible;
+  overflow: hidden;
 }
 
-// При додаванні класу hide, прелоадер зникає
+.preloader-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: v.$breakpoint-sm) {
+  .preloader-video {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
 .main-preloader.hide {
   opacity: 0;
   visibility: hidden;
 }
 
-.preloader-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 500px;
-  padding: 0 20px;
-}
-
-.logo-container {
-  position: relative;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 400px;
-}
-
-// Анімація підсвічування логотипу
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  20% {
-    left: 100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-// SVG логотип
-.logo-svg {
-  width: 100%;
-  height: auto;
-}
-
-// Анімація для елементів сітки логотипу
-.grid-path {
-  opacity: 0;
-  animation: fadeInSVG 0.05s ease forwards;
-}
-
-// Різна затримка анімації для різних елементів
-.grid-path {
-  animation-delay: calc(var(--i) * 0.05s);
-}
-
-// Анімація для тексту логотипу
-.logo-text {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInText 0.8s ease forwards;
-  animation-delay: 1.5s;
-}
-
-// Ключові кадри для анімації поступової появи елементів
-@keyframes fadeInSVG {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-// Ключові кадри для анімації появи тексту
-@keyframes fadeInText {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Прелоадер для навігації між сторінками
 .nav-preloader {
   position: fixed;
   top: 0;
@@ -127,7 +61,6 @@
   }
 }
 
-// Анімація прогресу для навігаційного прелоадера
 @keyframes navProgress {
   0% {
     width: 0;
@@ -137,18 +70,15 @@
   }
 }
 
-// Анімація для логотипу в хедері
 .logo-animation {
   animation: fadeIn 0.5s ease 0.3s forwards;
 }
 
-// Клас для приховування логотипу до анімації
 .logo-hidden {
   opacity: 0;
   transform: translateY(-10px);
 }
 
-// Анімація появи для логотипу в хедері
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -160,70 +90,39 @@
   }
 }
 
-// Додаємо CSS змінні для елементів SVG
-:root {
-  --cls-1-letter-spacing: 0.04em;
-  --cls-2-fill: #fff;
-  --cls-3-letter-spacing: 0.05em;
-  --cls-4-letter-spacing: 0.02em;
-  --cls-5-fill: #fff;
-  --cls-5-stroke: #fff;
-  --cls-5-stroke-miterlimit: 10;
-  --cls-6-font-family: Montserrat-Bold, Montserrat;
-  --cls-6-font-size: 48.75px;
-  --cls-6-font-weight: 700;
-  --cls-6-fill: #fff;
-  --cls-7-letter-spacing: 0.05em;
-  --cls-8-letter-spacing: 0.05em;
-  --cls-9-letter-spacing: 0.04em;
-}
-
-// Стилі для SVG класів
-.cls-1 {
-  letter-spacing: var(--cls-1-letter-spacing);
-}
-.cls-2 {
-  fill: var(--cls-2-fill);
-}
-.cls-3 {
-  letter-spacing: var(--cls-3-letter-spacing);
-}
-.cls-4 {
-  letter-spacing: var(--cls-4-letter-spacing);
-}
-.cls-5 {
-  fill: var(--cls-5-fill);
-  stroke: var(--cls-5-stroke);
-  stroke-miterlimit: var(--cls-5-stroke-miterlimit);
-}
-.cls-6 {
-  font-family: var(--cls-6-font-family);
-  font-size: var(--cls-6-font-size);
-  font-weight: var(--cls-6-font-weight);
-  fill: var(--cls-6-fill);
-}
-.cls-7 {
-  letter-spacing: var(--cls-7-letter-spacing);
-}
-.cls-8 {
-  letter-spacing: var(--cls-8-letter-spacing);
-}
-.cls-9 {
-  letter-spacing: var(--cls-9-letter-spacing);
-}
-
-// Адаптивність для малих екранів
 @media (max-width: v.$breakpoint-sm) {
-  .preloader-content {
-    max-width: 300px;
+  .preloader-video {
+    width: 85%;
+    height: 85%;
+    max-height: 85vh;
+    max-width: 85vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   }
 
-  .logo-container {
-    max-width: 250px;
-  }
+  .main-preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$dark-blue;
 
-  .loader {
-    width: 36px;
-    height: 36px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      z-index: 9999;
+    }
   }
 }
