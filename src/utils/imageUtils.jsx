@@ -15,7 +15,7 @@ const BASE_URL = "/capital-market/";
 export const getImageUrl = (imagePath) => {
   // Якщо шлях не передано, повертаємо шлях до заглушки
   if (!imagePath) {
-    return `${BASE_URL}assets/placeholder.png`;
+    return `${BASE_URL}assets/main-bg.png`;
   }
 
   // Додаємо BASE_URL до шляху зображення
@@ -28,7 +28,7 @@ export const getImageUrl = (imagePath) => {
 export const ImageWithFallback = ({ src, alt, className, ...rest }) => {
   const handleError = (e) => {
     console.error(`Failed to load image: ${src}`);
-    e.target.src = `${BASE_URL}assets/placeholder.png`;
+    e.target.src = `${BASE_URL}assets/main-bg.png`;
   };
 
   return (
@@ -62,7 +62,7 @@ export const StylishImage = ({
 
   const handleError = (e) => {
     console.error(`Failed to load image: ${src}`);
-    e.target.src = `${BASE_URL}assets/placeholder.png`;
+    e.target.src = `${BASE_URL}assets/main-bg.png`;
     setLoaded(true);
   };
 

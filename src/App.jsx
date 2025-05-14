@@ -30,9 +30,7 @@ function App() {
             <Route path="/construction" element={<Construction />} />
             <Route path="/construction/:slug" element={<ProjectDetail />} />
             <Route path="/manufacturing" element={<Manufacturing />} />
-            {/* <Route path="/manufacturing/:slug" element={<ProjectDetail />} /> */}
             <Route path="/design" element={<Design />} />
-            {/* <Route path="/design/:slug" element={<ProjectDetail />} /> */}
           </Routes>
         </main>
         <Footer />
