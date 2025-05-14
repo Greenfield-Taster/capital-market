@@ -28,6 +28,7 @@ const Preloader = () => {
   const [navLoading, setNavLoading] = useState(false);
   const { initialLoadComplete, setInitialLoadComplete } = usePreloader();
   const [videoEnded, setVideoEnded] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
     if (!initialLoadComplete) {
@@ -36,7 +37,7 @@ const Preloader = () => {
           setLoading(false);
           setInitialLoadComplete(true);
         }
-      }, 7000);
+      }, 6800);
 
       return () => clearTimeout(timer);
     } else {
@@ -44,12 +45,17 @@ const Preloader = () => {
     }
   }, [initialLoadComplete, setInitialLoadComplete, videoEnded]);
 
+  // Обработчик завершения видео
   const handleVideoEnd = () => {
     setVideoEnded(true);
     setTimeout(() => {
       setLoading(false);
       setInitialLoadComplete(true);
     }, 300);
+  };
+
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true);
   };
 
   useEffect(() => {
@@ -67,14 +73,23 @@ const Preloader = () => {
     <>
       {loading && (
         <div className="main-preloader">
+          {!videoLoaded && (
+            <div className="loader-container">
+              <div className="loader-spinner"></div>
+              <p className="loading-text">Загрузка...</p>
+            </div>
+          )}
+
           <video
             className="preloader-video"
             autoPlay
             muted
             playsInline
             onEnded={handleVideoEnd}
+            onLoadedData={handleVideoLoaded}
           >
             <source src={preloaderVideo} type="video/mp4" />
+            <source src={preloaderVideo} type="video/quicktime" />
             Ваш браузер не поддерживает видео.
           </video>
         </div>
