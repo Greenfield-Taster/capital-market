@@ -1,7 +1,7 @@
 import React from "react";
-import historyImage2016 from "../../assets/main-bg - Copy.png";
-import historyImage2019 from "../../assets/main-bg - Copy.png";
-import historyImage2024 from "../../assets/main-bg - Copy.png";
+import historyImage2016 from "../../assets/about-us/about-history-1.jpg";
+import historyImage2019 from "../../assets/about-us/about-history-2.jpg";
+import historyImage2024 from "../../assets/about-us/about-history-3.jpg";
 import "../../styles/components/About/_history.scss";
 
 const AboutHistory = ({ t }) => {
@@ -17,7 +17,7 @@ const AboutHistory = ({ t }) => {
           <div className="history-content">
             <p className="history-text">{t("about.history.paragraph1")}</p>
             <div className="history-image">
-              <img src={historyImage2016} alt="2016 - Заснування компанії" />
+              <img src={historyImage2016} alt="history-image1" />
             </div>
           </div>
         </div>
@@ -27,10 +27,7 @@ const AboutHistory = ({ t }) => {
           <div className="history-content">
             <p className="history-text">{t("about.history.paragraph2")}</p>
             <div className="history-image">
-              <img
-                src={historyImage2019}
-                alt="2019 - Сертифікація та розвиток"
-              />
+              <img src={historyImage2019} alt="history-image2" />
             </div>
           </div>
         </div>
@@ -40,7 +37,7 @@ const AboutHistory = ({ t }) => {
           <div className="history-content">
             <p className="history-text">{t("about.history.paragraph3")}</p>
             <div className="history-image">
-              <img src={historyImage2024} alt="2024 - Сучасний етап" />
+              <img src={historyImage2024} alt="history-image3" />
             </div>
           </div>
         </div>

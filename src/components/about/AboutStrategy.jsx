@@ -1,7 +1,7 @@
 import React from "react";
-import valueImage1 from "../../assets/main-bg - Copy.png";
-import valueImage2 from "../../assets/main-bg - Copy.png";
-import valueImage3 from "../../assets/main-bg - Copy.png";
+import valueImage1 from "../../assets/about-us/about-strategy-1.jpg";
+import valueImage2 from "../../assets/about-us/about-strategy-2.jpg";
+import valueImage3 from "../../assets/about-us/about-strategy-3.jpg";
 import "../../styles/components/About/_strategy.scss";
 
 const AboutStrategy = ({ t }) => {

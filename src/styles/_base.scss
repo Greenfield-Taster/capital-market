@@ -30,6 +30,13 @@ video {
   max-width: 100%;
   height: auto;
   display: block;
+  image-rendering: -webkit-optimize-contrast; /* Покращення різкості в Chrome */
+  image-rendering: crisp-edges; /* Загальне покращення різкості */
+  backface-visibility: hidden; /* Запобігає розмиттю під час трансформацій */
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0); /* Активація апаратного прискорення */
+  -webkit-transform: translateZ(0);
+  will-change: transform; /* Підказка браузеру для оптимізації */
 }
 button {
   cursor: pointer;

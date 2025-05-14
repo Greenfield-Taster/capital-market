@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/main-bg - Copy.png";
+import aboutImage from "../../assets/about-us/about-1.jpg";
 import AboutStats from "./AboutStats";
 import "../../styles/components/About/_hero.scss";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import teamImage from "../../assets/main-bg - Copy.png";
+import teamImage from "../../assets/about-us/about-team.jpg";
 import "../../styles/components/About/_team.scss";
 
 const AboutTeam = ({ t }) => {

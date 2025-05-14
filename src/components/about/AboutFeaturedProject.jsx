@@ -1,5 +1,5 @@
 import React from "react";
-import featuredProjectImage from "../../assets/main-bg - Copy.png";
+import featuredProjectImage from "../../assets/about-us/about-FeaturedProject.jpg";
 import "../../styles/components/About/_featured.scss";
 
 const AboutFeaturedProject = ({ t }) => {

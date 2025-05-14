@@ -1,10 +1,9 @@
 @use "../../variables" as v;
 
-// Process section
 .process-section {
   margin: v.$spacing-4xl 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45% 55%;
   gap: v.$spacing-2xl;
   align-items: center;
 
@@ -20,10 +19,13 @@
       border-radius: v.$border-radius-lg;
       overflow: hidden;
       box-shadow: v.$shadow-md;
+      max-height: 600px;
 
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
         transition: transform 0.5s ease;
       }
 
@@ -35,10 +37,10 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -15px;
-      right: -15px;
-      width: 70%;
-      height: 70%;
+      bottom: -20px;
+      right: -20px;
+      width: 80%;
+      height: 85%;
       background-color: rgba(v.$dark-blue, 0.07);
       border-radius: v.$border-radius-lg;
       z-index: -1;
@@ -46,14 +48,18 @@
   }
 
   .process-content {
+    padding-left: v.$spacing-lg;
+
     .section-title {
       margin-bottom: v.$spacing-xl;
+      font-size: calc(v.$font-size-3xl);
+      color: v.$dark-blue;
     }
 
     .process-steps {
       display: flex;
       flex-direction: column;
-      gap: v.$spacing-lg;
+      gap: v.$spacing-xl;
     }
 
     .process-step {
@@ -61,11 +67,12 @@
       align-items: flex-start;
       gap: v.$spacing-md;
       position: relative;
+      padding-bottom: v.$spacing-md;
 
       .step-number {
         flex-shrink: 0;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background-color: v.$terracotta;
         color: white;
         font-family: v.$font-primary;
@@ -74,23 +81,26 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        font-size: v.$font-size-lg;
+        font-size: v.$font-size-xl;
         position: relative;
         z-index: 1;
-        box-shadow: 0 3px 6px rgba(v.$terracotta, 0.2);
+        box-shadow: 0 4px 8px rgba(v.$terracotta, 0.3);
       }
 
       .step-content {
+        flex: 1;
+
         .step-title {
           font-family: v.$font-primary;
-          font-size: v.$font-size-lg;
+          font-size: v.$font-size-xl;
           font-weight: v.$font-weight-semibold;
           color: v.$dark-blue;
-          margin-bottom: v.$spacing-xs;
+          margin-bottom: v.$spacing-sm;
         }
 
         .step-description {
           font-size: v.$font-size-base;
+          line-height: 1.6;
           color: v.$graphite-medium;
         }
       }
@@ -98,17 +108,44 @@
       &:not(:last-child)::after {
         content: "";
         position: absolute;
-        top: 40px;
-        left: 20px;
-        width: 1px;
-        height: calc(100% + #{v.$spacing-lg});
+        top: 50px;
+        left: 25px;
+        width: 2px;
+        height: calc(100%);
         background: linear-gradient(
           to bottom,
           v.$terracotta,
-          rgba(v.$terracotta, 0.2)
+          rgba(v.$terracotta, 0.3)
         );
         z-index: 0;
       }
+    }
+  }
+
+  @media (max-width: v.$breakpoint-lg) {
+    .process-image-container {
+      .process-image {
+        max-height: 500px;
+      }
+    }
+  }
+
+  @media (max-width: v.$breakpoint-md) {
+    .process-image-container {
+      margin-bottom: v.$spacing-lg;
+
+      .process-image {
+        max-height: 450px;
+      }
+
+      &::after {
+        width: 70%;
+        height: 80%;
+      }
+    }
+
+    .process-content {
+      padding-left: 0;
     }
   }
 }

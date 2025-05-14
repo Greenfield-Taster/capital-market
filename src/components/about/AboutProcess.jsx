@@ -1,5 +1,5 @@
 import React from "react";
-import processImage from "../../assets/main-bg - Copy.png";
+import processImage from "../../assets/about-us/about-how-do-we-work.jpg";
 import "../../styles/components/About/_process.scss";
 
 const AboutProcess = ({ t }) => {
