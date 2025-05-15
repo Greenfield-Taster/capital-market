@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "title": "Офіс в Запоріжжі",
+    "slug": "office-in-zaporizhzhia",
+    "description": "Проект сучасного офісного простору з ергономічними робочими зонами, кімнатами для переговорів та відпочинку. Дизайн поєднує функціональність, комфорт та естетику.",
+    "mainImage": "assets/design/office-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Офіс в Запоріжжі"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Коворкінг у Києві",
+    "slug": "coworking-kyiv-comfort-town",
+    "description": "Дизайн-проект коворкінгу в житловому комплексі Comfort Town у Києві. Простір розділений на робочі зони, зони відпочинку та конференц-зали, створюючи комфортне середовище для роботи та взаємодії.",
+    "mainImage": "assets/design/coworking-kyiv-comfort-town/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-1.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-2.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-3.jpg",
+        "alt": "Коворкінг у Києві"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Ресторан у Запоріжжі",
+    "slug": "restaurant-in-zaporizhzhia",
+    "description": "Дизайн інтер'єру ресторану з акцентом на українські традиції та сучасні тенденції. Проект включає головний зал, приватні кабінети та літню терасу.",
+    "mainImage": "assets/design/restaurant-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Ресторан у Запоріжжі"
+      },
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Ресторан у Запоріжжі"
+      },
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Ресторан у Запоріжжі"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Готель в Енергодарі",
+    "slug": "hotel-in-enerhodar",
+    "description": "Проект дизайну інтер'єру для готелю, що включає оформлення номерів різних категорій, рецепції, ресторану та конференц-залів. Стиль поєднує комфорт та елегантність.",
+    "mainImage": "assets/design/hotel-in-enerhodar/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/hotel-in-enerhodar/photo-1.jpg",
+        "alt": "Готель в Енергодарі"
+      },
+      {
+        "url": "assets/design/hotel-in-enerhodar/photo-2.jpg",
+        "alt": "Готель в Енергодарі"
+      },
+      {
+        "url": "assets/design/hotel-in-enerhodar/photo-3.jpg",
+        "alt": "Готель в Енергодарі"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Фуд-корт у Полтаві",
+    "slug": "food-court-in-poltava",
+    "description": "Сучасний дизайн фуд-корту з різноманітними зонами харчування, комфортними місцями для відпочинку та ефективною системою навігації для відвідувачів.",
+    "mainImage": "assets/design/food-court-in-poltava/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/food-court-in-poltava/photo-1.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-2.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-3.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Тераса для магазину в Полтаві",
+    "slug": "terrace-for-a-store-in-poltava",
+    "description": "Дизайн-проект літньої тераси для магазину, що включає зону відпочинку та елементи озеленення. Концепція спрямована на створення комфортного простору для відвідувачів.",
+    "mainImage": "assets/design/terrace-for-a-store-in-poltava/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-1.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-2.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-3.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Парк Маяковського",
+    "slug": "mayakovsky-park",
+    "description": "Проект ландшафтного дизайну парку з оновленням зон відпочинку, дитячих майданчиків та створенням нових пішохідних маршрутів. Особлива увага приділена збереженню природного ландшафту.",
+    "mainImage": "assets/design/mayakovsky-park/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/mayakovsky-park/photo-1.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-2.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-3.jpg",
+        "alt": "Парк Маяковського"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Олександрівський парк",
+    "slug": "oleksandrivskyi-park",
+    "description": "Концепція оновлення історичного парку з реставрацією наявних архітектурних елементів та створенням нових зон для відпочинку та активного дозвілля.",
+    "mainImage": "assets/design/oleksandrivskyi-park/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-1.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-2.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-3.jpg",
+        "alt": "Олександрівський парк"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Парк Піски",
+    "slug": "park-pisky",
+    "description": "Проект розвитку міського парку з акцентом на створення сучасного простору для відпочинку, спорту та проведення культурних заходів.",
+    "mainImage": "assets/design/park-pisky/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/park-pisky/photo-1.jpg",
+        "alt": "Парк Піски"
+      },
+      {
+        "url": "assets/design/park-pisky/photo-2.jpg",
+        "alt": "Парк Піски"
+      },
+      {
+        "url": "assets/design/park-pisky/photo-3.jpg",
+        "alt": "Парк Піски"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Спортзали в школі у Запоріжжі",
+    "slug": "gyms-in-school-in-zaporizhzhia",
+    "description": "Дизайн-проект реконструкції спортивних залів у школі, спрямований на створення функціонального та безпечного простору для фізичного виховання учнів.",
+    "mainImage": "assets/design/gyms-in-school-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/gyms-in-school-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Спортзали в школі у Запоріжжі"
+      },
+      {
+        "url": "assets/design/gyms-in-school-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Спортзали в школі у Запоріжжі"
+      },
+      {
+        "url": "assets/design/gyms-in-school-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Спортзали в школі у Запоріжжі"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Зал у лікарні в Запоріжжі",
+    "slug": "hall-in-a-hospital-i-zaporizhzhia",
+    "description": "Проект оновлення холу в лікарні, що створює комфортне та заспокійливе середовище для пацієнтів та відвідувачів. Дизайн поєднує функціональність та естетику.",
+    "mainImage": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-1.jpg",
+        "alt": "Зал у лікарні в Запоріжжі"
+      },
+      {
+        "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-2.jpg",
+        "alt": "Зал у лікарні в Запоріжжі"
+      },
+      {
+        "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-3.jpg",
+        "alt": "Зал у лікарні в Запоріжжі"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Дитячі лікарні",
+    "slug": "childrens-hospitals",
+    "description": "Концепція дизайну інтер'єрів для дитячих лікарень, що створює дружнє та підтримуюче середовище для маленьких пацієнтів. Проект фокусується на психологічному комфорті дітей під час лікування.",
+    "mainImage": "assets/design/childrens-hospitals/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/childrens-hospitals/photo-1.jpg",
+        "alt": "Дитячі лікарні"
+      },
+      {
+        "url": "assets/design/childrens-hospitals/photo-2.jpg",
+        "alt": "Дитячі лікарні"
+      },
+      {
+        "url": "assets/design/childrens-hospitals/photo-3.jpg",
+        "alt": "Дитячі лікарні"
+      }
+    ]
+  }
+]

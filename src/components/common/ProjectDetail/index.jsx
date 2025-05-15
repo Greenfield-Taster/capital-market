@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ImageWithFallback, StylishImage } from "../../../utils/imageUtils";
 import projectsData from "../../../data/projects.json";
+import designProjectsData from "../../../data/design.json";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import "./ProjectDetail.scss";
 
 const ProjectDetail = () => {
   const { t } = useTranslation();
   const { slug } = useParams();
+  const location = useLocation();
+
+  // Определяем, на какой странице находимся (design или construction)
+  const isDesignPage = location.pathname.includes("/design/");
+  const basePathName = isDesignPage ? "/design" : "/construction";
+
+  // Выбираем соответствующие данные в зависимости от страницы
+  const currentData = isDesignPage ? designProjectsData : projectsData;
+
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
   const [visible, setVisible] = useState({
@@ -20,7 +30,7 @@ const ProjectDetail = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const foundProject = projectsData.find((p) => p.slug === slug);
+      const foundProject = currentData.find((p) => p.slug === slug);
       setProject(foundProject || null);
       setLoading(false);
 
@@ -33,9 +43,8 @@ const ProjectDetail = () => {
       );
       setTimeout(() => setVisible((prev) => ({ ...prev, gallery: true })), 700);
     }, 300);
-  }, [slug]);
+  }, [slug, currentData]);
 
-  // Анімація прокрутки для галереї
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(".animate-on-scroll");
@@ -77,7 +86,7 @@ const ProjectDetail = () => {
               "На жаль, запитуваний проект не існує."
             )}
           </p>
-          <Link to="/construction" className="project-detail__back-btn">
+          <Link to={basePathName} className="project-detail__back-btn">
             {t("gallery.backToGallery", "Повернутися до галереї")}
           </Link>
         </div>
@@ -92,10 +101,10 @@ const ProjectDetail = () => {
       <div className="decorative-element line-1"></div>
 
       <div className="floating-back-button">
-        <Link to="/construction" className="project-detail__back-btn">
+        <Link to={basePathName} className="project-detail__back-btn">
           <span className="back-icon">←</span>
           <span className="back-text">
-            {t("gallery.backToGallery", "Галерея")}
+            {t("gallery.backToGallery", "Назад")}
           </span>
         </Link>
       </div>
@@ -149,12 +158,12 @@ const ProjectDetail = () => {
           </h2>
 
           <div className="other-projects-grid">
-            {projectsData
+            {currentData
               .filter((item) => item.id !== project.id)
               .slice(0, 3)
               .map((item, index) => (
                 <Link
-                  to={`/construction/${item.slug}`}
+                  to={`${basePathName}/${item.slug}`}
                   className={`other-project-card delay-${index}`}
                   key={item.id}
                 >
@@ -169,7 +178,7 @@ const ProjectDetail = () => {
           </div>
 
           <div className="projects-action">
-            <Link to="/construction" className="view-all-btn">
+            <Link to={basePathName} className="view-all-btn">
               {t("latestProjects.viewAll", "Переглянути всі проекти")}
             </Link>
           </div>

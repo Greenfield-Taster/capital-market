@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ImageWithFallback } from "../../utils/imageUtils";
-import projectsData from "../../data/projects.json";
-import "./_construction.scss";
+import { ImageWithFallback } from "../utils/imageUtils";
+import projectsData from "../data/projects.json";
+import "../styles/pages/_construction.scss";
 
 const ProjectRow = ({ project, index }) => {
   const { t } = useTranslation();

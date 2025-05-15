@@ -1,5 +1,5 @@
 import React from "react";
-import "./_manufacturing.scss";
+import "../styles/pages/_manufacturing.scss";
 
 const Manufacturing = () => {
   return (

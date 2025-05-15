@@ -1,0 +1,257 @@
+@use "../../styles/variables" as v;
+
+.design-page {
+  position: relative;
+  width: 100%;
+  padding: 0 0 80px;
+  background: linear-gradient(to right, v.$almost-white, v.$milk);
+  overflow: hidden;
+
+  // Декоративные элементы фона
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(v.$dark-blue, 0.04);
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(v.$terracotta, 0.05);
+    z-index: 0;
+  }
+}
+
+.design-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  background: linear-gradient(135deg, v.$dark-blue, rgba(v.$dark-blue, 0.85));
+  margin-bottom: 60px;
+  overflow: hidden;
+
+  // Декоративный паттерн для фона
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/capital-market/assets/pattern-bg.png");
+    background-size: 200px;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  // Волнистая нижняя граница
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23FAFAFA'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: v.$font-headings;
+    font-size: 42px;
+    font-weight: 700;
+    color: v.$milk;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: v.$terracotta;
+    }
+
+    @media (max-width: v.$breakpoint-tablet) {
+      font-size: 36px;
+    }
+
+    @media (max-width: v.$breakpoint-mobile) {
+      font-size: 28px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    color: rgba(v.$milk, 0.9);
+    max-width: 600px;
+    margin: 30px auto 0;
+    line-height: 1.7;
+
+    @media (max-width: v.$breakpoint-mobile) {
+      font-size: 16px;
+    }
+  }
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: v.$breakpoint-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.design-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translateY(30px);
+  opacity: 0;
+
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+
+    // Разная задержка появления для карточек
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+    .design-card__image {
+      transform: scale(1.05);
+    }
+
+    .design-card__button {
+      background: v.$terracotta;
+      color: white;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  &__image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent 70%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 1;
+  }
+
+  &__content {
+    padding: 25px;
+    position: relative;
+
+    // Декоративный элемент внутри карточки
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 40px;
+      background: linear-gradient(to bottom, v.$dark-blue, v.$terracotta);
+      opacity: 0.8;
+    }
+  }
+
+  &__title {
+    font-family: v.$font-headings;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    color: v.$graphite-dark;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: v.$dark-blue;
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: v.$graphite-medium;
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(v.$dark-blue, 0.08);
+    color: v.$dark-blue;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: v.$terracotta;
+      color: white;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Анимация появления для проектов
+.design-appear {
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

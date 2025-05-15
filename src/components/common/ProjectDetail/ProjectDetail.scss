@@ -1,13 +1,13 @@
-@use "../../../styles/variables" as *;
+@use "../../../styles/variables" as v;
 
 .project-detail {
   padding: 0;
-  background-color: $almost-white;
+  background-color: v.$almost-white;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
 
-  // Декоративні елементи
+  // Декоративные элементы
   .decorative-element {
     position: absolute;
     z-index: 0;
@@ -21,8 +21,8 @@
       border-radius: 50%;
       background: radial-gradient(
         circle,
-        rgba($dark-blue, 0.05) 0%,
-        rgba($dark-blue, 0.01) 70%
+        rgba(v.$dark-blue, 0.05) 0%,
+        rgba(v.$dark-blue, 0.01) 70%
       );
     }
 
@@ -34,8 +34,8 @@
       border-radius: 50%;
       background: radial-gradient(
         circle,
-        rgba($terracotta, 0.07) 0%,
-        rgba($terracotta, 0.01) 70%
+        rgba(v.$terracotta, 0.07) 0%,
+        rgba(v.$terracotta, 0.01) 70%
       );
     }
 
@@ -47,28 +47,28 @@
       background: linear-gradient(
         to right,
         transparent,
-        rgba($dark-blue, 0.1),
+        rgba(v.$dark-blue, 0.1),
         transparent
       );
     }
   }
 
   .container {
-    max-width: $container-width;
+    max-width: v.$container-width;
     margin: 0 auto;
-    padding: 0 $gutter;
+    padding: 0 v.$gutter;
     position: relative;
     z-index: 1;
   }
 
-  // Фіксована кнопка "Назад"
+  // Фиксированная кнопка "Назад"
   .floating-back-button {
     position: fixed;
     top: 100px;
     left: 20px;
     z-index: 10;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: v.$breakpoint-tablet) {
       top: 80px;
     }
 
@@ -78,7 +78,7 @@
       gap: 8px;
       padding: 10px 20px;
       background-color: white;
-      color: $dark-blue;
+      color: v.$dark-blue;
       font-weight: 500;
       text-decoration: none;
       border-radius: 30px;
@@ -86,7 +86,7 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: $dark-blue;
+        background-color: v.$dark-blue;
         color: white;
         transform: translateX(-5px);
       }
@@ -95,7 +95,7 @@
         font-size: 20px;
       }
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         padding: 8px 12px;
 
         .back-text {
@@ -107,7 +107,7 @@
 
   &__header {
     padding: 130px 0 50px;
-    background: linear-gradient(135deg, $dark-blue, rgba($dark-blue, 0.7));
+    background: linear-gradient(135deg, v.$dark-blue, rgba(v.$dark-blue, 0.7));
     position: relative;
 
     &::after {
@@ -119,14 +119,14 @@
       height: 80px;
       background: linear-gradient(
         to top left,
-        $almost-white 0%,
+        v.$almost-white 0%,
         transparent 50%
       );
     }
   }
 
   &__title {
-    font-family: $font-headings;
+    font-family: v.$font-headings;
     font-size: 48px;
     font-weight: 700;
     color: white;
@@ -142,11 +142,11 @@
       transform: translateY(0);
     }
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: v.$breakpoint-tablet) {
       font-size: 36px;
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 28px;
     }
   }
@@ -185,7 +185,7 @@
     margin: 0 auto 60px;
     font-size: 18px;
     line-height: 1.7;
-    color: $graphite-medium;
+    color: v.$graphite-medium;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -203,7 +203,7 @@
       }
     }
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: v.$breakpoint-tablet) {
       font-size: 16px;
     }
   }
@@ -221,10 +221,10 @@
   }
 
   &__gallery-title {
-    font-family: $font-headings;
+    font-family: v.$font-headings;
     font-size: 32px;
     font-weight: 600;
-    color: $graphite-dark;
+    color: v.$graphite-dark;
     margin-bottom: 40px;
     text-align: center;
     position: relative;
@@ -237,14 +237,14 @@
       transform: translateX(-50%);
       width: 60px;
       height: 3px;
-      background: linear-gradient(to right, $dark-blue, $terracotta);
+      background: linear-gradient(to right, v.$dark-blue, v.$terracotta);
     }
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: v.$breakpoint-tablet) {
       font-size: 28px;
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: v.$breakpoint-mobile) {
       font-size: 24px;
     }
   }
@@ -254,10 +254,10 @@
     margin-bottom: 80px;
 
     .section-title {
-      font-family: $font-headings;
+      font-family: v.$font-headings;
       font-size: 32px;
       font-weight: 600;
-      color: $graphite-dark;
+      color: v.$graphite-dark;
       margin-bottom: 40px;
       text-align: center;
       position: relative;
@@ -270,7 +270,7 @@
         transform: translateX(-50%);
         width: 60px;
         height: 3px;
-        background: linear-gradient(to right, $terracotta, $dark-blue);
+        background: linear-gradient(to right, v.$terracotta, v.$dark-blue);
       }
     }
 
@@ -280,11 +280,11 @@
       gap: 30px;
       margin-bottom: 50px;
 
-      @media (max-width: $breakpoint-tablet) {
+      @media (max-width: v.$breakpoint-tablet) {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: v.$breakpoint-mobile) {
         grid-template-columns: 1fr;
       }
     }
@@ -307,7 +307,7 @@
         }
 
         .other-project-overlay {
-          background-color: rgba($dark-blue, 0.7);
+          background-color: rgba(v.$dark-blue, 0.7);
         }
       }
 
@@ -336,7 +336,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba($graphite-dark, 0.5);
+      background-color: rgba(v.$graphite-dark, 0.5);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -360,18 +360,18 @@
     .view-all-btn {
       display: inline-block;
       padding: 14px 30px;
-      background-color: $dark-blue;
+      background-color: v.$dark-blue;
       color: white;
       font-weight: 600;
       text-decoration: none;
       border-radius: 30px;
       transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba($dark-blue, 0.2);
+      box-shadow: 0 5px 15px rgba(v.$dark-blue, 0.2);
 
       &:hover {
-        background-color: $terracotta;
+        background-color: v.$terracotta;
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba($terracotta, 0.3);
+        box-shadow: 0 8px 25px rgba(v.$terracotta, 0.3);
       }
     }
   }
@@ -385,8 +385,8 @@
     .project-detail__loader {
       width: 50px;
       height: 50px;
-      border: 3px solid $light-gray;
-      border-top-color: $dark-blue;
+      border: 3px solid v.$light-gray;
+      border-top-color: v.$dark-blue;
       border-radius: 50%;
       animation: rotate 1s linear infinite;
     }
@@ -399,23 +399,23 @@
     min-height: 70vh;
 
     h1 {
-      font-family: $font-headings;
+      font-family: v.$font-headings;
       font-size: 32px;
       font-weight: 600;
-      color: $graphite-dark;
+      color: v.$graphite-dark;
       margin-bottom: 20px;
     }
 
     p {
       font-size: 18px;
-      color: $graphite-medium;
+      color: v.$graphite-medium;
       margin-bottom: 30px;
     }
 
     .project-detail__back-btn {
       display: inline-block;
       padding: 14px 30px;
-      background-color: $dark-blue;
+      background-color: v.$dark-blue;
       color: white;
       font-weight: 500;
       text-decoration: none;
@@ -423,7 +423,7 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: $terracotta;
+        background-color: v.$terracotta;
         transform: translateY(-3px);
       }
     }
