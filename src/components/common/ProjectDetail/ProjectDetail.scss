@@ -78,7 +78,7 @@
       gap: 8px;
       padding: 10px 20px;
       background-color: white;
-      color: v.$dark-blue;
+      color: v.$graphite-dark;
       font-weight: 500;
       text-decoration: none;
       border-radius: 30px;
@@ -86,7 +86,7 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background-color: v.$dark-blue;
+        background-color: v.$graphite-dark;
         color: white;
         transform: translateX(-5px);
       }
@@ -107,7 +107,11 @@
 
   &__header {
     padding: 130px 0 50px;
-    background: linear-gradient(135deg, v.$dark-blue, rgba(v.$dark-blue, 0.7));
+    background: linear-gradient(
+      135deg,
+      v.$graphite-dark,
+      rgba(v.$graphite-dark, 0.7)
+    );
     position: relative;
 
     &::after {

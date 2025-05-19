@@ -33,6 +33,7 @@ const DesignCard = ({ project, index }) => {
   );
 };
 
+// В компоненте Design
 const Design = () => {
   const { t } = useTranslation();
 
@@ -60,6 +61,10 @@ const Design = () => {
   return (
     <div className="design-page">
       <div className="design-hero">
+        {/* Декоративные линии */}
+        <div className="design-hero__decorative-line"></div>
+        <div className="design-hero__decorative-line"></div>
+
         <div className="container">
           <div className="design-hero__content">
             <h1 className="design-hero__title">

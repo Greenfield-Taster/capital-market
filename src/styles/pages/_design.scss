@@ -16,7 +16,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: rgba(v.$dark-blue, 0.04);
+    background: rgba(v.$graphite-medium, 0.04);
     z-index: 0;
   }
 
@@ -35,11 +35,20 @@
 
 .design-hero {
   position: relative;
-  padding: 180px 0 100px;
-  background: linear-gradient(135deg, v.$dark-blue, rgba(v.$dark-blue, 0.85));
-  margin-bottom: 60px;
+  padding: 140px 0 120px;
+  background: linear-gradient(
+    135deg,
+    v.$graphite-medium,
+    rgba(v.$graphite-dark, 0.85)
+  );
+  margin-bottom: 80px;
   overflow: hidden;
 
+  // Убираем существующие border-radius и добавляем новый стиль закругления
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  // Декоративные элементы для современного вида
   &::before {
     content: "";
     position: absolute;
@@ -47,23 +56,58 @@
     left: 0;
     width: 100%;
     height: 100%;
-
+    background-image: radial-gradient(
+        circle at 20% 30%,
+        rgba(255, 255, 255, 0.05) 0%,
+        transparent 25%
+      ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(255, 255, 255, 0.07) 0%,
+        transparent 20%
+      );
     background-size: 200px;
-    opacity: 0.1;
+    opacity: 1;
     z-index: 0;
   }
 
-  // Волнистая нижняя граница
+  // Основное волновое закругление
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -2px; // Небольшое перекрытие для стыковки
     left: 0;
     width: 100%;
-    height: 60px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23FAFAFA'%3E%3C/path%3E%3C/svg%3E");
-    background-size: cover;
+    height: 80px;
+    background-color: v.$almost-white; // Цвет фона страницы
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    mask-size: 100% 100%;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+    -webkit-mask-size: 100% 100%;
     z-index: 1;
+  }
+
+  // Декоративные линии для современного вида
+  .design-hero__decorative-line {
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, v.$terracotta, transparent);
+    opacity: 0.3;
+    z-index: 1;
+
+    &:nth-child(1) {
+      top: 15%;
+      left: -10%;
+      width: 30%;
+      transform: rotate(-30deg);
+    }
+
+    &:nth-child(2) {
+      bottom: 25%;
+      right: -5%;
+      width: 25%;
+      transform: rotate(20deg);
+    }
   }
 
   &__content {
@@ -76,7 +120,7 @@
 
   &__title {
     font-family: v.$font-headings;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: 700;
     color: v.$milk;
     margin-bottom: 20px;
@@ -109,6 +153,7 @@
     max-width: 600px;
     margin: 30px auto 0;
     line-height: 1.7;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
     @media (max-width: v.$breakpoint-mobile) {
       font-size: 16px;
