@@ -273,10 +273,9 @@
     transform: translateY(0);
   }
 
-  // Затримка для кожного наступного проекту
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
-      transition-delay: #{$i * 0.1}s;
+      transition-delay: #{$i * 0.05}s;
     }
   }
 }
