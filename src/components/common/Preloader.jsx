@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext, createContext } from "react";
 import { useLocation } from "react-router-dom";
 import preloaderVideo from "../../assets/preloader-video.mp4";
 import "../../styles/common/_preloader.scss";
 
-export const PreloaderContext = React.createContext({
+export const PreloaderContext = createContext({
   initialLoadComplete: false,
   setInitialLoadComplete: () => {},
 });
@@ -29,15 +29,19 @@ const Preloader = () => {
   const { initialLoadComplete, setInitialLoadComplete } = usePreloader();
   const [videoEnded, setVideoEnded] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [fadeOutActive, setFadeOutActive] = useState(false);
 
   useEffect(() => {
     if (!initialLoadComplete) {
       const timer = setTimeout(() => {
         if (!videoEnded) {
-          setLoading(false);
-          setInitialLoadComplete(true);
+          setFadeOutActive(true);
+          setTimeout(() => {
+            setLoading(false);
+            setInitialLoadComplete(true);
+          }, 1000);
         }
-      }, 6800);
+      }, 5500);
 
       return () => clearTimeout(timer);
     } else {
@@ -45,13 +49,13 @@ const Preloader = () => {
     }
   }, [initialLoadComplete, setInitialLoadComplete, videoEnded]);
 
-  // Обработчик завершения видео
   const handleVideoEnd = () => {
     setVideoEnded(true);
+    setFadeOutActive(true);
     setTimeout(() => {
       setLoading(false);
       setInitialLoadComplete(true);
-    }, 300);
+    }, 1000);
   };
 
   const handleVideoLoaded = () => {
@@ -72,11 +76,10 @@ const Preloader = () => {
   return (
     <>
       {loading && (
-        <div className="main-preloader">
+        <div className={`main-preloader ${fadeOutActive ? "fade-out" : ""}`}>
           {!videoLoaded && (
             <div className="loader-container">
               <div className="loader-spinner"></div>
-              <p className="loading-text">Загрузка...</p>
             </div>
           )}
 
@@ -92,6 +95,14 @@ const Preloader = () => {
             <source src={preloaderVideo} type="video/quicktime" />
             Ваш браузер не поддерживает видео.
           </video>
+
+          {fadeOutActive && (
+            <div className="particles-container">
+              {[...Array(30)].map((_, i) => (
+                <div key={i} className="particle"></div>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
