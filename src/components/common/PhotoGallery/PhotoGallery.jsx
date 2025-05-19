@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { ImageWithFallback, StylishImage } from "../../../utils/imageUtils";
+import LazyImage from "../../../utils/LazyImage/LazyImage";
 import "./PhotoGallery.scss";
 
 const PhotoGallery = ({ photos }) => {
   const { t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [visible, setVisible] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
@@ -17,18 +16,6 @@ const PhotoGallery = ({ photos }) => {
     const timer = setTimeout(() => setVisible(true), 300);
     return () => clearTimeout(timer);
   }, []);
-
-  const openLightbox = (index) => {
-    setSelectedIndex(index);
-    setIsLightboxOpen(true);
-
-    // document.body.style.overflow = "hidden"; // Заблокувати прокрутку сторінки
-  };
-
-  const closeLightbox = () => {
-    setIsLightboxOpen(false);
-    document.body.style.overflow = "";
-  };
 
   const nextPhoto = () => {
     setSelectedIndex((prevIndex) =>
@@ -68,29 +55,6 @@ const PhotoGallery = ({ photos }) => {
   };
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (!isLightboxOpen) return;
-
-      switch (e.key) {
-        case "ArrowRight":
-          nextPhoto();
-          break;
-        case "ArrowLeft":
-          prevPhoto();
-          break;
-        case "Escape":
-          closeLightbox();
-          break;
-        default:
-          break;
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isLightboxOpen]);
-
-  useEffect(() => {
     if (sliderRef.current) {
       const translateValue = -selectedIndex * 100;
       sliderRef.current.style.transform = `translateX(${translateValue}%)`;
@@ -108,12 +72,8 @@ const PhotoGallery = ({ photos }) => {
           onTouchEnd={onTouchEnd}
         >
           {photos.map((photo, index) => (
-            <div
-              className="photo-gallery__main-slide"
-              key={index}
-              onClick={() => openLightbox(index)}
-            >
-              <StylishImage
+            <div className="photo-gallery__main-slide" key={index}>
+              <LazyImage
                 src={photo.url}
                 alt={photo.alt || t("gallery.photoAlt", "Фото проекту")}
                 className="photo-gallery__main-image"
@@ -184,79 +144,14 @@ const PhotoGallery = ({ photos }) => {
               }`}
               onClick={() => setSelectedIndex(index)}
             >
-              <ImageWithFallback
+              <LazyImage
                 src={photo.url}
                 alt=""
                 className="photo-gallery__thumbnail-image"
+                aspectRatio="1/1"
               />
             </div>
           ))}
-        </div>
-      )}
-
-      {isLightboxOpen && (
-        <div className="photo-gallery__lightbox" onClick={closeLightbox}>
-          <div
-            className="photo-gallery__lightbox-content"
-            onClick={(e) => e.stopPropagation()}
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-          >
-            <button
-              className="photo-gallery__lightbox-close"
-              onClick={closeLightbox}
-              aria-label={t("gallery.close", "Закрити")}
-            >
-              &times;
-            </button>
-
-            <div className="photo-gallery__lightbox-image-container">
-              <ImageWithFallback
-                src={photos[selectedIndex].url}
-                alt={
-                  photos[selectedIndex].alt ||
-                  t("gallery.photoAlt", "Фото проекту")
-                }
-                className="photo-gallery__lightbox-image"
-              />
-            </div>
-
-            {photos[selectedIndex].description && (
-              <div className="photo-gallery__lightbox-description">
-                <p>{photos[selectedIndex].description}</p>
-              </div>
-            )}
-
-            {photos.length > 1 && (
-              <>
-                <button
-                  className="photo-gallery__lightbox-nav photo-gallery__lightbox-nav--prev"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    prevPhoto();
-                  }}
-                  aria-label={t("gallery.prevPhoto", "Попереднє фото")}
-                >
-                  <span>&#10094;</span>
-                </button>
-                <button
-                  className="photo-gallery__lightbox-nav photo-gallery__lightbox-nav--next"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    nextPhoto();
-                  }}
-                  aria-label={t("gallery.nextPhoto", "Наступне фото")}
-                >
-                  <span>&#10095;</span>
-                </button>
-              </>
-            )}
-
-            <div className="photo-gallery__lightbox-counter">
-              {selectedIndex + 1} / {photos.length}
-            </div>
-          </div>
         </div>
       )}
     </div>

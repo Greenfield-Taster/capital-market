@@ -1,11 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ImageWithFallback, StylishImage } from "../../../utils/imageUtils";
+import LazyImage from "../../../utils/LazyImage/LazyImage";
 import projectsData from "../../../data/projects.json";
 import designProjectsData from "../../../data/design.json";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import "./ProjectDetail.scss";
+
+const fixPhotoPaths = (photo) => {
+  if (typeof photo !== "object" || !photo) return photo;
+  return { ...photo };
+};
+
+const fixPhotoArrayPaths = (photos) => {
+  if (!Array.isArray(photos)) return photos;
+  return photos.map((photo) => fixPhotoPaths(photo));
+};
+
+const fixProjectPaths = (project) => {
+  if (typeof project !== "object" || !project) return project;
+
+  const newProject = { ...project };
+
+  if (Array.isArray(newProject.photos)) {
+    newProject.photos = fixPhotoArrayPaths(newProject.photos);
+  }
+
+  return newProject;
+};
 
 const ProjectDetail = () => {
   const { t } = useTranslation();
@@ -29,12 +51,14 @@ const ProjectDetail = () => {
   });
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       const foundProject = currentData.find((p) => p.slug === slug);
-      setProject(foundProject || null);
+
+      const fixedProject = foundProject ? fixProjectPaths(foundProject) : null;
+
+      setProject(fixedProject);
       setLoading(false);
 
-      // Поетапно показуємо елементи для кращого візуального ефекту
       setTimeout(() => setVisible((prev) => ({ ...prev, title: true })), 100);
       setTimeout(() => setVisible((prev) => ({ ...prev, image: true })), 300);
       setTimeout(
@@ -43,6 +67,8 @@ const ProjectDetail = () => {
       );
       setTimeout(() => setVisible((prev) => ({ ...prev, gallery: true })), 700);
     }, 300);
+
+    return () => clearTimeout(timer);
   }, [slug, currentData]);
 
   useEffect(() => {
@@ -68,7 +94,7 @@ const ProjectDetail = () => {
   if (loading) {
     return (
       <div className="project-detail loading">
-        <div className="container">
+        <div className="project-detail__container">
           <div className="project-detail__loader"></div>
         </div>
       </div>
@@ -127,10 +153,11 @@ const ProjectDetail = () => {
             visible.image ? "visible" : ""
           }`}
         >
-          <StylishImage
+          <LazyImage
             src={project.mainImage}
             alt={project.title}
             aspectRatio="16/9"
+            priority={true}
           />
         </div>
       </div>
@@ -161,20 +188,29 @@ const ProjectDetail = () => {
             {currentData
               .filter((item) => item.id !== project.id)
               .slice(0, 3)
-              .map((item, index) => (
-                <Link
-                  to={`${basePathName}/${item.slug}`}
-                  className={`other-project-card delay-${index}`}
-                  key={item.id}
-                >
-                  <div className="other-project-image">
-                    <ImageWithFallback src={item.mainImage} alt={item.title} />
-                  </div>
-                  <div className="other-project-overlay">
-                    <h3 className="other-project-title">{item.title}</h3>
-                  </div>
-                </Link>
-              ))}
+              .map((item, index) => {
+                const fixedItem = fixProjectPaths(item);
+
+                return (
+                  <Link
+                    to={`${basePathName}/${fixedItem.slug}`}
+                    className={`other-project-card delay-${index}`}
+                    key={fixedItem.id}
+                  >
+                    <div className="other-project-image">
+                      <LazyImage
+                        src={fixedItem.mainImage}
+                        alt={fixedItem.title}
+                        aspectRatio="16/9"
+                        priority={true}
+                      />
+                    </div>
+                    <div className="other-project-overlay">
+                      <h3 className="other-project-title">{fixedItem.title}</h3>
+                    </div>
+                  </Link>
+                );
+              })}
           </div>
 
           <div className="projects-action">

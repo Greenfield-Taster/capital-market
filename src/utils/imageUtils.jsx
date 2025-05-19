@@ -1,83 +1,100 @@
 import React from "react";
 
-/**
- * Утиліта для управління зображеннями
- */
+export const SvgPlaceholder = ({ type = "loading" }) => {
+  switch (type) {
+    case "image":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="48"
+          height="48"
+          fill="#cccccc"
+        >
+          <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7l-3 3.72L9 13l-3 4h12l-4-5z" />
+        </svg>
+      );
 
-// Визначення базового URL для застосунку
-const BASE_URL = "/capital-market/";
+    case "error":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="48"
+          height="48"
+          fill="#e74c3c"
+        >
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+        </svg>
+      );
 
-/**
- * Функція для отримання правильного шляху до зображення
- * @param {string} imagePath - Шлях до зображення у форматі "assets/path/to/image.jpg"
- * @returns {string} Повний шлях до зображення
- */
-export const getImageUrl = (imagePath) => {
-  // Якщо шлях не передано, повертаємо шлях до заглушки
-  if (!imagePath) {
-    return `${BASE_URL}assets/main-bg.png`;
+    case "loading":
+    default:
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="48"
+          height="48"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+            fill="none"
+            stroke="#1a3c5a"
+            strokeWidth="2"
+            strokeDasharray="30 120"
+            strokeLinecap="round"
+          >
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="rotate"
+              from="0 12 12"
+              to="360 12 12"
+              dur="1.5s"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </svg>
+      );
+  }
+};
+
+export const ImageWithFallback = ({ src, alt, ...props }) => {
+  const [imgSrc, setImgSrc] = React.useState(src);
+  const [isError, setIsError] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    setImgSrc(src);
+    setIsError(false);
+    setIsLoading(false);
+  }, [src]);
+
+  const onError = () => {
+    setIsError(true);
+    setIsLoading(false);
+  };
+
+  const onLoad = () => {
+    setIsLoading(false);
+  };
+
+  if (isError) {
+    return (
+      <div className="image-error-placeholder" {...props}>
+        <SvgPlaceholder type="error" />
+      </div>
+    );
   }
 
-  // Додаємо BASE_URL до шляху зображення
-  return `${BASE_URL}${imagePath}`;
-};
-
-/**
- * Компонент обгортки для зображень з обробкою помилок
- */
-export const ImageWithFallback = ({ src, alt, className, ...rest }) => {
-  const handleError = (e) => {
-    console.error(`Failed to load image: ${src}`);
-    e.target.src = `${BASE_URL}assets/main-bg.png`;
-  };
-
   return (
-    <img
-      src={getImageUrl(src)}
-      alt={alt || "Зображення"}
-      className={className || ""}
-      onError={handleError}
-      loading="lazy" // Додаємо ліниве завантаження для оптимізації продуктивності
-      {...rest}
-    />
-  );
-};
-
-/**
- * Компонент стильної обгортки для зображень зі спец-ефектами
- * Додає ефект розмиття та поступового завантаження
- */
-export const StylishImage = ({
-  src,
-  alt,
-  className,
-  aspectRatio = "4/3",
-  ...rest
-}) => {
-  const [loaded, setLoaded] = React.useState(false);
-
-  const handleLoad = () => {
-    setLoaded(true);
-  };
-
-  const handleError = (e) => {
-    console.error(`Failed to load image: ${src}`);
-    e.target.src = `${BASE_URL}assets/main-bg.png`;
-    setLoaded(true);
-  };
-
-  return (
-    <div
-      className={`image-container ${className || ""}`}
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        aspectRatio,
-        background: "#f5f5f5",
-      }}
-    >
-      {!loaded && (
+    <div className="image-with-fallback" style={{ position: "relative" }}>
+      {isLoading && (
         <div
+          className="image-loading-placeholder"
           style={{
             position: "absolute",
             top: 0,
@@ -87,34 +104,70 @@ export const StylishImage = ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#f5f5f5",
+            background: "#f5f5f5",
           }}
         >
-          <div className="image-loader"></div>
+          <SvgPlaceholder type="loading" />
         </div>
       )}
       <img
-        src={getImageUrl(src)}
-        alt={alt || "Зображення"}
-        onLoad={handleLoad}
-        onError={handleError}
-        loading="lazy"
+        {...props}
+        src={imgSrc}
+        alt={alt}
+        onError={onError}
+        onLoad={onLoad}
         style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          transition: "opacity 0.5s ease, transform 0.5s ease",
-          opacity: loaded ? 1 : 0,
-          transform: loaded ? "scale(1)" : "scale(1.05)",
+          opacity: isLoading ? 0 : 1,
+          transition: "opacity 0.3s ease",
+          ...props.style,
         }}
-        {...rest}
       />
     </div>
   );
 };
 
+export const StylishImage = ({
+  src,
+  alt,
+  aspectRatio = "16/9",
+  className = "",
+  ...props
+}) => {
+  const containerStyle = {
+    position: "relative",
+    paddingBottom:
+      aspectRatio === "16/9"
+        ? "56.25%"
+        : aspectRatio === "4/3"
+        ? "75%"
+        : aspectRatio === "1/1"
+        ? "100%"
+        : aspectRatio,
+    overflow: "hidden",
+    ...props.style,
+  };
+
+  const imageStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+  };
+
+  return (
+    <div
+      className={`stylish-image-container ${className}`}
+      style={containerStyle}
+    >
+      <ImageWithFallback src={src} alt={alt} style={imageStyle} {...props} />
+    </div>
+  );
+};
+
 export default {
-  getImageUrl,
+  SvgPlaceholder,
   ImageWithFallback,
   StylishImage,
 };
