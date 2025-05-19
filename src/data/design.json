@@ -17,6 +17,86 @@
       {
         "url": "assets/design/office-in-zaporizhzhia/photo-3.jpg",
         "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-4.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-5.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-6.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-7.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-8.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-9.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-10.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-11.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-12.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-13.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-14.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-15.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-16.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-17.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-18.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-19.jpg",
+        "alt": "Офіс в Запоріжжі"
+      },
+      {
+        "url": "assets/design/office-in-zaporizhzhia/photo-20.jpg",
+        "alt": "Офіс в Запоріжжі"
       }
     ]
   },
@@ -37,6 +117,30 @@
       },
       {
         "url": "assets/design/coworking-kyiv-comfort-town/photo-3.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-4.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-5.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-6.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-7.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-8.jpg",
+        "alt": "Коворкінг у Києві"
+      },
+      {
+        "url": "assets/design/coworking-kyiv-comfort-town/photo-9.jpg",
         "alt": "Коворкінг у Києві"
       }
     ]
@@ -59,6 +163,22 @@
       {
         "url": "assets/design/restaurant-in-zaporizhzhia/photo-3.jpg",
         "alt": "Ресторан у Запоріжжі"
+      },
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-4.jpg",
+        "alt": "Ресторан у Запоріжжі"
+      },
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-5.jpg",
+        "alt": "Ресторан у Запоріжжі"
+      },
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-6.jpg",
+        "alt": "Ресторан у Запоріжжі"
+      },
+      {
+        "url": "assets/design/restaurant-in-zaporizhzhia/photo-7.jpg",
+        "alt": "Ресторан у Запоріжжі"
       }
     ]
   },
@@ -80,6 +200,10 @@
       {
         "url": "assets/design/hotel-in-enerhodar/photo-3.jpg",
         "alt": "Готель в Енергодарі"
+      },
+      {
+        "url": "assets/design/hotel-in-enerhodar/photo-4.jpg",
+        "alt": "Готель в Енергодарі"
       }
     ]
   },
@@ -91,7 +215,7 @@
     "mainImage": "assets/design/food-court-in-poltava/photo-1.jpg",
     "photos": [
       {
-        "url": "assets/design/food-court-in-poltava/photo-1.jpg",
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-1.jpg",
         "alt": "Фуд-корт у Полтаві"
       },
       {
@@ -100,6 +224,62 @@
       },
       {
         "url": "assets/design/food-court-in-poltava/photo-3.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-4.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-5.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-6.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-7.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-8.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-9.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-10.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-11.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-12.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-13.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-14.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-15.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-16.jpg",
+        "alt": "Фуд-корт у Полтаві"
+      },
+      {
+        "url": "assets/design/food-court-in-poltava/photo-17.jpg",
         "alt": "Фуд-корт у Полтаві"
       }
     ]
@@ -122,6 +302,30 @@
       {
         "url": "assets/design/terrace-for-a-store-in-poltava/photo-3.jpg",
         "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-4.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-5.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-6.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-7.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-8.jpg",
+        "alt": "Тераса для магазину в Полтаві"
+      },
+      {
+        "url": "assets/design/terrace-for-a-store-in-poltava/photo-9.jpg",
+        "alt": "Тераса для магазину в Полтаві"
       }
     ]
   },
@@ -142,6 +346,46 @@
       },
       {
         "url": "assets/design/mayakovsky-park/photo-3.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-4.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-5.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-6.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-7.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-8.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-9.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-10.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-11.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-12.jpg",
+        "alt": "Парк Маяковського"
+      },
+      {
+        "url": "assets/design/mayakovsky-park/photo-13.jpg",
         "alt": "Парк Маяковського"
       }
     ]
@@ -164,6 +408,58 @@
       {
         "url": "assets/design/oleksandrivskyi-park/photo-3.jpg",
         "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-4.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-5.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-6.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-7.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-8.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-9.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-10.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-11.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-12.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-13.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-14.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-51.jpg",
+        "alt": "Олександрівський парк"
+      },
+      {
+        "url": "assets/design/oleksandrivskyi-park/photo-16.jpg",
+        "alt": "Олександрівський парк"
       }
     ]
   },
@@ -184,6 +480,14 @@
       },
       {
         "url": "assets/design/park-pisky/photo-3.jpg",
+        "alt": "Парк Піски"
+      },
+      {
+        "url": "assets/design/park-pisky/photo-4.jpg",
+        "alt": "Парк Піски"
+      },
+      {
+        "url": "assets/design/park-pisky/photo-5.jpg",
         "alt": "Парк Піски"
       }
     ]
@@ -206,6 +510,10 @@
       {
         "url": "assets/design/gyms-in-school-in-zaporizhzhia/photo-3.jpg",
         "alt": "Спортзали в школі у Запоріжжі"
+      },
+      {
+        "url": "assets/design/gyms-in-school-in-zaporizhzhia/photo-4.jpg",
+        "alt": "Спортзали в школі у Запоріжжі"
       }
     ]
   },
@@ -226,6 +534,18 @@
       },
       {
         "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-3.jpg",
+        "alt": "Зал у лікарні в Запоріжжі"
+      },
+      {
+        "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-4.jpg",
+        "alt": "Зал у лікарні в Запоріжжі"
+      },
+      {
+        "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-5.jpg",
+        "alt": "Зал у лікарні в Запоріжжі"
+      },
+      {
+        "url": "assets/design/hall-in-a-hospital-i-zaporizhzhia/photo-6.jpg",
         "alt": "Зал у лікарні в Запоріжжі"
       }
     ]
@@ -248,6 +568,1162 @@
       {
         "url": "assets/design/childrens-hospitals/photo-3.jpg",
         "alt": "Дитячі лікарні"
+      },
+      {
+        "url": "assets/design/childrens-hospitals/photo-5.jpg",
+        "alt": "Дитячі лікарні"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Житловий комплекс Amsterdam в Запоріжжі",
+    "slug": "amsterdam-residential-complex-in-zaporizhzhia",
+    "description": "Сучасний житловий комплекс з європейським дизайном, що поєднує функціональність та естетику. Проект створює комфортне житлове середовище з акцентом на якість життя мешканців.",
+    "mainImage": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-4.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-5.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-6.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-7.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-8.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-9.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-10.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-11.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-12.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-13.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-14.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-15.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-16.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-17.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-18.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-19.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-20.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-21.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-22.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-23.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-24.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-25.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-26.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-27.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      },
+      {
+        "url": "assets/design/amsterdam-residential-complex-in-zaporizhzhia/photo-28.jpg",
+        "alt": "Житловий комплекс Amsterdam в Запоріжжі"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Автобусна зупинка з підземним укриттям",
+    "slug": "bus-stop-with-an-underground-shelter",
+    "description": "Інноваційний проект міської інфраструктури, що поєднує функцію автобусної зупинки з підземним укриттям для безпеки громадян під час тривог. Проект відповідає сучасним вимогам безпеки в міському просторі.",
+    "mainImage": "assets/design/bus-stop-with-an-underground-shelter/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/bus-stop-with-an-underground-shelter/photo-1.jpg",
+        "alt": "Автобусна зупинка з підземним укриттям"
+      },
+      {
+        "url": "assets/design/bus-stop-with-an-underground-shelter/photo-2.jpg",
+        "alt": "Автобусна зупинка з підземним укриттям"
+      },
+      {
+        "url": "assets/design/bus-stop-with-an-underground-shelter/photo-3.jpg",
+        "alt": "Автобусна зупинка з підземним укриттям"
+      },
+      {
+        "url": "assets/design/bus-stop-with-an-underground-shelter/photo-4.jpg",
+        "alt": "Автобусна зупинка з підземним укриттям"
+      },
+      {
+        "url": "assets/design/bus-stop-with-an-underground-shelter/photo-5.jpg",
+        "alt": "Автобусна зупинка з підземним укриттям"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Центр надання адміністративних послуг для ветеранів",
+    "slug": "cnap-for-veterans",
+    "description": "Спеціалізований центр надання адміністративних послуг, адаптований для потреб ветеранів. Проект створює доступне та комфортне середовище для отримання необхідних послуг.",
+    "mainImage": "assets/design/cnap-for-veterans/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/cnap-for-veterans/photo-1.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-2.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-3.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-4.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-5.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-6.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-7.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-8.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-9.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-10.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-11.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-12.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-13.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-14.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-15.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-16.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      },
+      {
+        "url": "assets/design/cnap-for-veterans/photo-17.jpg",
+        "alt": "Центр надання адміністративних послуг для ветеранів"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Командний пункт для військових",
+    "slug": "command-post-for-the-military",
+    "description": "Функціональний проект командного пункту для військових потреб, що забезпечує ефективну координацію та управління. Дизайн поєднує практичність, надійність та безпеку.",
+    "mainImage": "assets/design/command-post-for-the-military/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/command-post-for-the-military/photo-1.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-2.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-3.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-4.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-5.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-6.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-7.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-8.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-9.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-10.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-11.jpg",
+        "alt": "Командний пункт для військових"
+      },
+      {
+        "url": "assets/design/command-post-for-the-military/photo-12.jpg",
+        "alt": "Командний пункт для військових"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "ЦПМСД-6",
+    "slug": "cpmcd-6",
+    "description": "Проект модернізації Центру первинної медико-санітарної допомоги №6, спрямований на покращення умов для пацієнтів та медичного персоналу. Дизайн створює функціональне та приємне середовище для надання медичних послуг.",
+    "mainImage": "assets/design/cpmcd-6/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/cpmcd-6/photo-1.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-2.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-3.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-4.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-5.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-6.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-7.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-8.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-9.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-10.jpg",
+        "alt": "ЦПМСД-6"
+      },
+      {
+        "url": "assets/design/cpmcd-6/photo-11.jpg",
+        "alt": "Дитячі лікарні"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "ЦПМСД-9",
+    "slug": "cpmcd-9",
+    "description": "Реновація Центру первинної медико-санітарної допомоги №9 з акцентом на ергономіку та доступність для всіх категорій пацієнтів. Проект модернізує простір медичного закладу відповідно до сучасних стандартів.",
+    "mainImage": "assets/design/cpmcd-9/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/cpmcd-9/photo-1.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-2.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-3.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-4.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-5.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-6.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-7.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-8.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-9.jpg",
+        "alt": "ЦПМСД-9"
+      },
+      {
+        "url": "assets/design/cpmcd-9/photo-10.jpg",
+        "alt": "ЦПМСД-9"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "ЦПО Запоріжжя",
+    "slug": "cpo-zaporizhzhia",
+    "description": "Центр професійної освіти в Запоріжжі, спроектований для створення оптимальних умов навчання та розвитку професійних навичок. Дизайн поєднує функціональність освітнього простору з сучасною естетикою.",
+    "mainImage": "assets/design/cpo-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-1.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-2.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-3.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-4.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-5.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-6.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-7.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-8.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-9.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-10.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-11.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-12.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-13.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-14.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-15.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-16.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-17.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-18.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-19.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-20.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-21.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-22.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-23.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-24.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-25.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-26.jpg",
+        "alt": "ЦПО Запоріжжя"
+      },
+      {
+        "url": "assets/design/cpo-zaporizhzhia/photo-27.jpg",
+        "alt": "ЦПО Запоріжжя"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Футбольні поля в Закарпатті",
+    "slug": "football-fields-in-zakarpattia",
+    "description": "Проект розвитку спортивної інфраструктури в Закарпатській області з фокусом на створення сучасних футбольних полів. Дизайн враховує місцеві ландшафтні особливості та екологічні стандарти.",
+    "mainImage": "assets/design/football-fields-in-zakarpattia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-1.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-2.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-3.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-4.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-5.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-6.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-7.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      },
+      {
+        "url": "assets/design/football-fields-in-zakarpattia/photo-8.jpg",
+        "alt": "Футбольні поля в Закарпатті"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Логістичний центр Донецький регіон",
+    "slug": "logistics-center-Donetsk-region",
+    "description": "Проект сучасного логістичного центру для Донецького регіону, що забезпечує ефективну систему постачання та розподілу товарів. Дизайн фокусується на оптимізації процесів та функціональності простору.",
+    "mainImage": "assets/design/logistics-center-Donetsk-region/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-1.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-2.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-3.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-4.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-5.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-6.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-7.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-8.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-9.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-10.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-11.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-12.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-13.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-14.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-15.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      },
+      {
+        "url": "assets/design/logistics-center-Donetsk-region/photo-16.jpg",
+        "alt": "Логістичний центр Донецький регіон"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Дитячі майданчики та підземні паркінги в Запоріжжі",
+    "slug": "playground-and-underground-parking-lot-in-zaporizhzhia",
+    "description": "Комплексний проект розвитку міської інфраструктури, що поєднує створення безпечних дитячих майданчиків з ефективним використанням підземного простору для паркування. Дизайн орієнтований на потреби сучасного міста.",
+    "mainImage": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      },
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      },
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      },
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-4.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      },
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-5.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      },
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-6.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      },
+      {
+        "url": "assets/design/playground-and-underground-parking-lot-in-zaporizhzhia/photo-7.jpg",
+        "alt": "Дитячі майданчики та підземні паркінги в Запоріжжі"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Початкова школа в селі Мар'ївка",
+    "slug": "pry-in-a-school-in-maryivka-village",
+    "description": "Проект модернізації початкової школи в селі Мар'ївка, спрямований на створення сучасного освітнього середовища для дітей. Дизайн адаптований до потреб сільської школи з урахуванням сучасних освітніх підходів.",
+    "mainImage": "assets/design/pry-in-a-school-in-maryivka-village/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-1.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-2.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-3.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-4.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-5.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-6.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-7.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      },
+      {
+        "url": "assets/design/pry-in-a-school-in-maryivka-village/photo-8.jpg",
+        "alt": "Початкова школа в селі Мар'ївка"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Житлова будівля в Запоріжжі",
+    "slug": "residential-building-in-zaporizhzhia",
+    "description": "Проект сучасного житлового будинку в Запоріжжі, що поєднує комфорт проживання з раціональним використанням простору. Дизайн створює якісне житлове середовище з акцентом на потреби мешканців.",
+    "mainImage": "assets/design/residential-building-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-1.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-2.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-3.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-4.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-5.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-6.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-7.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-8.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-9.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-10.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-11.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-12.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-13.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-14.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-15.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-16.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-17.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-18.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-19.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-20.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-21.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-22.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-23.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-24.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-25.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-26.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-27.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-28.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-29.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-30.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-31.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-32.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-33.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-34.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-35.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-36.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-37.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-38.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-39.jpg",
+        "alt": "Житлова будівля в Запоріжжі"
+      },
+      {
+        "url": "assets/design/residential-building-in-zaporizhzhia/photo-40.jpg",
+        "alt": "Дитячі лікарні"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Школа Буча",
+    "slug": "school-bucha",
+    "description": "Проект відновлення та модернізації школи в місті Буча, спрямований на створення безпечного та сучасного освітнього простору для дітей. Дизайн враховує потреби навчального процесу та психологічний комфорт учнів.",
+    "mainImage": "assets/design/school-bucha/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/school-bucha/photo-1.jpg",
+        "alt": "Школа Буча"
+      },
+      {
+        "url": "assets/design/school-bucha/photo-2.jpg",
+        "alt": "Школа Буча"
+      },
+      {
+        "url": "assets/design/school-bucha/photo-3.jpg",
+        "alt": "Школа Буча"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Школа в селі Костянтинівка Мелітопольського району",
+    "slug": "school-in-kostiantynivka-village-melitopol-district",
+    "description": "Проект реконструкції сільської школи в Костянтинівці, що забезпечує сучасні умови для навчання дітей в сільській місцевості. Дизайн адаптований до специфіки освітнього процесу в сільській школі.",
+    "mainImage": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-1.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-2.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-3.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-4.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-5.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-6.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-7.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      },
+      {
+        "url": "assets/design/school-in-kostiantynivka-village-melitopol-district/photo-8.jpg",
+        "alt": "Школа в селі Костянтинівка Мелітопольського району"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Укриття для цивільних",
+    "slug": "shelter-for-civilians",
+    "description": "Проект безпечного укриття для цивільного населення, розроблений з урахуванням сучасних вимог безпеки. Дизайн забезпечує комфортні умови перебування людей під час надзвичайних ситуацій.",
+    "mainImage": "assets/design/shelter-for-civilians/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/shelter-for-civilians/photo-1.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-2.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-3.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-4.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-5.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-6.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-7.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-8.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-9.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-10.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-11.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-12.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-13.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-14.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-15.jpg",
+        "alt": "Укриття для цивільних"
+      },
+      {
+        "url": "assets/design/shelter-for-civilians/photo-16.jpg",
+        "alt": "Укриття для цивільних"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "ШБСМ в Запоріжжі",
+    "slug": "shvsm-in-zaporizhzhia",
+    "description": "Проект Школи вищої спортивної майстерності в Запоріжжі, спрямований на створення оптимальних умов для тренувань професійних спортсменів. Дизайн поєднує функціональність спортивного комплексу з сучасними стандартами.",
+    "mainImage": "assets/design/shvsm-in-zaporizhzhia/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-1.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-2.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-3.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-4.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-5.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-6.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-7.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-8.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-9.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-10.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-11.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-12.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-13.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-14.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-15.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-16.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-17.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-18.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-19.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-20.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-21.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-22.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-23.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-24.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-25.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-26.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-27.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-28.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-29.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-30.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-31.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-32.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-33.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-34.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-35.jpg",
+        "alt": "ШБСМ в Запоріжжі"
+      },
+      {
+        "url": "assets/design/shvsm-in-zaporizhzhia/photo-36.jpg",
+        "alt": "ШБСМ в Запоріжжі"
       }
     ]
   }

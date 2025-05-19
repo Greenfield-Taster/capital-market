@@ -1,6 +1,180 @@
 [
   {
     "id": 1,
+    "title": "Соборний 151",
+    "slug": "soborny-151",
+    "description": "Проект реконструкції історичної будівлі на вулиці Соборній, 151. Реставрація фасаду та внутрішніх приміщень із збереженням історичної цінності об'єкта.",
+    "mainImage": "assets/constructions/soborny-151/photo-1.JPG",
+    "photos": [
+      {
+        "url": "assets/constructions/soborny-151/photo-1.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-2.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-3.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-4.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-5.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-6.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-7.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-8.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-9.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-10.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-11.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-12.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-13.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-14.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-15.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-16.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-17.JPG",
+        "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-18.JPG",
+        "alt": "Фото проекту Соборний 151"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Парк Садського",
+    "slug": "park-sadskogo",
+    "description": "Проект реконструкції та благоустрою парку Садського з фокусом на збереження та відновлення історичного деревного фонду. Проект включав лікування вікових дерев, створення нових насаджень та ландшафтний дизайн.",
+    "mainImage": "assets/constructions/park-sadskogo/photo-1.JPG",
+    "photos": [
+      {
+        "url": "assets/constructions/park-sadskogo/photo-1.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-2.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-3.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-4.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-5.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-6.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-7.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-8.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-9.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-10.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-11.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-12.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-13.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-14.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-15.JPG",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-16.jpg",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-17.jpg",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-18.jpg",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-19.jpg",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-20.jpg",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-21.jpg",
+        "alt": "Фото парку Садського"
+      }
+    ]
+  },
+  {
+    "id": 3,
     "title": "Лікарня №1",
     "slug": "bolnitsa-1",
     "description": "Проект модернізації міської лікарні №1. Включав оновлення фасаду, заміну комунікацій, перепланування та обладнання медичних кабінетів відповідно до сучасних вимог.",
@@ -101,14 +275,51 @@
     ]
   },
   {
-    "id": 2,
+    "id": 4,
+    "title": "Школа №62",
+    "slug": "school-62",
+    "description": "Комплексна реконструкція школи №62 з метою створення сучасного освітнього середовища. Проект включав ремонт класів, оновлення спортивного залу, створення медіатеки та лабораторій.",
+    "mainImage": "assets/constructions/school-62/photo-1.jpg",
+    "photos": [
+      {
+        "url": "assets/constructions/school-62/photo-1.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
+        "url": "assets/constructions/school-62/photo-3.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
+        "url": "assets/constructions/school-62/photo-4.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
+        "url": "assets/constructions/school-62/photo-5.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
+        "url": "assets/constructions/school-62/photo-6.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
+        "url": "assets/constructions/school-62/photo-7.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
+        "url": "assets/constructions/school-62/photo-8.jpg",
+        "alt": "Фото проекту школи №62"
+      }
+    ]
+  },
+  {
+    "id": 5,
     "title": "Лікарня №5",
     "slug": "bolnitsa-5",
     "description": "Комплексна реконструкція лікарні №5 з метою покращення якості медичних послуг та підвищення комфорту пацієнтів. Проект включав ремонт палат, створення нових діагностичних кабінетів та реконструкцію інженерних систем.",
     "mainImage": "assets/constructions/bolnitsa-5/photo-1.JPG",
     "photos": [
       {
-        "url": "assets/constructions/bolnitsa-5/photo-1.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-1.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
@@ -178,165 +389,78 @@
       {
         "url": "assets/constructions/bolnitsa-5/photo-18.JPG",
         "alt": "Фото проекту лікарні №5"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Діловий бізнес-центр",
-    "slug": "dbc",
-    "description": "Будівництво сучасного ділового центру з офісними приміщеннями, конференц-залами та підземним паркінгом. Проект відповідає всім сучасним вимогам безпеки та комфорту.",
-    "mainImage": "assets/constructions/DBC/photo-1.JPG",
-    "photos": [
-      {
-        "url": "assets/constructions/DBC/photo-1.JPG",
-        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-2.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-19.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-3.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-20.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-4.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-21.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-5.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-22.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-6.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-23.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-7.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-24.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-8.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-25.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-9.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-26.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-10.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-27.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-11.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-28.JPG",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-12.JPG",
-        "alt": "Фото проекту бізнес-центру"
+        "url": "assets/constructions/bolnitsa-5/photo-29.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/DBC/photo-13.JPG",
-        "alt": "Фото проекту бізнес-центру"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Школа №25",
-    "slug": "school-25",
-    "description": "Комплексна реконструкція школи №25 з метою створення сучасного освітнього середовища. Проект включав ремонт класів, оновлення спортивного залу, створення медіатеки та лабораторій.",
-    "mainImage": "assets/constructions/school-25/photo-1.JPG",
-    "photos": [
-      {
-        "url": "assets/constructions/school-25/photo-1.JPG",
-        "alt": "Фото проекту школи №25"
+        "url": "assets/constructions/bolnitsa-5/photo-30.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/school-25/photo-3.JPG",
-        "alt": "Фото проекту школи №25"
+        "url": "assets/constructions/bolnitsa-5/photo-31.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/school-25/photo-4.JPG",
-        "alt": "Фото проекту школи №25"
+        "url": "assets/constructions/bolnitsa-5/photo-32.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/school-25/photo-5.JPG",
-        "alt": "Фото проекту школи №25"
+        "url": "assets/constructions/bolnitsa-5/photo-33.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/school-25/photo-6.JPG",
-        "alt": "Фото проекту школи №25"
+        "url": "assets/constructions/bolnitsa-5/photo-34.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/school-25/photo-7.JPG",
-        "alt": "Фото проекту школи №25"
+        "url": "assets/constructions/bolnitsa-5/photo-35.jpg",
+        "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/school-25/photo-8.JPG",
-        "alt": "Фото проекту школи №25"
-      },
-      {
-        "url": "assets/constructions/school-25/photo-9.JPG",
-        "alt": "Фото проекту школи №25"
-      },
-      {
-        "url": "assets/constructions/school-25/photo-10.JPG",
-        "alt": "Фото проекту школи №25"
-      },
-      {
-        "url": "assets/constructions/school-25/photo-11.JPG",
-        "alt": "Фото проекту школи №25"
-      },
-      {
-        "url": "assets/constructions/school-25/photo-14.JPG",
-        "alt": "Фото проекту школи №25"
-      },
-      {
-        "url": "assets/constructions/school-25/photo-15.JPG",
-        "alt": "Фото проекту школи №25"
-      },
-      {
-        "url": "assets/constructions/school-25/photo-16.JPG",
-        "alt": "Фото проекту школи №25"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Школа №62",
-    "slug": "school-62",
-    "description": "Комплексна реконструкція школи №62 з метою створення сучасного освітнього середовища. Проект включав ремонт класів, оновлення спортивного залу, створення медіатеки та лабораторій.",
-    "mainImage": "assets/constructions/school-62/photo-1.jpg",
-    "photos": [
-      {
-        "url": "assets/constructions/school-62/photo-1.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-3.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-4.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-5.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-6.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-7.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-8.jpg",
-        "alt": "Фото проекту школи №62"
+        "url": "assets/constructions/bolnitsa-5/photo-36.jpg",
+        "alt": "Фото проекту лікарні №5"
       }
     ]
   },
@@ -403,151 +527,167 @@
   },
   {
     "id": 7,
-    "title": "Парк Садського",
-    "slug": "park-sadskogo",
-    "description": "Проект реконструкції та благоустрою парку Садського з фокусом на збереження та відновлення історичного деревного фонду. Проект включав лікування вікових дерев, створення нових насаджень та ландшафтний дизайн.",
-    "mainImage": "assets/constructions/park-sadskogo/photo-1.JPG",
+    "title": "ДВС",
+    "slug": "dbc",
+    "description": "Проєкт передбачає проведення реконструкції хлораторної ДВС-2 з метою модернізації технологічного обладнання, підвищення рівня безпеки бомбосховища, енергоефективності та забезпечення відповідності сучасним нормативам з водопідготовки та використання хлору.",
+    "mainImage": "assets/constructions/DBC/photo-1.JPG",
     "photos": [
       {
-        "url": "assets/constructions/park-sadskogo/photo-1.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-1.jpg",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-2.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-2.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-3.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-3.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-4.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-4.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-5.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-5.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-6.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-6.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-7.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-7.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-8.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-8.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-9.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-9.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-10.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-10.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-11.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-11.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-12.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-12.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-13.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-13.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-14.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-14.JPG",
+        "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-15.JPG",
-        "alt": "Фото парку Садського"
+        "url": "assets/constructions/DBC/photo-15.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-16.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-17.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-18.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-19.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-20.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-21.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-22.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-23.jpg",
+        "alt": "Фото проекту бізнес-центру"
+      },
+      {
+        "url": "assets/constructions/DBC/photo-24.jpg",
+        "alt": "Фото проекту бізнес-центру"
       }
     ]
   },
   {
     "id": 8,
-    "title": "Соборний 151",
-    "slug": "soborny-151",
-    "description": "Проект реконструкції історичної будівлі на вулиці Соборній, 151. Реставрація фасаду та внутрішніх приміщень із збереженням історичної цінності об'єкта.",
-    "mainImage": "assets/constructions/soborny-151/photo-1.JPG",
+    "title": "Школа №25",
+    "slug": "school-25",
+    "description": "Комплексна реконструкція школи №25 з метою створення сучасного освітнього середовища. Проект включав ремонт класів, оновлення спортивного залу, створення медіатеки та лабораторій.",
+    "mainImage": "assets/constructions/school-25/photo-1.JPG",
     "photos": [
       {
-        "url": "assets/constructions/soborny-151/photo-1.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-1.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-2.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-3.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-3.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-4.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-4.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-5.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-5.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-6.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-6.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-7.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-7.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-8.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-8.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-9.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-9.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-10.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-10.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-11.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-11.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-14.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-12.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-15.JPG",
+        "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-13.JPG",
-        "alt": "Фото проекту Соборний 151"
-      },
-      {
-        "url": "assets/constructions/soborny-151/photo-14.JPG",
-        "alt": "Фото проекту Соборний 151"
-      },
-      {
-        "url": "assets/constructions/soborny-151/photo-15.JPG",
-        "alt": "Фото проекту Соборний 151"
-      },
-      {
-        "url": "assets/constructions/soborny-151/photo-16.JPG",
-        "alt": "Фото проекту Соборний 151"
-      },
-      {
-        "url": "assets/constructions/soborny-151/photo-17.JPG",
-        "alt": "Фото проекту Соборний 151"
-      },
-      {
-        "url": "assets/constructions/soborny-151/photo-18.JPG",
-        "alt": "Фото проекту Соборний 151"
+        "url": "assets/constructions/school-25/photo-16.JPG",
+        "alt": "Фото проекту школи №25"
       }
     ]
   }
