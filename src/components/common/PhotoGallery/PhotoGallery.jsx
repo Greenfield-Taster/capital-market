@@ -17,6 +17,10 @@ const PhotoGallery = ({ photos }) => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    setSelectedIndex(0);
+  }, [photos]);
+
   const nextPhoto = () => {
     setSelectedIndex((prevIndex) =>
       prevIndex === photos.length - 1 ? 0 : prevIndex + 1

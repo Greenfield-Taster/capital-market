@@ -185,30 +185,80 @@
   }
 
   &__description {
-    max-width: 800px;
-    margin: 0 auto 60px;
-    font-size: 18px;
-    line-height: 1.7;
+    margin: 0 auto 70px;
     color: v.$graphite-medium;
-    opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    background: linear-gradient(135deg, v.$dark-blue-10, v.$terracotta-10);
+    padding: v.$spacing-2xl v.$spacing-xl;
+    border-radius: v.$border-radius-xl;
+    box-shadow: v.$shadow-md;
+    position: relative;
+    overflow: hidden;
 
-    &.visible {
-      opacity: 1;
-      transform: translateY(0);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.1)
+      );
+      transform: skewX(-45deg) translateX(-100%);
+      animation: shine 8s infinite;
     }
 
-    p {
-      margin: 0 0 20px;
-
-      &:last-child {
-        margin-bottom: 0;
+    @keyframes shine {
+      0% {
+        transform: skewX(-45deg) translateX(-100%);
+      }
+      20%,
+      100% {
+        transform: skewX(-45deg) translateX(100%);
       }
     }
 
-    @media (max-width: v.$breakpoint-tablet) {
-      font-size: 16px;
+    blockquote {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      p {
+        font-family: v.$font-primary;
+        font-size: v.$font-size-xl;
+        font-weight: v.$font-weight-light;
+        line-height: 1.5;
+        color: v.$graphite-dark;
+        margin: 10px;
+
+        @media (max-width: v.$breakpoint-md) {
+          font-size: v.$font-size-xl;
+        }
+
+        @media (max-width: v.$breakpoint-sm) {
+          font-size: v.$font-size-lg;
+        }
+      }
+    }
+  }
+
+  .quote-icon {
+    position: absolute;
+    fill: rgba(v.$terracotta, 0.1);
+
+    &:first-of-type {
+      top: v.$spacing-lg;
+      left: v.$spacing-lg;
+    }
+
+    &.quote-close {
+      bottom: v.$spacing-lg;
+      right: v.$spacing-lg;
+      transform: rotate(180deg);
     }
   }
 
