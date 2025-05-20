@@ -1,54 +1,41 @@
 @use "../../variables" as v;
 
-// Featured project section
-.featured-project-section {
+.featured-project-section.contrast {
   margin: v.$spacing-4xl 0;
-  padding: v.$spacing-2xl 0;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -10%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(135deg, v.$dark-blue-5, v.$almost-white);
-    transform: skewY(-3deg);
-    z-index: -1;
-  }
+  padding: v.$spacing-3xl 0;
+  background-color: #0a09094f;
+  color: v.$almost-white;
+  border-radius: 20px;
 
   .featured-project-container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: v.$spacing-2xl;
+    grid-template-columns: 1fr 1fr;
+    gap: v.$spacing-3xl;
     align-items: center;
+    max-width: v.$container-max-width;
+    margin: 0 auto;
+    padding: 0 v.$spacing-xl;
 
     @media (max-width: v.$breakpoint-md) {
       grid-template-columns: 1fr;
-      gap: v.$spacing-xl;
+      gap: v.$spacing-2xl;
     }
   }
 
   .featured-content {
-    padding-right: v.$spacing-xl;
-
-    @media (max-width: v.$breakpoint-md) {
-      padding-right: 0;
-    }
-
     .section-title {
       margin-bottom: v.$spacing-lg;
-      color: v.$graphite-dark;
+      color: v.$almost-white;
+      font-size: v.$font-size-2xl;
+      font-weight: v.$font-weight-bold;
       position: relative;
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
-        bottom: -10px;
+        top: -15px;
         left: 0;
-        width: 60px;
+        width: 30px;
         height: 3px;
         background-color: v.$terracotta;
       }
@@ -56,8 +43,9 @@
 
     .featured-description {
       font-size: v.$font-size-md;
-      line-height: 1.7;
-      color: v.$graphite-medium;
+      line-height: 1.8;
+      color: v.$light-gray;
+      max-width: 90%;
     }
   }
 
@@ -65,9 +53,9 @@
     position: relative;
     border-radius: v.$border-radius-lg;
     overflow: hidden;
-    box-shadow: v.$shadow-lg;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -75,27 +63,27 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(
-        to right,
-        rgba(v.$dark-blue, 0.3),
-        transparent
+        45deg,
+        rgba(v.$terracotta, 0.2),
+        rgba(v.$dark-blue, 0.2)
       );
       z-index: 1;
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
+      opacity: 0;
+      transition: opacity v.$transition-medium;
     }
 
-    &:hover::before {
-      opacity: 0.3;
+    &:hover::after {
+      opacity: 1;
     }
 
     img {
       width: 100%;
       height: auto;
-      vertical-align: middle;
-      transition: transform 0.5s ease;
+      display: block;
+      transition: transform v.$transition-slow;
 
       &:hover {
-        transform: scale(1.03);
+        transform: scale(1.05);
       }
     }
   }
