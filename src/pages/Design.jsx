@@ -9,27 +9,29 @@ const DesignCard = ({ project, index }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={`design-card design-appear`}>
-      <div className="design-card__image-container">
-        <div className="design-card__image-overlay"></div>
-        <ImageWithFallback
-          src={project.mainImage}
-          alt={project.title}
-          className="design-card__image"
-        />
+    <Link to={`/design/${project.slug}`}>
+      <div className={`design-card design-appear`}>
+        <div className="design-card__image-container">
+          <div className="design-card__image-overlay"></div>
+          <ImageWithFallback
+            src={project.mainImage}
+            alt={project.title}
+            className="design-card__image"
+          />
+        </div>
+        <div className="design-card__content">
+          <h2 className="design-card__title">{project.title}</h2>
+          <p className="design-card__description">
+            {project.description.length > 100
+              ? project.description.substring(0, 100) + "..."
+              : project.description}
+          </p>
+          <button className="design-card__button">
+            {t("latestProjects.viewDetails", "Детальніше")}
+          </button>
+        </div>
       </div>
-      <div className="design-card__content">
-        <h2 className="design-card__title">{project.title}</h2>
-        <p className="design-card__description">
-          {project.description.length > 120
-            ? project.description.substring(0, 120) + "..."
-            : project.description}
-        </p>
-        <Link to={`/design/${project.slug}`} className="design-card__button">
-          {t("latestProjects.viewDetails", "Детальніше")}
-        </Link>
-      </div>
-    </div>
+    </Link>
   );
 };
 

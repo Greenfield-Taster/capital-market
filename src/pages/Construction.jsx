@@ -9,31 +9,30 @@ const ProjectRow = ({ project, index }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={`project-row project-appear`}>
-      <div className="project-row__color-block"></div>
-      <div className="project-row__content">
-        <h2 className="project-row__title">{project.title}</h2>
-        <p className="project-row__description">
-          {project.description.length > 160
-            ? project.description.substring(0, 160) + "..."
-            : project.description}
-        </p>
-        <Link
-          to={`/construction/${project.slug}`}
-          className="project-row__button"
-        >
-          {t("latestProjects.viewDetails", "Детальніше")}
-        </Link>
+    <Link to={`/construction/${project.slug}`}>
+      <div className={`project-row project-appear`}>
+        <div className="project-row__color-block"></div>
+        <div className="project-row__content">
+          <h2 className="project-row__title">{project.title}</h2>
+          <p className="project-row__description">
+            {project.description.length > 160
+              ? project.description.substring(0, 160) + "..."
+              : project.description}
+          </p>
+          <button className="project-row__button">
+            {t("latestProjects.viewDetails", "Детальніше")}
+          </button>
+        </div>
+        <div className="project-row__image-container">
+          <div className="project-row__image-overlay"></div>
+          <ImageWithFallback
+            src={project.mainImage}
+            alt={project.title}
+            className="project-row__image"
+          />
+        </div>
       </div>
-      <div className="project-row__image-container">
-        <div className="project-row__image-overlay"></div>
-        <ImageWithFallback
-          src={project.mainImage}
-          alt={project.title}
-          className="project-row__image"
-        />
-      </div>
-    </div>
+    </Link>
   );
 };
 
