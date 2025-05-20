@@ -1,26 +1,5 @@
 @use "../variables" as v;
-
-body {
-  &::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 9997;
-    opacity: 1;
-    transition: opacity 1.2s ease;
-    pointer-events: none;
-  }
-
-  &.content-visible {
-    &::after {
-      opacity: 0;
-    }
-  }
-}
+@use "sass:math";
 
 .main-preloader {
   position: fixed;
@@ -28,156 +7,94 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #000000 !important;
+  background: #000000 !important;
   z-index: 9999;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transition: opacity 1s ease, visibility 1s ease;
   opacity: 1;
   visibility: visible;
   overflow: hidden;
 }
 
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.main-preloader.fade-out {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(8px);
+  transition: opacity 1s ease, visibility 1s ease, background-color 1s ease;
+}
+
+.main-preloader.fade-out .preloader-video {
+  opacity: 0.2;
+  transform: scale(1.05);
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10001;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  animation: particleAnimation 1.5s ease-out forwards;
+}
+
+.particles-container .particle:nth-child(3n) {
+  background: linear-gradient(to right, v.$dark-blue, v.$terracotta);
+  width: 12px;
+  height: 12px;
+}
+
+.particles-container .particle:nth-child(2n) {
+  background: v.$terracotta;
+  width: 6px;
+  height: 6px;
+}
+
+@for $i from 1 through 30 {
+  .particles-container .particle:nth-child(#{$i}) {
+    top: calc(50% + #{math.random(200) - 100}px);
+    left: calc(50% + #{math.random(200) - 100}px);
+    animation-delay: #{$i * 0.03}s;
+  }
+}
+
 .main-preloader.hide {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.8s ease, visibility 0.8s 0.1s ease;
-}
-
-.preloader-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 500px;
-  padding: 0 20px;
-}
-
-.logo-container {
-  position: relative;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 400px;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-}
-
-.logo-svg {
-  width: 100%;
-  height: auto;
-}
-
-.grid-path {
-  opacity: 0;
-  animation: fadeInWithGlow 0.05s ease forwards;
-  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.7));
-  transition: all 0.3s ease;
-}
-
-.grid-path {
-  animation-delay: calc(var(--i) * 0.05s);
-}
-
-.grid-path:hover {
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
-}
-
-.logo-text {
-  opacity: 1;
-  animation-delay: 1.5s;
-}
-
-.logo-text tspan {
-  opacity: 0;
-  animation: letterFadeIn 0.3s ease forwards;
-}
-
-.cls-1 {
-  animation-delay: 1.6s;
-} // C
-.cls-8 {
-  animation-delay: 1.7s;
-} // A
-.cls-9 {
-  animation-delay: 1.8s;
-} // P
-.cls-7 {
-  animation-delay: 1.9s;
-} // I
-.cls-4 {
-  animation-delay: 2s;
-} // T
-.cls-3 {
-  animation-delay: 2.1s;
-} // A
-.cls-3 + .cls-3 {
-  animation-delay: 2.2s;
-} // L
-.cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.3s;
-} // и далее для каждой буквы
-.cls-3 + .cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.4s;
-}
-.cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.5s;
-}
-.cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.6s;
-}
-.cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.7s;
-}
-.cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.8s;
-}
-.cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 + .cls-3 {
-  animation-delay: 2.9s;
-}
-.cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3
-  + .cls-3 {
-  animation-delay: 3s;
-}
-
-@keyframes fadeInWithGlow {
-  0% {
-    opacity: 0;
-    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
-  }
-  50% {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
-  }
-  100% {
-    opacity: 1;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
-  }
-}
-
-@keyframes letterFadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(15px) scale(0.8);
-    filter: blur(5px);
-  }
-  60% {
-    filter: blur(0);
-  }
-  80% {
-    transform: translateY(-2px) scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 .nav-preloader {
@@ -201,10 +118,21 @@ body {
     height: 100%;
     width: 0;
     background: linear-gradient(to right, v.$dark-blue, v.$terracotta);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); // Добавлено свечение
     transition: width 0.3s ease;
     animation: navProgress 0.8s ease forwards;
   }
+}
+
+.loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10000;
+  animation: fadeIn 0.5s ease;
 }
 
 @keyframes navProgress {
@@ -216,89 +144,31 @@ body {
   }
 }
 
-.main-preloader::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 150vw;
-  height: 150vh;
-  background: radial-gradient(
-    circle,
-    rgba(30, 30, 40, 0.2) 0%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  animation: pulseBackground 4s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes pulseBackground {
-  0%,
-  100% {
-    opacity: 0.3;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-}
-
-.cls-1,
-.cls-2,
-.cls-3,
-.cls-4,
-.cls-5,
-.cls-6,
-.cls-7,
-.cls-8,
-.cls-9 {
-  fill: #fff;
-}
-
-.cls-5 {
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 0.5px;
-}
-
-.cls-6 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 48.75px;
-  font-weight: 700;
-}
-
-@media (max-width: v.$breakpoint-sm) {
-  .preloader-content {
-    max-width: 300px;
-  }
-
-  .logo-container {
-    max-width: 250px;
-  }
-
-  .loader {
-    width: 36px;
-    height: 36px;
-  }
-}
-
-@keyframes fadeInContent {
-  from {
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translate(-50%, -60%);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
-body.content-visible main,
-body.content-visible header,
-body.content-visible section,
-body.content-visible .page {
-  animation: fadeInContent 0.8s ease forwards;
+@keyframes particleAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.8);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+        #{math.random(300) - 150}px,
+        #{math.random(300) - 150}px
+      )
+      scale(0);
+  }
 }
