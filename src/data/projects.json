@@ -316,7 +316,7 @@
     "title": "Лікарня №5",
     "slug": "bolnitsa-5",
     "description": "Комплексна реконструкція лікарні №5 з метою покращення якості медичних послуг та підвищення комфорту пацієнтів. Проект включав ремонт палат, створення нових діагностичних кабінетів та реконструкцію інженерних систем.",
-    "mainImage": "assets/constructions/bolnitsa-5/photo-1.JPG",
+    "mainImage": "assets/constructions/bolnitsa-5/photo-1.jpg",
     "photos": [
       {
         "url": "assets/constructions/bolnitsa-5/photo-1.jpg",
@@ -530,7 +530,7 @@
     "title": "ДВС",
     "slug": "dbc",
     "description": "Проєкт передбачає проведення реконструкції хлораторної ДВС-2 з метою модернізації технологічного обладнання, підвищення рівня безпеки бомбосховища, енергоефективності та забезпечення відповідності сучасним нормативам з водопідготовки та використання хлору.",
-    "mainImage": "assets/constructions/DBC/photo-1.JPG",
+    "mainImage": "assets/constructions/DBC/photo-1.jpg",
     "photos": [
       {
         "url": "assets/constructions/DBC/photo-1.jpg",
