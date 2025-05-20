@@ -5,6 +5,7 @@
     "slug": "soborny-151",
     "description": "Проект модернізації бомбосховища міської лікарні №1. Включав оновлення фасаду, заміну комунікацій, перепланування та обладнання медичних кабінетів відповідно до сучасних вимог.",
     "mainImage": "assets/constructions/soborny-151/photo-1.JPG",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/soborny-151/photo-1.JPG",
@@ -86,6 +87,7 @@
     "slug": "park-sadskogo",
     "description": "Проект реконструкції та благоустрою парку Сацького з фокусом на збереження пам`яті загиблих воїнів в наслідок російської агресії.",
     "mainImage": "assets/constructions/park-sadskogo/photo-1.JPG",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/park-sadskogo/photo-1.JPG",
@@ -179,6 +181,7 @@
     "slug": "bolnitsa-1",
     "description": "Проект модернізації міської лікарні №1. Включав оновлення фасаду, заміну комунікацій, перепланування та обладнання медичних кабінетів відповідно до сучасних вимог.",
     "mainImage": "assets/constructions/bolnitsa-1/photo-1.JPG",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/bolnitsa-1/photo-1.JPG",
@@ -280,6 +283,7 @@
     "slug": "school-62",
     "description": "Комплексна реконструкція бомбосховища школи №62 з метою створення сучасного освітнього середовища. Проект включав створення учнівських кабінетів, із метою забезпечення навчання у безпечному місці.",
     "mainImage": "assets/constructions/school-62/photo-1.jpg",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/school-62/photo-1.jpg",
@@ -317,6 +321,7 @@
     "slug": "bolnitsa-5",
     "description": "Комплексна реконструкція бомбосховища лікарні №5 з метою покращення якості медичних послуг та підвищення безпеки пацієнтів. Проект включав ремонт палат, створення нових діагностичних кабінетів та реконструкцію інженерних систем.",
     "mainImage": "assets/constructions/bolnitsa-5/photo-1.jpg",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/bolnitsa-5/photo-1.jpg",
@@ -470,6 +475,7 @@
     "slug": "school-76",
     "description": "Реконструкція бомбосховища школи №76 з метою створення безпечного освітнього середовища. Проект включав ремонт класів, створення нових місць для безпечного навчання.",
     "mainImage": "assets/constructions/school-76/photo-1.JPG",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/school-76/photo-1.JPG",
@@ -531,6 +537,7 @@
     "slug": "dbc",
     "description": "Проєкт передбачає проведення реконструкції хлораторної ДВС-2 з метою модернізації технологічного обладнання, підвищення рівня безпеки бомбосховища, енергоефективності та забезпечення відповідності сучасним нормативам з водопідготовки та використання хлору.",
     "mainImage": "assets/constructions/DBC/photo-1.jpg",
+    "status": "completed",
     "photos": [
       {
         "url": "assets/constructions/DBC/photo-1.jpg",
@@ -636,6 +643,7 @@
     "slug": "school-25",
     "description": "Ремонт бомбосховища та дворику школи №25 з метою створення сучасного, безпечного, якісного освітнього середовища.",
     "mainImage": "assets/constructions/school-25/photo-1.JPG",
+    "status": "",
     "photos": [
       {
         "url": "assets/constructions/school-25/photo-1.JPG",

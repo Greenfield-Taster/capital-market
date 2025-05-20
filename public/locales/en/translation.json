@@ -371,5 +371,9 @@
     "subtitle": "Explore our most recent construction and reconstruction work",
     "viewDetails": "View Details",
     "viewAll": "View All Projects"
+  },
+  "construction": {
+    "statusCompleted": "Construction is completed",
+    "statusInProgress": "Construction is ongoing"
   }
 }
