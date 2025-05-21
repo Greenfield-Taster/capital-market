@@ -374,5 +374,10 @@
   "construction": {
     "statusCompleted": "Будівництво завершено",
     "statusInProgress": "Будівництво триває"
+  },
+  "design": {
+    "implementation": "Реалізовується",
+    "realized": "Реалізовано",
+    "notImplemented": "Не реалізовано"
   }
 }
