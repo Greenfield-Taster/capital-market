@@ -375,5 +375,10 @@
   "construction": {
     "statusCompleted": "Construction is completed",
     "statusInProgress": "Construction is ongoing"
+  },
+  "design": {
+    "implementation": "Implementation",
+    "realized": "Realized",
+    "notImplemented": "Not implemented"
   }
 }

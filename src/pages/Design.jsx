@@ -8,6 +8,20 @@ import "../styles/pages/_design.scss";
 const DesignCard = ({ project, index }) => {
   const { t } = useTranslation();
 
+  const statusText =
+    project.status === "implementation"
+      ? t("design.implementation")
+      : project.status === "realized"
+      ? t("design.realized")
+      : t("design.notImplemented");
+
+  const statusClass =
+    project.status === "implementation"
+      ? "design-card__status-badge--implementation"
+      : project.status === "realized"
+      ? "design-card__status-badge--realized"
+      : "design-card__status-badge--not-implemented";
+
   return (
     <Link to={`/design/${project.slug}`}>
       <div className={`design-card design-appear`}>
@@ -26,16 +40,20 @@ const DesignCard = ({ project, index }) => {
               ? project.description.substring(0, 100) + "..."
               : project.description}
           </p>
-          <button className="design-card__button">
-            {t("latestProjects.viewDetails", "Детальніше")}
-          </button>
+          <div className="design-card__content__actions">
+            <button className="design-card__button">
+              {t("latestProjects.viewDetails", "Детальніше")}
+            </button>
+            <span className={`design-card__status-badge ${statusClass}`}>
+              {statusText}
+            </span>
+          </div>
         </div>
       </div>
     </Link>
   );
 };
 
-// В компоненте Design
 const Design = () => {
   const { t } = useTranslation();
 
