@@ -161,7 +161,11 @@ const ProjectDetail = () => {
       </div>
 
       <div className="container">
-        <div className="project-detail__description">
+        <div
+          className={`project-detail__description ${
+            visible.description ? "visible" : ""
+          }`}
+        >
           <svg
             className="quote-icon"
             viewBox="0 0 24 24"

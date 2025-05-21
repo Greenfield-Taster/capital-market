@@ -187,6 +187,7 @@
   &__description {
     margin: 0 auto 70px;
     color: v.$graphite-medium;
+    opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
     background: linear-gradient(135deg, v.$dark-blue-10, v.$terracotta-10);
@@ -195,6 +196,11 @@
     box-shadow: v.$shadow-md;
     position: relative;
     overflow: hidden;
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     &::before {
       content: "";
