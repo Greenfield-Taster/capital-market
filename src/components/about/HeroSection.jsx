@@ -1,6 +1,6 @@
 import React from "react";
 import { Eye, Sparkles } from "lucide-react";
-import aboutPhoto from "../../assets/about-us/ChatGPT Image May 22, 2025, 03_10_55 PM.png";
+import aboutPhoto from "../../assets/about-us/about-1 - Copy.jpg";
 import "../../styles/components/about/HeroSection.scss";
 import { Link } from "react-router-dom";
 
