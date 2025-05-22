@@ -1,0 +1,103 @@
+@use "../../variables" as v;
+
+.cta-section {
+  padding: 120px 0;
+  position: relative;
+  background: linear-gradient(135deg, v.$milk 0%, v.$almost-white 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, v.$dark-blue-20, v.$terracotta-20);
+  }
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: v.$font-primary;
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: v.$graphite-medium;
+  font-family: v.$font-primary;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.cta-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.cta-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(v.$almost-white, 0.8);
+  border-radius: 15px;
+  border: 1px solid v.$light-gray;
+  transition: all v.$transition-medium;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px v.$terracotta-20;
+    border-color: v.$terracotta;
+  }
+}
+
+.cta-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: v.$dark-blue;
+  margin-bottom: 0.5rem;
+  font-family: v.$font-primary;
+}
+
+.cta-stat-label {
+  font-size: 1rem;
+  color: v.$graphite-medium;
+  font-weight: 500;
+  font-family: v.$font-primary;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

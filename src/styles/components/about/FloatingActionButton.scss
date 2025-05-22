@@ -1,0 +1,39 @@
+// FloatingActionButton.scss
+
+// Основная палитра
+$dark-blue: #1a3c5a;
+$terracotta: #c96e4f;
+
+// Прозрачные версии
+$terracotta-30: rgba($terracotta, 0.3);
+$terracotta-40: rgba($terracotta, 0.4);
+
+// Переходы
+$transition-medium: 0.3s ease;
+
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.fab-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, $dark-blue, $terracotta);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px $terracotta-30;
+  transition: all $transition-medium;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 35px $terracotta-40;
+  }
+}

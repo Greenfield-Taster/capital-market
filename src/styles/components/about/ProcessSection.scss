@@ -1,0 +1,214 @@
+@use "../../variables" as v;
+
+.process-section {
+  padding: 120px 0;
+  position: relative;
+  background: linear-gradient(135deg, v.$milk 0%, v.$almost-white 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, v.$dark-blue-10, v.$terracotta-20);
+  }
+}
+
+.process-diamond-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diamond-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+
+  &.top-row,
+  &.bottom-row {
+    .process-card {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &.middle-row {
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+}
+
+.process-card {
+  position: relative;
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(135deg, v.$almost-white, v.$milk);
+  border-radius: 20px;
+  border: 1px solid v.$light-gray;
+  backdrop-filter: blur(10px);
+  transition: all v.$transition-medium;
+  box-shadow: 0 4px 20px v.$dark-blue-10;
+  width: 450px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px v.$terracotta-20;
+    border-color: v.$terracotta;
+  }
+}
+
+.process-number {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  border: 4px solid v.$almost-white;
+  box-shadow: 0 4px 15px v.$terracotta-20;
+  font-family: v.$font-primary;
+}
+
+.process-icon {
+  width: 50px;
+  height: 40px;
+  color: v.$dark-blue;
+  margin: 1rem 0 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: v.$graphite-dark;
+  font-family: v.$font-primary;
+  line-height: 1.3;
+}
+
+.process-description {
+  color: v.$graphite-medium;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin: 0;
+  font-family: v.$font-primary;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+// Анимация появления
+.process-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: var(--animation-delay, 0ms);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Адаптивный дизайн
+@media (max-width: 1200px) {
+  .diamond-row.middle-row {
+    max-width: 700px;
+    gap: 2rem;
+  }
+
+  .process-card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-section {
+    padding: 80px 0;
+  }
+
+  .process-diamond-layout {
+    gap: 2rem;
+  }
+
+  .diamond-row {
+    &.middle-row {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .process-card {
+    width: 280px;
+    min-height: 320px;
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .process-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .process-icon {
+    width: 40px;
+    height: 40px;
+    margin: 1.5rem 0 1rem;
+  }
+
+  .process-title {
+    font-size: 1.4rem;
+  }
+
+  .process-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-card {
+    width: 260px;
+    min-height: 300px;
+    padding: 2rem 1rem 1rem;
+  }
+
+  .process-number {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+
+  .process-title {
+    font-size: 1.3rem;
+  }
+
+  .process-description {
+    font-size: 0.95rem;
+  }
+}
