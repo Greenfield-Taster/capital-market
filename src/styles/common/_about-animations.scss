@@ -1,0 +1,349 @@
+@use "../variables" as v;
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: var(--animation-delay, 0ms);
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  transform: translateY(60px);
+  filter: blur(3px);
+
+  &.visible {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.fade-in-left {
+  transform: translateX(-60px);
+  filter: blur(3px);
+
+  &.visible {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.fade-in-right {
+  transform: translateX(60px);
+  filter: blur(3px);
+
+  &.visible {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.fade-in-scale {
+  transform: scale(0.8);
+  filter: blur(3px);
+
+  &.visible {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+.hero-title.animate-on-scroll {
+  transform: translateY(80px) scale(0.95);
+  filter: blur(5px);
+
+  &.visible {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.hero-image.animate-on-scroll {
+  transform: translateX(100px) scale(0.9);
+  filter: blur(5px);
+
+  &.visible {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.process-card.animate-on-scroll {
+  transform: translateY(80px) rotateX(10deg);
+  filter: blur(3px);
+
+  &.visible {
+    transform: translateY(0) rotateX(0deg);
+    filter: blur(0);
+  }
+}
+
+.value-card.animate-on-scroll {
+  transform: translateY(60px) scale(0.8);
+  filter: blur(3px);
+
+  &.visible {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.text-block.animate-on-scroll {
+  transform: translateX(-40px);
+  filter: blur(2px);
+
+  &.visible {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.feature.animate-on-scroll {
+  transform: translateX(-30px);
+  filter: blur(2px);
+
+  &.visible {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.cta-stat.animate-on-scroll {
+  transform: translateY(40px) scale(0.9);
+  filter: blur(2px);
+
+  &.visible {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.image-placeholder-hero.animate-on-scroll,
+.image-placeholder.animate-on-scroll {
+  transform: scale(0.85);
+  filter: blur(8px);
+
+  &.visible {
+    transform: scale(1);
+    filter: blur(0);
+  }
+
+  img {
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: calc(var(--animation-delay, 0ms) + 200ms);
+  }
+}
+
+.btn.animate-on-scroll {
+  transform: translateY(30px) scale(0.9);
+  filter: blur(2px);
+
+  &.visible {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.features .feature.animate-on-scroll {
+  &:nth-child(1) {
+    --animation-delay: 100ms;
+  }
+  &:nth-child(2) {
+    --animation-delay: 200ms;
+  }
+  &:nth-child(3) {
+    --animation-delay: 300ms;
+  }
+  &:nth-child(4) {
+    --animation-delay: 400ms;
+  }
+  &:nth-child(5) {
+    --animation-delay: 500ms;
+  }
+}
+
+.project-features .feature.animate-on-scroll {
+  &:nth-child(1) {
+    --animation-delay: 200ms;
+  }
+  &:nth-child(2) {
+    --animation-delay: 350ms;
+  }
+  &:nth-child(3) {
+    --animation-delay: 500ms;
+  }
+}
+
+.cta-stats .cta-stat.animate-on-scroll {
+  &:nth-child(1) {
+    --animation-delay: 100ms;
+  }
+  &:nth-child(2) {
+    --animation-delay: 250ms;
+  }
+  &:nth-child(3) {
+    --animation-delay: 400ms;
+  }
+  &:nth-child(4) {
+    --animation-delay: 550ms;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+
+  &:nth-child(2n) {
+    animation-delay: 2s;
+  }
+
+  &:nth-child(3n) {
+    animation-delay: 4s;
+  }
+}
+
+.gradient-text.animate-on-scroll {
+  background-size: 200% 200%;
+  background-position: 200% center;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: var(--animation-delay, 0ms);
+
+  &.visible {
+    background-position: 0% center;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(v.$dark-blue, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(v.$dark-blue, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(v.$dark-blue, 0);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    v.$light-gray 25%,
+    #ffffff 50%,
+    v.$light-gray 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-on-scroll {
+    transition-duration: 0.6s;
+  }
+
+  .fade-in-up {
+    transform: translateY(40px);
+  }
+
+  .fade-in-left,
+  .fade-in-right {
+    transform: translateX(0) translateY(40px);
+
+    &.visible {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  .hero-title.animate-on-scroll {
+    transform: translateY(50px) scale(0.95);
+  }
+
+  .hero-image.animate-on-scroll {
+    transform: translateY(40px) scale(0.9);
+
+    &.visible {
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .floating-element {
+    animation: none !important;
+  }
+
+  .pulse-animation {
+    animation: none !important;
+  }
+
+  .shimmer {
+    animation: none !important;
+  }
+}
+
+.interactive-hover {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(v.$dark-blue, 0.15);
+  }
+}
+
+.glow-effect {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+      45deg,
+      v.$dark-blue,
+      v.$terracotta,
+      v.$dark-blue
+    );
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: blur(8px);
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+}

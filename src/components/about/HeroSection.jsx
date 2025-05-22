@@ -14,19 +14,23 @@ const HeroSection = ({ data }) => {
               <span className="gradient-text">{data.title}</span>
               <div className="title-decoration"></div>
             </h1>
+
             <p className="hero-subtitle">{data.mainQuote}</p>
+
             <div className="hero-description">
               <p>{data.paragraph1}</p>
             </div>
+
             <div className="hero-cta">
-              <Link to="/construction" className="btn btn-primary">
+              <Link to="/construction" className="btn btn-primary glow-effect">
                 <Eye size={20} />
                 Дивитися проекти
               </Link>
             </div>
           </div>
+
           <div className="hero-image">
-            <div className="image-placeholder-hero">
+            <div className="image-placeholder-hero ">
               <img src={aboutPhoto} alt="aboutPhoto" />
               <div className="image-glow"></div>
             </div>

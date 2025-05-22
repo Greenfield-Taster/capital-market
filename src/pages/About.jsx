@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "../components/about/HeroSection";
 import ProcessSection from "../components/about/ProcessSection";
 import MainContentSection from "../components/about/MainContentSection";
@@ -7,10 +7,32 @@ import ValuesSection from "../components/about/ValuesSection";
 import CTASection from "../components/about/CTASection";
 import FooterSection from "../components/about/FooterSection";
 import ParallaxBackground from "../components/about/ParallaxBackground";
-import FloatingActionButton from "../components/about/FloatingActionButton";
+import useAboutScrollAnimation from "../utils/useAboutScrollAnimation";
 import "../styles/components/about/_about.scss";
+import "../styles/common/_about-animations.scss";
 
 const About = () => {
+  // Используем кастомный хук для анимаций
+  useAboutScrollAnimation();
+
+  // Эффект для обработки движения мыши (параллакс)
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { clientX, clientY } = e;
+      const x = (clientX / window.innerWidth) * 100;
+      const y = (clientY / window.innerHeight) * 100;
+
+      document.documentElement.style.setProperty("--mouse-x", `${x}%`);
+      document.documentElement.style.setProperty("--mouse-y", `${y}%`);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   const data = {
     title: "ТД Столиця Маркет",
     mainQuote: "Ми будуємо не просто споруди — ми створюємо надійне майбутнє",

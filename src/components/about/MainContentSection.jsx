@@ -30,7 +30,7 @@ const MainContentSection = ({ data }) => {
             </div>
           </div>
           <div className="content-image">
-            <div className="image-placeholder large">
+            <div className="image-placeholder large interactive-hover">
               <img src={photo} alt="photo" />
               <div className="shimmer-overlay"></div>
             </div>

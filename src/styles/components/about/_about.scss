@@ -1,37 +1,12 @@
 @use "sass:color";
-
-// Основная палитра
-$graphite-dark: #2a2a2a;
-$graphite-medium: #4a4a4a;
-$graphite-light: #757575;
-$dark-blue: #1a3c5a;
-$terracotta: #c96e4f;
-$milk: #f5f5f0;
-$light-gray: #e0e0e0;
-$almost-white: #fafafa;
-
-// Прозрачные версии
-$graphite-dark-10: rgba($graphite-dark, 0.1);
-$graphite-dark-20: rgba($graphite-dark, 0.2);
-$dark-blue-10: rgba($dark-blue, 0.1);
-$dark-blue-20: rgba($dark-blue, 0.2);
-$terracotta-20: rgba($terracotta, 0.2);
-$terracotta-30: rgba($terracotta, 0.3);
-
-// Шрифты
-$font-primary: "Manrope", sans-serif;
-
-// Переходы
-$transition-medium: 0.3s ease;
-$transition-slow: 0.5s ease;
+@use "../../variables" as v;
 
 .about-page {
-  background: linear-gradient(135deg, $almost-white 0%, $milk 100%);
-  color: $graphite-dark;
-  overflow-x: hidden;
+  background: linear-gradient(135deg, v.$almost-white 0%, v.$milk 100%);
+  color: v.$graphite-dark;
   position: relative;
   min-height: 100vh;
-  font-family: $font-primary;
+  font-family: v.$font-primary;
 }
 
 .container {
@@ -57,7 +32,7 @@ $transition-slow: 0.5s ease;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, $dark-blue, $terracotta);
+  background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -75,8 +50,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: $graphite-dark;
-  font-family: $font-primary;
+  color: v.$graphite-dark;
+  font-family: v.$font-primary;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 1rem 0;
@@ -114,7 +89,7 @@ h6 {
 
 // Стили для текста
 p {
-  color: $graphite-medium;
+  color: v.$graphite-medium;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0 0 1rem 0;
@@ -132,11 +107,11 @@ p {
 //   font-weight: 600;
 //   text-decoration: none;
 //   cursor: pointer;
-//   transition: all $transition-medium;
+//   transition: all v.$transition-medium;
 //   position: relative;
 //   overflow: hidden;
 //   font-size: 1rem;
-//   font-family: $font-primary;
+//   font-family: v.$font-primary;
 
 //   &::before {
 //     content: "";
@@ -151,7 +126,7 @@ p {
 //       rgba(255, 255, 255, 0.3),
 //       transparent
 //     );
-//     transition: left $transition-slow;
+//     transition: left v.$transition-slow;
 //   }
 
 //   &:hover::before {
@@ -159,25 +134,25 @@ p {
 //   }
 
 //   &-primary {
-//     background: linear-gradient(135deg, $dark-blue, $terracotta);
+//     background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
 //     color: #ffffff;
-//     box-shadow: 0 4px 15px $terracotta-20;
+//     box-shadow: 0 4px 15px v.$terracotta-20;
 
 //     &:hover {
 //       transform: translateY(-2px);
-//       box-shadow: 0 8px 25px $terracotta-30;
+//       box-shadow: 0 8px 25px v.$terracotta-30;
 //     }
 //   }
 
 //   &-outline {
 //     background: transparent;
-//     border: 2px solid $dark-blue;
-//     color: $dark-blue;
+//     border: 2px solid v.$dark-blue;
+//     color: v.$dark-blue;
 
 //     &:hover {
-//       background: $dark-blue;
+//       background: v.$dark-blue;
 //       color: #ffffff;
-//       box-shadow: 0 4px 15px $dark-blue-20;
+//       box-shadow: 0 4px 15px v.$dark-blue-20;
 //     }
 //   }
 
@@ -192,16 +167,16 @@ p {
 //   width: 100%;
 //   max-width: 400px;
 //   height: 500px;
-//   background: linear-gradient(135deg, $light-gray, $milk);
+//   background: linear-gradient(135deg, v.$light-gray, v.$milk);
 //   border-radius: 20px;
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
 //   font-size: 1.2rem;
-//   color: $graphite-light;
+//   color: v.$graphite-light;
 //   position: relative;
 //   overflow: hidden;
-//   border: 2px solid $light-gray;
+//   border: 2px solid v.$light-gray;
 //   backdrop-filter: blur(10px);
 
 //   &.large {
@@ -215,13 +190,13 @@ p {
 //   right: 20px;
 //   width: 50px;
 //   height: 50px;
-//   background: $dark-blue-20;
+//   background: v.$dark-blue-20;
 //   border-radius: 50%;
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
 //   backdrop-filter: blur(10px);
-//   color: $dark-blue;
+//   color: v.$dark-blue;
 // }
 
 // .image-glow {
@@ -230,12 +205,12 @@ p {
 //   left: -4px;
 //   right: -4px;
 //   bottom: -4px;
-//   background: linear-gradient(135deg, $dark-blue, $terracotta);
+//   background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
 //   border-radius: calc(20px + 4px);
 //   z-index: -1;
 //   opacity: 0;
 //   filter: blur(15px);
-//   transition: opacity $transition-medium;
+//   transition: opacity v.$transition-medium;
 // }
 
 // .image-placeholder:hover .image-glow {
@@ -247,11 +222,11 @@ p {
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: $graphite-medium;
+  color: v.$graphite-medium;
   font-size: 1.1rem;
 
   svg {
-    color: $dark-blue;
+    color: v.$dark-blue;
     flex-shrink: 0;
   }
 }
@@ -263,7 +238,7 @@ p {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, $dark-blue-20, transparent);
+  background: linear-gradient(90deg, transparent, v.$dark-blue-20, transparent);
   transition: left 0.8s ease;
 }
 
@@ -276,13 +251,13 @@ p {
   position: fixed;
   width: 20px;
   height: 20px;
-  background: linear-gradient(135deg, $dark-blue, $terracotta);
+  background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
   border-radius: 50%;
   pointer-events: none;
   z-index: 1000;
   opacity: 0.6;
   filter: blur(2px);
-  transition: opacity $transition-medium;
+  transition: opacity v.$transition-medium;
 }
 
 // Responsive Design

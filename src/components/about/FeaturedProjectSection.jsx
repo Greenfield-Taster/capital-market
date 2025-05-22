@@ -29,7 +29,10 @@ const FeaturedProjectSection = ({ data }) => {
               </div>
             </div>
             <div className="project-cta">
-              <Link to="/construction/soborny-151" className="btn btn-outline">
+              <Link
+                to="/construction/soborny-151"
+                className="btn btn-outline glow-effect"
+              >
                 <Eye size={20} />
                 Переглянути проект
               </Link>
