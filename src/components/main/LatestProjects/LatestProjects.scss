@@ -93,7 +93,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: v.$spacing-2xl;
-    margin-bottom: v.$spacing-3xl;
+    margin-bottom: v.$spacing-2xl;
 
     @media (max-width: v.$breakpoint-md) {
       display: flex;
@@ -109,18 +109,19 @@
     background-color: v.$milk;
     transition: all v.$transition-medium;
     grid-column: span 4;
+    height: 400px;
 
     &--featured {
       grid-column: span 4;
-      margin-top: -30px;
-      margin-bottom: 55px;
+      margin-top: -5px;
+      margin-bottom: 45px;
 
       @media (max-width: v.$breakpoint-md) {
         margin-top: 0;
       }
 
       .project-card__image {
-        height: 280px;
+        height: 250px;
       }
     }
 
@@ -155,7 +156,7 @@
 
     &__image {
       position: relative;
-      height: 280px;
+      height: 250px;
       overflow: hidden;
 
       img {
@@ -188,7 +189,7 @@
       transition: opacity v.$transition-medium;
     }
 
-    &__btn {
+    &__button {
       display: inline-block;
       padding: v.$spacing-sm v.$spacing-lg;
       background-color: v.$dark-blue;
@@ -234,5 +235,23 @@
   &__action {
     text-align: center;
     margin-top: v.$spacing-xl;
+  }
+}
+
+.buttonViewAll {
+  display: inline-block;
+  padding: v.$spacing-lg v.$spacing-xl;
+  background-color: v.$dark-blue;
+  color: v.$milk;
+  font-size: v.$font-size-sm;
+  font-weight: v.$font-weight-semibold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: v.$border-radius-lg;
+  transition: all v.$transition-fast;
+
+  &:hover {
+    background-color: v.$terracotta;
+    color: v.$milk;
   }
 }

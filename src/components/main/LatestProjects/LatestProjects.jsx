@@ -40,7 +40,7 @@ const LatestProjects = () => {
                 <div className="project-card__overlay">
                   <Link
                     to={`/construction/${project.slug}`}
-                    className="project-card__btn"
+                    className="project-card__button"
                   >
                     {t("latestProjects.viewDetails", "Детальніше")}
                   </Link>
@@ -59,7 +59,7 @@ const LatestProjects = () => {
         </div>
 
         <div className="latest-projects__action">
-          <Link to="/construction" className="btn btn--secondary">
+          <Link to="/construction" className="buttonViewAll">
             {t("latestProjects.viewAll", "Переглянути всі проекти")}
           </Link>
         </div>
