@@ -76,7 +76,13 @@ const PhotoGallery = ({ photos }) => {
           onTouchEnd={onTouchEnd}
         >
           {photos.map((photo, index) => (
-            <div className="photo-gallery__main-slide" key={index}>
+            <div
+              className="photo-gallery__main-slide"
+              key={index}
+              style={{
+                "--bg-image": `url(${photo.url})`,
+              }}
+            >
               <LazyImage
                 src={photo.url}
                 alt={photo.alt || t("gallery.photoAlt", "Фото проекту")}
