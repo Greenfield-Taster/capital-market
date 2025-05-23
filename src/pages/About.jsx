@@ -6,16 +6,13 @@ import FeaturedProjectSection from "../components/about/FeaturedProjectSection";
 import ValuesSection from "../components/about/ValuesSection";
 import CTASection from "../components/about/CTASection";
 import FooterSection from "../components/about/FooterSection";
-import ParallaxBackground from "../components/about/ParallaxBackground";
 import useAboutScrollAnimation from "../utils/useAboutScrollAnimation";
 import "../styles/components/about/_about.scss";
 import "../styles/common/_about-animations.scss";
 
 const About = () => {
-  // Используем кастомный хук для анимаций
   useAboutScrollAnimation();
 
-  // Эффект для обработки движения мыши (параллакс)
   useEffect(() => {
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
@@ -54,8 +51,6 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <ParallaxBackground />
-
       <HeroSection data={data} />
       <ProcessSection />
       <MainContentSection data={data} />

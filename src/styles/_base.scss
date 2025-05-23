@@ -69,47 +69,6 @@ a {
   }
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: v.$spacing-sm v.$spacing-xl;
-  font-weight: v.$font-weight-medium;
-  font-size: v.$font-size-sm;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: v.$border-radius-sm;
-  transition: all v.$transition-medium;
-
-  &--primary {
-    background-color: v.$dark-blue;
-    color: v.$milk;
-
-    &:hover {
-      background-color: rgba(v.$dark-blue, 10%);
-      transform: translateY(-2px);
-    }
-  }
-
-  &--secondary {
-    background-color: transparent;
-    color: v.$graphite-dark;
-    border: 2px solid v.$graphite-medium;
-
-    &:hover {
-      background-color: v.$graphite-dark;
-      color: v.$milk;
-      border-color: v.$graphite-dark;
-    }
-  }
-
-  &--lg {
-    padding: v.$spacing-md v.$spacing-2xl;
-    font-size: v.$font-size-base;
-  }
-}
 .fade-in {
   opacity: 0;
   transition: opacity v.$transition-medium;
