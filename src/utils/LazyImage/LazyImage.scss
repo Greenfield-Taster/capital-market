@@ -2,10 +2,10 @@
 
 .lazy-image-container {
   position: relative;
-  overflow: hidden;
-  background-color: rgba(v.$light-gray, 0.2);
-  border-radius: 8px;
   width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: v.$light-gray;
 }
 
 .lazy-image {
@@ -15,71 +15,53 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease, transform 0.7s ease;
   opacity: 0;
-  transform: scale(1.05);
+  transition: opacity 0.3s ease;
 
   &--loaded {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
 .lazy-image-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f0f0f0;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$light-gray;
+}
+
+.lazy-image-loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid v.$light-gray;
+  border-top-color: v.$dark-blue;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 .lazy-image-error {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f8f8f8;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$light-gray;
+  color: v.$graphite-medium;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
 }
 
-.lazy-image-svg {
-  width: 50px;
-  height: 50px;
-  animation: rotate 1.5s linear infinite;
-  opacity: 0.3;
-}
-
-.lazy-image-circle {
-  stroke: v.$dark-blue;
-  stroke-dasharray: 80;
-  stroke-dashoffset: 0;
-  transform-origin: center;
-  animation: dash 1.5s ease-in-out infinite;
-}
-
-@keyframes rotate {
-  100% {
+@keyframes spin {
+  to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 80;
-  }
-  50% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: -80;
   }
 }

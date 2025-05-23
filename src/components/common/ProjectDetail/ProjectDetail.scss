@@ -53,8 +53,7 @@
     }
   }
 
-  .container {
-    max-width: v.$container-width;
+  .containerProj {
     margin: 0 auto;
     padding: 0 v.$gutter;
     position: relative;
@@ -196,6 +195,7 @@
     box-shadow: v.$shadow-md;
     position: relative;
     overflow: hidden;
+    max-width: 1200px;
 
     &.visible {
       opacity: 1;
@@ -310,6 +310,8 @@
   }
 
   .other-projects {
+    max-width: v.$container-width;
+    margin: 0 auto;
     padding-top: 40px;
     margin-bottom: 80px;
 

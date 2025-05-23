@@ -1,108 +1,92 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { getImagePath } from "../imageUtils";
 import "./LazyImage.scss";
 
-const LazyImage = ({
-  src,
-  alt,
-  aspectRatio = "16/9",
-  className = "",
-  priority = true,
-}) => {
+const LazyImage = ({ src, alt, className, aspectRatio, priority = false }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const [hasError, setHasError] = useState(false);
+  const imgRef = useRef(null);
+  const containerRef = useRef(null);
 
-  let fixedSrc = src;
+  useEffect(() => {
+    if (priority) {
+      setIsInView(true);
+      return;
+    }
 
-  if (!src.startsWith("http") && !src.startsWith("data:")) {
-    const cleanPath = src.startsWith("/") ? src.substring(1) : src;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsInView(true);
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "50px",
+      }
+    );
 
-    fixedSrc = `/capital-market/${cleanPath}`;
-  }
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
 
-  const handleImageLoaded = () => {
+    return () => {
+      observer.disconnect();
+    };
+  }, [priority]);
+
+  const handleLoad = () => {
+    setIsLoaded(true);
+    setHasError(false);
+  };
+
+  const handleError = () => {
+    console.error("Failed to load image:", src);
+    setHasError(true);
     setIsLoaded(true);
   };
 
-  const handleImageError = () => {
-    setIsError(true);
+  // Получаем правильный путь
+  const imageSrc = getImagePath(src);
 
-    const possibleCorrections = [
-      fixedSrc,
-      fixedSrc.replace("/capital-market/", "/"),
-      fixedSrc.replace("/capital-market/", "/public/"),
-      fixedSrc.replace(".jpg", ".JPG"),
-      fixedSrc.replace(".JPG", ".jpg"),
-      fixedSrc.replace(".png", ".PNG"),
-      fixedSrc.replace(".PNG", ".png"),
-    ];
-
-    console.log("Возможные варианты путей:", possibleCorrections);
-  };
-
-  const containerStyle = {
-    position: "relative",
-    paddingBottom:
-      aspectRatio === "16/9"
-        ? "56.25%"
-        : aspectRatio === "4/3"
-        ? "75%"
-        : aspectRatio === "1/1"
-        ? "100%"
-        : aspectRatio,
-  };
+  const paddingBottom = aspectRatio
+    ? `${
+        (parseInt(aspectRatio.split("/")[1]) /
+          parseInt(aspectRatio.split("/")[0])) *
+        100
+      }%`
+    : "56.25%"; // 16:9 по умолчанию
 
   return (
-    <div className={`lazy-image-container ${className}`} style={containerStyle}>
-      {!isLoaded && !isError && (
+    <div
+      ref={containerRef}
+      className={`lazy-image-container ${className || ""}`}
+      style={{ paddingBottom }}
+    >
+      {!isLoaded && !hasError && (
         <div className="lazy-image-placeholder">
-          <svg
-            className="lazy-image-svg"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              className="lazy-image-circle"
-              cx="12"
-              cy="12"
-              r="10"
-              fill="none"
-              strokeWidth="2"
-            />
-          </svg>
+          <div className="lazy-image-loader"></div>
         </div>
       )}
 
-      {isError && (
+      {hasError && (
         <div className="lazy-image-error">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="48"
-            height="48"
-            fill="#e74c3c"
-          >
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
-          </svg>
-          <div
-            style={{
-              fontSize: "10px",
-              color: "#666",
-              marginTop: "5px",
-              textAlign: "center",
-            }}
-          >
-            {src.split("/").pop()}
-          </div>
+          <span>Не вдалося завантажити зображення</span>
         </div>
       )}
 
-      {!isError && (
+      {isInView && !hasError && (
         <img
-          src={fixedSrc}
+          ref={imgRef}
+          src={imageSrc}
           alt={alt}
           className={`lazy-image ${isLoaded ? "lazy-image--loaded" : ""}`}
-          onLoad={handleImageLoaded}
-          onError={handleImageError}
+          onLoad={handleLoad}
+          onError={handleError}
         />
       )}
     </div>

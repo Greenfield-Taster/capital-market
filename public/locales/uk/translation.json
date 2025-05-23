@@ -379,5 +379,15 @@
     "implementation": "Реалізовується",
     "realized": "Реалізовано",
     "notImplemented": "Не реалізовано"
+  },
+  "gallery": {
+    "openPhoto": "Відкрити",
+    "close": "Закрити",
+    "zoomIn": "Збільшити",
+    "zoomOut": "Зменшити",
+    "photoAlt": "Фото проекту",
+    "prevPhoto": "Попереднє фото",
+    "nextPhoto": "Наступне фото",
+    "goToPhoto": "Перейти до фото"
   }
 }

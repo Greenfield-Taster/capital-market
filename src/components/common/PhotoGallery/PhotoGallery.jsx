@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { createPortal } from "react-dom";
 import LazyImage from "../../../utils/LazyImage/LazyImage";
+import { getImagePath } from "../../../utils/imageUtils";
 import "./PhotoGallery.scss";
 
 const PhotoGallery = ({ photos }) => {
@@ -9,8 +11,17 @@ const PhotoGallery = ({ photos }) => {
   const [visible, setVisible] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [zoom, setZoom] = useState(1);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+
   const sliderRef = useRef(null);
   const thumbnailsRef = useRef(null);
+  const lightboxImageRef = useRef(null);
+  const lightboxContainerRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 300);
@@ -20,6 +31,18 @@ const PhotoGallery = ({ photos }) => {
   useEffect(() => {
     setSelectedIndex(0);
   }, [photos]);
+
+  // Блокировка прокрутки страницы при открытом лайтбоксе
+  useEffect(() => {
+    if (lightboxOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [lightboxOpen]);
 
   const nextPhoto = () => {
     setSelectedIndex((prevIndex) =>
@@ -32,6 +55,98 @@ const PhotoGallery = ({ photos }) => {
       prevIndex === 0 ? photos.length - 1 : prevIndex - 1
     );
   };
+
+  const nextLightboxPhoto = () => {
+    setLightboxIndex((prevIndex) =>
+      prevIndex === photos.length - 1 ? 0 : prevIndex + 1
+    );
+    resetZoom();
+  };
+
+  const prevLightboxPhoto = () => {
+    setLightboxIndex((prevIndex) =>
+      prevIndex === 0 ? photos.length - 1 : prevIndex - 1
+    );
+    resetZoom();
+  };
+
+  const openLightbox = (index) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+    resetZoom();
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    resetZoom();
+  };
+
+  const resetZoom = () => {
+    setZoom(1);
+    setPosition({ x: 0, y: 0 });
+  };
+
+  const handleZoomIn = () => {
+    setZoom((prev) => Math.min(prev + 0.5, 3));
+  };
+
+  const handleZoomOut = () => {
+    setZoom((prev) => {
+      const newZoom = Math.max(prev - 0.5, 1);
+      if (newZoom === 1) {
+        setPosition({ x: 0, y: 0 });
+      }
+      return newZoom;
+    });
+  };
+
+  const handleMouseDown = (e) => {
+    if (zoom > 1) {
+      setIsDragging(true);
+      setDragStart({
+        x: e.clientX - position.x,
+        y: e.clientY - position.y,
+      });
+    }
+  };
+
+  const handleMouseMove = (e) => {
+    if (isDragging && zoom > 1) {
+      setPosition({
+        x: e.clientX - dragStart.x,
+        y: e.clientY - dragStart.y,
+      });
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleWheel = (e) => {
+    if (e.deltaY < 0) {
+      handleZoomIn();
+    } else {
+      handleZoomOut();
+    }
+  };
+
+  // Добавляем обработчик wheel события с { passive: false }
+  useEffect(() => {
+    const container = lightboxContainerRef.current;
+    if (!container || !lightboxOpen) return;
+
+    const wheelHandler = (e) => {
+      e.preventDefault();
+      handleWheel(e);
+    };
+
+    container.addEventListener("wheel", wheelHandler, { passive: false });
+
+    return () => {
+      container.removeEventListener("wheel", wheelHandler);
+    };
+  }, [lightboxOpen, zoom]);
 
   const minSwipeDistance = 50;
 
@@ -52,9 +167,17 @@ const PhotoGallery = ({ photos }) => {
     const isRightSwipe = distance < -minSwipeDistance;
 
     if (isLeftSwipe) {
-      nextPhoto();
+      if (lightboxOpen) {
+        nextLightboxPhoto();
+      } else {
+        nextPhoto();
+      }
     } else if (isRightSwipe) {
-      prevPhoto();
+      if (lightboxOpen) {
+        prevLightboxPhoto();
+      } else {
+        prevPhoto();
+      }
     }
   };
 
@@ -64,6 +187,149 @@ const PhotoGallery = ({ photos }) => {
       sliderRef.current.style.transform = `translateX(${translateValue}%)`;
     }
   }, [selectedIndex]);
+
+  // Обработка клавиатуры для лайтбокса
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!lightboxOpen) return;
+
+      switch (e.key) {
+        case "Escape":
+          closeLightbox();
+          break;
+        case "ArrowLeft":
+          prevLightboxPhoto();
+          break;
+        case "ArrowRight":
+          nextLightboxPhoto();
+          break;
+        case "+":
+        case "=":
+          handleZoomIn();
+          break;
+        case "-":
+          handleZoomOut();
+          break;
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxOpen]);
+
+  const LightboxContent = () => (
+    <div className="photo-gallery__lightbox" onClick={closeLightbox}>
+      <div
+        className="photo-gallery__lightbox-content"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          className="photo-gallery__lightbox-close"
+          onClick={closeLightbox}
+          aria-label={t("gallery.close", "Закрити")}
+        >
+          ×
+        </button>
+
+        <div
+          ref={lightboxContainerRef}
+          className="photo-gallery__lightbox-image-container"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+          style={{
+            cursor: zoom > 1 ? (isDragging ? "grabbing" : "grab") : "pointer",
+          }}
+        >
+          <img
+            ref={lightboxImageRef}
+            src={getImagePath(photos[lightboxIndex].url)}
+            alt={
+              photos[lightboxIndex].alt || t("gallery.photoAlt", "Фото проекту")
+            }
+            className="photo-gallery__lightbox-image"
+            style={{
+              transform: `scale(${zoom}) translate(${position.x / zoom}px, ${
+                position.y / zoom
+              }px)`,
+              transition: isDragging ? "none" : "transform 0.3s ease",
+            }}
+            onClick={(e) => {
+              e.stopPropagation();
+              if (zoom === 1) {
+                handleZoomIn();
+              }
+            }}
+          />
+        </div>
+
+        {/* Элементы управления масштабом */}
+        <div className="photo-gallery__zoom-controls">
+          <button
+            className="photo-gallery__zoom-button"
+            onClick={handleZoomOut}
+            disabled={zoom <= 1}
+            aria-label={t("gallery.zoomOut", "Зменшити")}
+          >
+            −
+          </button>
+          <span className="photo-gallery__zoom-level">
+            {Math.round(zoom * 100)}%
+          </span>
+          <button
+            className="photo-gallery__zoom-button"
+            onClick={handleZoomIn}
+            disabled={zoom >= 3}
+            aria-label={t("gallery.zoomIn", "Збільшити")}
+          >
+            +
+          </button>
+        </div>
+
+        {/* Навигация */}
+        {photos.length > 1 && (
+          <>
+            <button
+              className="photo-gallery__lightbox-nav photo-gallery__lightbox-nav--prev"
+              onClick={(e) => {
+                e.stopPropagation();
+                prevLightboxPhoto();
+              }}
+              aria-label={t("gallery.prevPhoto", "Попереднє фото")}
+            >
+              &#10094;
+            </button>
+            <button
+              className="photo-gallery__lightbox-nav photo-gallery__lightbox-nav--next"
+              onClick={(e) => {
+                e.stopPropagation();
+                nextLightboxPhoto();
+              }}
+              aria-label={t("gallery.nextPhoto", "Наступне фото")}
+            >
+              &#10095;
+            </button>
+          </>
+        )}
+
+        {/* Счетчик фото */}
+        <div className="photo-gallery__lightbox-counter">
+          {lightboxIndex + 1} / {photos.length}
+        </div>
+
+        {/* Описание */}
+        {photos[lightboxIndex].description && (
+          <div className="photo-gallery__lightbox-description">
+            <p>{photos[lightboxIndex].description}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <div className={`photo-gallery ${visible ? "visible" : ""}`}>
@@ -80,8 +346,9 @@ const PhotoGallery = ({ photos }) => {
               className="photo-gallery__main-slide"
               key={index}
               style={{
-                "--bg-image": `url(${photo.url})`,
+                "--bg-image": `url(${getImagePath(photo.url)})`,
               }}
+              onClick={() => openLightbox(index)}
             >
               <LazyImage
                 src={photo.url}
@@ -89,6 +356,11 @@ const PhotoGallery = ({ photos }) => {
                 className="photo-gallery__main-image"
                 aspectRatio="16/9"
               />
+              <div className="photo-gallery__hover-overlay">
+                <span className="photo-gallery__hover-text">
+                  {t("gallery.openPhoto", "Відкрити")}
+                </span>
+              </div>
               {photo.description && (
                 <div className="photo-gallery__description">
                   <span>{photo.description}</span>
@@ -164,6 +436,8 @@ const PhotoGallery = ({ photos }) => {
           ))}
         </div>
       )}
+
+      {lightboxOpen && createPortal(<LightboxContent />, document.body)}
     </div>
   );
 };

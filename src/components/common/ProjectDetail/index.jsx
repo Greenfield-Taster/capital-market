@@ -92,7 +92,7 @@ const ProjectDetail = () => {
   if (loading) {
     return (
       <div className="project-detail loading">
-        <div className="project-detail__container">
+        <div className="project-detail__containerProj">
           <div className="project-detail__loader"></div>
         </div>
       </div>
@@ -102,7 +102,7 @@ const ProjectDetail = () => {
   if (!project) {
     return (
       <div className="project-detail not-found">
-        <div className="container">
+        <div className="containerProj">
           <h1>{t("gallery.projectNotFound", "Проект не знайдено")}</h1>
           <p>
             {t(
@@ -134,7 +134,7 @@ const ProjectDetail = () => {
       </div>
 
       <div className="project-detail__header">
-        <div className="container">
+        <div className="containerProj">
           <h1
             className={`project-detail__title ${
               visible.title ? "visible" : ""
@@ -160,7 +160,7 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="containerProj">
         <div
           className={`project-detail__description ${
             visible.description ? "visible" : ""

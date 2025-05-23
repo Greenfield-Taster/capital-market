@@ -380,5 +380,15 @@
     "implementation": "Implementation",
     "realized": "Realized",
     "notImplemented": "Not implemented"
+  },
+  "gallery": {
+    "openPhoto": "Open",
+    "close": "Close",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "photoAlt": "Project photo",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "goToPhoto": "Go to photo"
   }
 }
