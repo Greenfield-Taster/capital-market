@@ -4,55 +4,55 @@
     "title": "Соборний 151",
     "slug": "soborny-151",
     "description": "Проект реконструкції історичної будівлі на вулиці Соборній, 151. Реставрація фасаду та внутрішніх приміщень із збереженням історичної цінності об'єкта.",
-    "mainImage": "assets/constructions/soborny-151/photo-1.JPG",
+    "mainImage": "assets/constructions/soborny-151/photo-1.jpg",
     "status": "completed",
     "photos": [
       {
-        "url": "assets/constructions/soborny-151/photo-1.JPG",
+        "url": "assets/constructions/soborny-151/photo-1.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-2.jpg",
+        "url": "assets/constructions/soborny-151/photo-2.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-3.jpg",
+        "url": "assets/constructions/soborny-151/photo-3.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-4.JPG",
+        "url": "assets/constructions/soborny-151/photo-4.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-5.JPG",
+        "url": "assets/constructions/soborny-151/photo-5.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-6.jpg",
+        "url": "assets/constructions/soborny-151/photo-6.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-7.JPG",
+        "url": "assets/constructions/soborny-151/photo-7.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-8.JPG",
+        "url": "assets/constructions/soborny-151/photo-8.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-9.JPG",
+        "url": "assets/constructions/soborny-151/photo-9.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-10.JPG",
+        "url": "assets/constructions/soborny-151/photo-10.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-11.JPG",
+        "url": "assets/constructions/soborny-151/photo-11.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-12.JPG",
+        "url": "assets/constructions/soborny-151/photo-12.png",
         "alt": "Фото проекту Соборний 151"
       },
       {
@@ -64,11 +64,11 @@
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-15.JPG",
+        "url": "assets/constructions/soborny-151/photo-15.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-16.JPG",
+        "url": "assets/constructions/soborny-151/photo-16.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
@@ -76,7 +76,7 @@
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-18.JPG",
+        "url": "assets/constructions/soborny-151/photo-18.jpg",
         "alt": "Фото проекту Соборний 151"
       }
     ]
@@ -86,91 +86,47 @@
     "title": "Парк Сацького",
     "slug": "park-sadskogo",
     "description": "Проект реконструкції та благоустрою парку Сацького з фокусом на збереження пам`яті загиблих воїнів в наслідок російської агресії.",
-    "mainImage": "assets/constructions/park-sadskogo/photo-1.JPG",
+    "mainImage": "assets/constructions/park-sadskogo/photo-1.jpg",
     "status": "completed",
     "photos": [
       {
-        "url": "assets/constructions/park-sadskogo/photo-1.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-1.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-2.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-2.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-3.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-3.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-4.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-4.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-5.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-5.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-6.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-6.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-7.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-7.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-8.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-8.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-9.JPG",
+        "url": "assets/constructions/park-sadskogo/photo-9.jpg",
         "alt": "Фото парку Садського"
       },
       {
-        "url": "assets/constructions/park-sadskogo/photo-10.JPG",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-11.JPG",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-12.JPG",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-13.JPG",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-14.JPG",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-15.JPG",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-16.jpg",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-17.jpg",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-18.jpg",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-19.jpg",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-20.jpg",
-        "alt": "Фото парку Садського"
-      },
-      {
-        "url": "assets/constructions/park-sadskogo/photo-21.jpg",
+        "url": "assets/constructions/park-sadskogo/photo-10.jpg",
         "alt": "Фото парку Садського"
       }
     ]
@@ -328,71 +284,71 @@
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-2.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-2.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-3.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-3.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-4.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-4.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-5.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-5.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-6.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-6.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-7.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-7.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-8.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-8.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-9.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-9.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-10.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-10.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-11.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-11.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-12.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-12.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-13.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-13.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-14.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-14.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-15.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-15.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-16.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-16.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-17.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-17.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-18.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-18.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
@@ -432,7 +388,7 @@
         "alt": "Фото проекту лікарні №5"
       },
       {
-        "url": "assets/constructions/bolnitsa-5/photo-28.JPG",
+        "url": "assets/constructions/bolnitsa-5/photo-28.jpg",
         "alt": "Фото проекту лікарні №5"
       },
       {
@@ -442,30 +398,6 @@
       {
         "url": "assets/constructions/bolnitsa-5/photo-30.jpg",
         "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-31.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-32.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-33.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-34.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-35.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-36.jpg",
-        "alt": "Фото проекту лікарні №5"
       }
     ]
   },
@@ -474,59 +406,59 @@
     "title": "Школа №76",
     "slug": "school-76",
     "description": "Реконструкція бомбосховища школи №76 з метою створення безпечного освітнього середовища. Проект включав ремонт класів, створення нових місць для безпечного навчання.",
-    "mainImage": "assets/constructions/school-76/photo-1.JPG",
+    "mainImage": "assets/constructions/school-76/photo-1.jpg",
     "status": "completed",
     "photos": [
       {
-        "url": "assets/constructions/school-76/photo-1.JPG",
+        "url": "assets/constructions/school-76/photo-1.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-3.JPG",
+        "url": "assets/constructions/school-76/photo-3.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-4.JPG",
+        "url": "assets/constructions/school-76/photo-4.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-5.JPG",
+        "url": "assets/constructions/school-76/photo-5.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-6.JPG",
+        "url": "assets/constructions/school-76/photo-6.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-7.JPG",
+        "url": "assets/constructions/school-76/photo-7.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-8.JPG",
+        "url": "assets/constructions/school-76/photo-8.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-9.JPG",
+        "url": "assets/constructions/school-76/photo-9.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-10.JPG",
+        "url": "assets/constructions/school-76/photo-10.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-11.JPG",
+        "url": "assets/constructions/school-76/photo-11.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-14.JPG",
+        "url": "assets/constructions/school-76/photo-14.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-15.JPG",
+        "url": "assets/constructions/school-76/photo-15.jpg",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-16.JPG",
+        "url": "assets/constructions/school-76/photo-16.jpg",
         "alt": "Фото проекту школи №76"
       }
     ]
@@ -544,55 +476,55 @@
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-2.JPG",
+        "url": "assets/constructions/DBC/photo-2.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-3.JPG",
+        "url": "assets/constructions/DBC/photo-3.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-4.JPG",
+        "url": "assets/constructions/DBC/photo-4.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-5.JPG",
+        "url": "assets/constructions/DBC/photo-5.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-6.JPG",
+        "url": "assets/constructions/DBC/photo-6.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-7.JPG",
+        "url": "assets/constructions/DBC/photo-7.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-8.JPG",
+        "url": "assets/constructions/DBC/photo-8.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-9.JPG",
+        "url": "assets/constructions/DBC/photo-9.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-10.JPG",
+        "url": "assets/constructions/DBC/photo-10.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-11.JPG",
+        "url": "assets/constructions/DBC/photo-11.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-12.JPG",
+        "url": "assets/constructions/DBC/photo-12.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-13.JPG",
+        "url": "assets/constructions/DBC/photo-13.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
-        "url": "assets/constructions/DBC/photo-14.JPG",
+        "url": "assets/constructions/DBC/photo-14.jpg",
         "alt": "Фото проекту бізнес-центру"
       },
       {
@@ -602,38 +534,6 @@
       {
         "url": "assets/constructions/DBC/photo-16.jpg",
         "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-17.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-18.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-19.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-20.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-21.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-22.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-23.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-24.jpg",
-        "alt": "Фото проекту бізнес-центру"
       }
     ]
   },
@@ -642,59 +542,59 @@
     "title": "Школа №25",
     "slug": "school-25",
     "description": "Ремонт бомбосховища та дворику школи №25 з метою створення сучасного, безпечного, якісного освітнього середовища.",
-    "mainImage": "assets/constructions/school-25/photo-1.JPG",
+    "mainImage": "assets/constructions/school-25/photo-1.jpg",
     "status": "",
     "photos": [
       {
-        "url": "assets/constructions/school-25/photo-1.JPG",
+        "url": "assets/constructions/school-25/photo-1.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-3.JPG",
+        "url": "assets/constructions/school-25/photo-2.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-4.JPG",
+        "url": "assets/constructions/school-25/photo-3.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-5.JPG",
+        "url": "assets/constructions/school-25/photo-4.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-6.JPG",
+        "url": "assets/constructions/school-25/photo-5.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-7.JPG",
+        "url": "assets/constructions/school-25/photo-6.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-8.JPG",
+        "url": "assets/constructions/school-25/photo-7.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-9.JPG",
+        "url": "assets/constructions/school-25/photo-8.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-10.JPG",
+        "url": "assets/constructions/school-25/photo-9.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-11.JPG",
+        "url": "assets/constructions/school-25/photo-10.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-14.JPG",
+        "url": "assets/constructions/school-25/photo-11.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-15.JPG",
+        "url": "assets/constructions/school-25/photo-14.jpg",
         "alt": "Фото проекту школи №25"
       },
       {
-        "url": "assets/constructions/school-25/photo-16.JPG",
+        "url": "assets/constructions/school-25/photo-15.jpg",
         "alt": "Фото проекту школи №25"
       }
     ]
