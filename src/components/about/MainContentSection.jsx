@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
-import photo from "../../assets/about-us/photo_2025-05-21_12-52-55.jpg";
+import photo from "../../assets/about-us/about-2.jpg";
 import "../../styles/components/about/MainContentSection.scss";
 
 const MainContentSection = ({ data }) => {

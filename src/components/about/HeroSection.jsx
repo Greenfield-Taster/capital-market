@@ -1,6 +1,6 @@
 import React from "react";
 import { Eye, Sparkles } from "lucide-react";
-import aboutPhoto from "../../assets/about-us/about-1 - Copy.jpg";
+import aboutPhoto from "../../assets/about-us/about-1.jpg";
 import "../../styles/components/about/HeroSection.scss";
 import { Link } from "react-router-dom";
 
