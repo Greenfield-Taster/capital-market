@@ -37,7 +37,7 @@ const CTASection = ({ data }) => {
             </div>
             <div className="cta-stat interactive-hover">
               <span className="cta-stat-number">1</span>
-              <span className="cta-stat-label">МЛН. ГРН. ОБОРОТУ</span>
+              <span className="cta-stat-label">МЛРД. ГРН. ОБОРОТУ</span>
             </div>
             <div className="cta-stat interactive-hover">
               <span className="cta-stat-number">3</span>
