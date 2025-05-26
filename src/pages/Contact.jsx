@@ -1,15 +1,24 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import useScrollAnimation from "../utils/useScrollAnimation";
-import workingManImage from "../assets/working-man.png";
-import UpImageBg from "../assets/contact-bg.png";
+import workingManImage from "/assets/working-man.png";
+import UpImageBg from "/assets/contact-bg.png";
 import partnersData from "../data/partners.json";
 import "../styles/pages/_Contact.scss";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [isVisible, setIsVisible] = useState(false);
 
   useScrollAnimation();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="contact-page">
@@ -28,9 +37,13 @@ const Contact = () => {
       </div>
 
       <div className="contact-container">
-        <div className="partners-section">
+        <div
+          className={`partners-section animate-on-scroll slide-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <div className="partners-header">
-            <h1>{t("contact.ourPartners")}</h1>
+            <h1 className="animated-title">{t("contact.ourPartners")}</h1>
           </div>
           <div className="partners-grid">
             {partnersData.map((partner) => (
@@ -50,11 +63,19 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-header">
-          <h1>{t("contact.title")}</h1>
+        <div
+          className={`contact-header animate-on-scroll slide-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
+          <h1 className="animated-title">{t("contact.title")}</h1>
         </div>
 
-        <div className="contact-content">
+        <div
+          className={`contact-content animate-on-scroll slide-up ${
+            isVisible ? "visible" : ""
+          }`}
+        >
           <div className="contact-card">
             <div className="contact-card-inner">
               <p>+380986032592</p>

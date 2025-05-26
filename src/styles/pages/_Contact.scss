@@ -1,6 +1,6 @@
 @use "../variables" as v;
 @use "sass:color";
-@use "../common//animations";
+@use "../common/animations";
 
 .contact-page {
   position: relative;
@@ -44,32 +44,65 @@
   z-index: 2;
 }
 
+.animated-title {
+  display: inline-block;
+  padding: 10px 30px;
+  font-family: v.$font-headings;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: titleSlideIn 0.8s ease forwards;
+  animation-delay: 0.2s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: v.$color-primary;
+  }
+}
+
 .contact-header {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 50px;
+}
 
-  h1 {
-    display: inline-block;
-    padding: 10px 30px;
-    font-family: v.$font-headings;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
+.partners-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 50px;
-      height: 3px;
-      background-color: v.$color-primary;
-    }
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
+
+  &.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.partners-section {
+  transition-delay: 0.1s;
+}
+
+.contact-header {
+  transition-delay: 0.3s;
 }
 
 .contact-content {
@@ -77,6 +110,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 60px;
+  transition-delay: 0.5s;
 
   @media (max-width: v.$breakpoint-tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -266,49 +300,6 @@
   }
 }
 
-@media (max-width: v.$breakpoint-tablet) {
-  .contact-card-inner {
-    padding: 30px 25px;
-  }
-}
-
-@media (max-width: v.$breakpoint-mobile) {
-  .contact-card-inner {
-    padding: 25px 20px;
-
-    p {
-      font-size: 15px;
-    }
-  }
-}
-
-.partners-header {
-  text-align: center;
-  margin-bottom: 40px;
-
-  h1 {
-    display: inline-block;
-    padding: 10px 30px;
-    font-family: v.$font-headings;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 50px;
-      height: 3px;
-      background-color: v.$color-primary;
-    }
-  }
-}
-
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -346,8 +337,37 @@
   }
 }
 
+@keyframes titleSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(18px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(18px);
+  }
+}
+
 @media (max-width: v.$breakpoint-tablet) {
-  .contact-header h1 {
+  .contact-card-inner {
+    padding: 30px 25px;
+  }
+
+  .contact-header h1,
+  .partners-header h1,
+  .animated-title {
     font-size: 24px;
   }
 
@@ -371,15 +391,11 @@
 
   .contact-header {
     margin-bottom: 40px;
-
-    h1 {
-      font-size: 20px;
-      padding: 8px 20px;
-    }
   }
 
-  .partners-header h2 {
+  .animated-title {
     font-size: 20px;
+    padding: 8px 20px;
   }
 
   .partner-card {
@@ -396,6 +412,112 @@
     .working-man-image {
       max-height: 220px;
       left: 60%;
+    }
+  }
+
+  .contact-card-inner {
+    padding: 25px 20px;
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.card-content {
+  h3 {
+    font-family: v.$font-primary;
+    font-size: v.$font-size-lg;
+    font-weight: v.$font-weight-semibold;
+    color: v.$graphite-dark;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: v.$graphite-medium;
+    font-size: v.$font-size-base;
+    line-height: 1.6;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: v.$breakpoint-md) {
+  .contact-banner {
+    height: 50vh;
+    min-height: 400px;
+
+    .working-man-image {
+      right: 2%;
+      max-height: 70%;
+    }
+  }
+
+  .contact-container {
+    padding: 60px v.$spacing-lg 40px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+
+    .section-title {
+      font-size: v.$font-size-2xl;
+    }
+  }
+}
+
+@media (max-width: v.$breakpoint-sm) {
+  .contact-banner {
+    height: 40vh;
+    min-height: 300px;
+
+    .working-man-image {
+      display: none;
+    }
+
+    .page-title .gradient-text {
+      font-size: 2rem;
+    }
+
+    .page-subtitle {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-container {
+    padding: 40px v.$spacing-md 30px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
     }
   }
 }
