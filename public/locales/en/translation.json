@@ -311,10 +311,13 @@
     "viewAll": "View All Projects"
   },
   "construction": {
+    "title": "Our projects",
     "statusCompleted": "Construction is completed",
     "statusInProgress": "Construction is ongoing"
   },
   "design": {
+    "title": "Our design projects",
+    "description": "We create functional and aesthetic design solutions for various types of objects. Our design team works to create modern spaces that meet the needs of our clients.",
     "implementation": "Implementation",
     "realized": "Realized",
     "notImplemented": "Not implemented"
@@ -327,6 +330,25 @@
     "photoAlt": "Project photo",
     "prevPhoto": "Previous photo",
     "nextPhoto": "Next photo",
-    "goToPhoto": "Go to photo"
+    "goToPhoto": "Go to photo",
+    "projectNotFound": "Project not found",
+    "projectNotFoundDesc": "Unfortunately, the requested project does not exist.",
+    "backToGallery": "Back to gallery",
+    "backToLastPage": "Back",
+    "projectPhotos": "Project photo gallery",
+    "otherProjects": "Other projects"
+  },
+  "notFound": {
+    "notFoundPage": {
+      "title": "Page not found",
+      "description": "Unfortunately, the requested page does not exist.",
+      "backText": "Back to last page",
+      "backToMain": "Back to main",
+      "tryAgain": "Try again",
+      "interests": "You may be interested: ",
+      "constrProj": "Our construction projects",
+      "designSolution": "Design solutions",
+      "aboutCompany": "About our company"
+    }
   }
 }

@@ -81,20 +81,14 @@ const Design = () => {
   return (
     <div className="design-page">
       <div className="design-hero">
-        {/* Декоративные линии */}
         <div className="design-hero__decorative-line"></div>
         <div className="design-hero__decorative-line"></div>
 
         <div className="container">
           <div className="design-hero__content">
-            <h1 className="design-hero__title">
-              {t("design.title", "Наші проекти дизайну")}
-            </h1>
+            <h1 className="design-hero__title">{t("design.title")}</h1>
             <p className="design-hero__description">
-              {t(
-                "design.description",
-                "Ми створюємо функціональні та естетичні дизайнерські рішення для різних типів об'єктів. Наша команда дизайнерів працює над створенням сучасних просторів, які задовольняють потреби клієнтів."
-              )}
+              {t("design.description")}
             </p>
           </div>
         </div>

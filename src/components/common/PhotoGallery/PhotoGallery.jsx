@@ -95,13 +95,13 @@ const PhotoGallery = ({ photos }) => {
             >
               <LazyImage
                 src={photo.url}
-                alt={photo.alt || t("gallery.photoAlt", "Фото проекту")}
+                alt={photo.alt || t("gallery.photoAlt")}
                 className="photo-gallery__main-image"
                 aspectRatio="16/9"
               />
               <div className="photo-gallery__hover-overlay">
                 <span className="photo-gallery__hover-text">
-                  {t("gallery.openPhoto", "Відкрити")}
+                  {t("gallery.openPhoto")}
                 </span>
               </div>
               {photo.description && (
@@ -121,7 +121,7 @@ const PhotoGallery = ({ photos }) => {
                 e.stopPropagation();
                 prevPhoto();
               }}
-              aria-label={t("gallery.prevPhoto", "Попереднє фото")}
+              aria-label={t("gallery.prevPhoto")}
             >
               <span>‹</span>
             </button>
@@ -131,7 +131,7 @@ const PhotoGallery = ({ photos }) => {
                 e.stopPropagation();
                 nextPhoto();
               }}
-              aria-label={t("gallery.nextPhoto", "Наступне фото")}
+              aria-label={t("gallery.nextPhoto")}
             >
               <span>›</span>
             </button>
@@ -150,9 +150,7 @@ const PhotoGallery = ({ photos }) => {
                   e.stopPropagation();
                   setSelectedIndex(index);
                 }}
-                aria-label={
-                  t("gallery.goToPhoto", "Перейти до фото") + ` ${index + 1}`
-                }
+                aria-label={t("gallery.goToPhoto") + ` ${index + 1}`}
               />
             ))}
           </div>

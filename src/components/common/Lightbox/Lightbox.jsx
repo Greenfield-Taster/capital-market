@@ -168,7 +168,7 @@ const Lightbox = ({ photos, initialIndex, onClose }) => {
         <button
           className="lightbox__close"
           onClick={onClose}
-          aria-label={t("gallery.close", "Закрити")}
+          aria-label={t("gallery.close")}
         >
           ×
         </button>
@@ -190,7 +190,7 @@ const Lightbox = ({ photos, initialIndex, onClose }) => {
           <img
             ref={imageRef}
             src={getImagePath(currentPhoto.url)}
-            alt={currentPhoto.alt || t("gallery.photoAlt", "Фото проекту")}
+            alt={currentPhoto.alt || t("gallery.photoAlt")}
             className="lightbox__image"
             style={{
               transform: `scale(${zoom}) translate(${position.x / zoom}px, ${
@@ -209,7 +209,7 @@ const Lightbox = ({ photos, initialIndex, onClose }) => {
             className="lightbox__zoom-button"
             onClick={handleZoomOut}
             disabled={zoom <= 1}
-            aria-label={t("gallery.zoomOut", "Зменшити")}
+            aria-label={t("gallery.zoomOut")}
           >
             −
           </button>
@@ -220,7 +220,7 @@ const Lightbox = ({ photos, initialIndex, onClose }) => {
             className="lightbox__zoom-button"
             onClick={handleZoomIn}
             disabled={zoom >= 3}
-            aria-label={t("gallery.zoomIn", "Збільшити")}
+            aria-label={t("gallery.zoomIn")}
           >
             +
           </button>
@@ -231,14 +231,14 @@ const Lightbox = ({ photos, initialIndex, onClose }) => {
             <button
               className="lightbox__nav lightbox__nav--prev"
               onClick={prevPhoto}
-              aria-label={t("gallery.prevPhoto", "Попереднє фото")}
+              aria-label={t("gallery.prevPhoto")}
             >
               ‹
             </button>
             <button
               className="lightbox__nav lightbox__nav--next"
               onClick={nextPhoto}
-              aria-label={t("gallery.nextPhoto", "Наступне фото")}
+              aria-label={t("gallery.nextPhoto")}
             >
               ›
             </button>

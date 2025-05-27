@@ -76,9 +76,7 @@ const Gallery = () => {
   return (
     <div className="gallery-page">
       <div className="container">
-        <h1 className="gallery-page__title">
-          {t("gallery.title", "Наші проекти")}
-        </h1>
+        <h1 className="gallery-page__title">{t("construction.title")}</h1>
 
         <div className="gallery-page__list">
           {projectsData.map((project, index) => (
