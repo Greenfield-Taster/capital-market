@@ -1,0 +1,634 @@
+@use "../../../styles/variables" as v;
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    v.$almost-white 0%,
+    v.$milk 50%,
+    v.$light-gray 100%
+  );
+  position: relative;
+  overflow: hidden;
+  padding: 9rem 2rem 5rem 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .floating-shape {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: linear-gradient(
+      135deg,
+      rgba(v.$dark-blue, 0.1),
+      rgba(v.$terracotta, 0.1)
+    );
+    animation: float var(--duration) ease-in-out infinite;
+    animation-delay: var(--delay);
+
+    &:nth-child(odd) {
+      background: linear-gradient(
+        135deg,
+        rgba(v.$terracotta, 0.15),
+        rgba(v.$dark-blue, 0.05)
+      );
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    &:nth-child(1) {
+      top: 10%;
+      left: 10%;
+    }
+    &:nth-child(2) {
+      top: 20%;
+      right: 15%;
+    }
+    &:nth-child(3) {
+      bottom: 30%;
+      left: 20%;
+    }
+    &:nth-child(4) {
+      bottom: 15%;
+      right: 10%;
+    }
+    &:nth-child(5) {
+      top: 60%;
+      left: 5%;
+    }
+    &:nth-child(6) {
+      top: 40%;
+      right: 25%;
+    }
+  }
+
+  &__container {
+    text-align: center;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+  }
+
+  // Главная иконка
+  &__icon-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  &__icon-bg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, v.$dark-blue-20, v.$terracotta-20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  &__emoji {
+    font-size: 4rem;
+    position: relative;
+    z-index: 2;
+    animation: bounce 2s ease-in-out infinite;
+    display: inline-block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  }
+
+  .search-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border: 2px solid v.$dark-blue-20;
+    border-radius: 50%;
+    animation: ripple 3s ease-out infinite;
+  }
+
+  // 404 код
+  &__code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-family: v.$font-primary;
+  }
+
+  .code-digit {
+    font-size: clamp(4rem, 8vw, 8rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0;
+    transform: rotateY(90deg);
+    animation: flipIn 0.8s ease forwards;
+    animation-delay: var(--delay);
+    text-shadow: 0 10px 30px rgba(v.$dark-blue, 0.3);
+  }
+
+  .code-separator {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .separator-dot {
+    width: 8px;
+    height: 8px;
+    background: v.$terracotta;
+    border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+  }
+
+  // Заголовок с эффектом печатания
+  &__title {
+    font-family: v.$font-primary;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: v.$graphite-dark;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .typing-text {
+    opacity: 0;
+    animation: typeWriter 2s steps(20) 1s forwards;
+  }
+
+  .cursor {
+    opacity: 0;
+    animation: blink 1s ease-in-out 1s infinite;
+    color: v.$terracotta;
+    font-weight: 300;
+  }
+
+  // Описание
+  &__description {
+    font-size: 1.2rem;
+    color: v.$graphite-medium;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 1.5s forwards;
+  }
+
+  // Креативная иллюстрация
+  &__illustration {
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 2s forwards;
+  }
+
+  .question-marks {
+    position: absolute;
+    top: -20px;
+    right: -40px;
+
+    span {
+      font-size: 2rem;
+      color: v.$terracotta;
+      position: absolute;
+      opacity: 0;
+      animation: popIn 0.5s ease forwards;
+      animation-delay: var(--delay);
+      font-weight: bold;
+
+      &:nth-child(1) {
+        top: 0;
+        right: 0;
+      }
+      &:nth-child(2) {
+        top: 20px;
+        right: 15px;
+      }
+      &:nth-child(3) {
+        top: 40px;
+        right: 5px;
+      }
+    }
+  }
+
+  .paper-stack {
+    position: absolute;
+    left: -60px;
+    top: 20px;
+  }
+
+  .paper {
+    width: 40px;
+    height: 50px;
+    background: white;
+    border: 1px solid v.$light-gray;
+    border-radius: 4px;
+    position: absolute;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      right: 6px;
+      height: 2px;
+      background: v.$light-gray;
+      border-radius: 1px;
+      box-shadow: 0 6px 0 v.$light-gray, 0 12px 0 v.$light-gray,
+        0 18px 0 v.$light-gray;
+    }
+  }
+
+  .paper-1 {
+    animation: paperFloat 4s ease-in-out infinite;
+    z-index: 3;
+  }
+
+  .paper-2 {
+    transform: translate(5px, 5px) rotate(5deg);
+    animation: paperFloat 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+    z-index: 2;
+  }
+
+  .paper-3 {
+    transform: translate(10px, 10px) rotate(-3deg);
+    animation: paperFloat 4s ease-in-out infinite;
+    animation-delay: 1s;
+    z-index: 1;
+  }
+
+  // Кнопки действий
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 2.5s forwards;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: v.$font-primary;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      transition: left 0.5s ease;
+    }
+
+    &:hover::before {
+      left: 100%;
+    }
+
+    &-primary {
+      background: linear-gradient(135deg, v.$dark-blue, v.$terracotta);
+      color: white;
+      box-shadow: 0 4px 15px rgba(v.$dark-blue, 0.3);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(v.$dark-blue, 0.4);
+      }
+    }
+
+    &-outline {
+      background: transparent;
+      border: 2px solid v.$dark-blue;
+      color: v.$dark-blue;
+
+      &:hover {
+        background: v.$dark-blue;
+        color: white;
+      }
+    }
+
+    &-ghost {
+      background: rgba(v.$graphite-light, 0.1);
+      color: v.$graphite-medium;
+      border: 1px solid transparent;
+
+      &:hover {
+        background: rgba(v.$graphite-light, 0.2);
+        border-color: v.$graphite-light;
+      }
+    }
+  }
+
+  // Эмодзи настроения
+  &__mood-emojis {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mood-emoji {
+    font-size: 2rem;
+    opacity: 0;
+    animation: bounceIn 0.6s ease forwards;
+    animation-delay: var(--delay);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2) rotate(10deg);
+    }
+  }
+
+  // Подсказки
+  &__suggestions {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 3s forwards;
+
+    h3 {
+      color: v.$graphite-dark;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .suggestions-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .suggestion-link {
+    padding: 8px 16px;
+    background: rgba(v.$dark-blue, 0.1);
+    color: v.$graphite-dark;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+      background: rgba(v.$dark-blue, 0.2);
+      border-color: v.$dark-blue-20;
+      transform: translateY(-2px);
+    }
+  }
+
+  // Интерактивные частицы
+  .interactive-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: v.$terracotta;
+    border-radius: 50%;
+    opacity: 0;
+    animation: particleFloat 6s ease-in-out infinite;
+    animation-delay: var(--particle-delay);
+    top: var(--particle-y);
+    left: var(--particle-x);
+  }
+}
+
+// Анимации
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.4;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+}
+
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes typeWriter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes paperFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(2px, -3px) rotate(1deg);
+  }
+  66% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.3) rotate(-120deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-100px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-120px) scale(0);
+  }
+}
+
+// Responsive
+@media (max-width: v.$breakpoint-md) {
+  .not-found {
+    padding: 1rem;
+
+    &__actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .suggestions-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .code-digit {
+      font-size: clamp(3rem, 6vw, 6rem);
+    }
+
+    &__mood-emojis {
+      gap: 1rem;
+    }
+  }
+}

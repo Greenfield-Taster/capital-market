@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link, useLocation } from "react-router-dom";
+import { useParams, Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LazyImage from "../../../utils/LazyImage/LazyImage";
 import projectsData from "../../../data/projects.json";
@@ -33,6 +33,7 @@ const ProjectDetail = () => {
   const { t } = useTranslation();
   const { slug } = useParams();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isDesignPage = location.pathname.includes("/design/");
   const basePathName = isDesignPage ? "/design" : "/construction";
@@ -41,6 +42,7 @@ const ProjectDetail = () => {
 
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [projectNotFound, setProjectNotFound] = useState(false);
   const [visible, setVisible] = useState({
     title: false,
     image: false,
@@ -51,23 +53,35 @@ const ProjectDetail = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       const foundProject = currentData.find((p) => p.slug === slug);
-
       const fixedProject = foundProject ? fixProjectPaths(foundProject) : null;
 
       setProject(fixedProject);
       setLoading(false);
 
-      setTimeout(() => setVisible((prev) => ({ ...prev, title: true })), 100);
-      setTimeout(() => setVisible((prev) => ({ ...prev, image: true })), 300);
-      setTimeout(
-        () => setVisible((prev) => ({ ...prev, description: true })),
-        500
-      );
-      setTimeout(() => setVisible((prev) => ({ ...prev, gallery: true })), 700);
+      if (fixedProject) {
+        setTimeout(() => setVisible((prev) => ({ ...prev, title: true })), 100);
+        setTimeout(() => setVisible((prev) => ({ ...prev, image: true })), 300);
+        setTimeout(
+          () => setVisible((prev) => ({ ...prev, description: true })),
+          500
+        );
+        setTimeout(
+          () => setVisible((prev) => ({ ...prev, gallery: true })),
+          700
+        );
+      } else {
+        setProjectNotFound(true);
+      }
     }, 300);
 
     return () => clearTimeout(timer);
   }, [slug, currentData]);
+
+  useEffect(() => {
+    if (!loading && projectNotFound) {
+      navigate("/404", { replace: true });
+    }
+  }, [loading, projectNotFound, navigate]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -99,23 +113,8 @@ const ProjectDetail = () => {
     );
   }
 
-  if (!project) {
-    return (
-      <div className="project-detail not-found">
-        <div className="containerProj">
-          <h1>{t("gallery.projectNotFound", "Проект не знайдено")}</h1>
-          <p>
-            {t(
-              "gallery.projectNotFoundDesc",
-              "На жаль, запитуваний проект не існує."
-            )}
-          </p>
-          <Link to={basePathName} className="project-detail__back-btn">
-            {t("gallery.backToGallery", "Повернутися до галереї")}
-          </Link>
-        </div>
-      </div>
-    );
+  if (projectNotFound || !project) {
+    return null;
   }
 
   return (
@@ -127,9 +126,7 @@ const ProjectDetail = () => {
       <div className="floating-back-button">
         <Link to={basePathName} className="project-detail__back-btn">
           <span className="back-icon">←</span>
-          <span className="back-text">
-            {t("gallery.backToGallery", "Назад")}
-          </span>
+          <span className="back-text">{t("gallery.backToLastPage")}</span>
         </Link>
       </div>
 
@@ -189,16 +186,14 @@ const ProjectDetail = () => {
 
         <div className={`gallery-section ${visible.gallery ? "visible" : ""}`}>
           <h2 className="project-detail__gallery-title animate-on-scroll fade-in">
-            {t("gallery.projectPhotos", "Фотогалерея проекту")}
+            {t("gallery.projectPhotos")}
           </h2>
 
           <PhotoGallery photos={project.photos} />
         </div>
 
         <div className="other-projects animate-on-scroll fade-in">
-          <h2 className="section-title">
-            {t("gallery.otherProjects", "Інші проекти")}
-          </h2>
+          <h2 className="section-title">{t("gallery.otherProjects")}</h2>
 
           <div className="other-projects-grid">
             {currentData
@@ -231,7 +226,7 @@ const ProjectDetail = () => {
 
           <div className="projects-action">
             <Link to={basePathName} className="view-all-btn">
-              {t("latestProjects.viewAll", "Переглянути всі проекти")}
+              {t("latestProjects.viewAll")}
             </Link>
           </div>
         </div>
