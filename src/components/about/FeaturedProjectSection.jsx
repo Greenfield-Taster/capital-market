@@ -1,31 +1,36 @@
 import React from "react";
 import { CheckCircle, Eye, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import sobornyPhoto from "../../assets/about-us/soborny-photo.jpg";
 import "../../styles/components/about/FeaturedProjectSection.scss";
 
-const FeaturedProjectSection = ({ data }) => {
+const FeaturedProjectSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="featured-project" className="featured-project-section">
       <div className="container">
         <div className="project-content">
           <div className="project-text">
-            <h2 className="section-title">{data.featuredProject.title}</h2>
+            <h2 className="section-title">
+              {t("about.featuredProject.title")}
+            </h2>
             <p className="project-description">
-              {data.featuredProject.description}
+              {t("about.featuredProject.description")}
             </p>
             <div className="project-features">
               <div className="feature">
                 <CheckCircle size={20} />
-                <span>Інноваційні матеріали</span>
+                <span>{t("about.featuredProject.span1")}</span>
               </div>
               <div className="feature">
                 <CheckCircle size={20} />
-                <span>Максимальний захист</span>
+                <span>{t("about.featuredProject.span2")}</span>
               </div>
               <div className="feature">
                 <CheckCircle size={20} />
-                <span>Сучасні технології</span>
+                <span>{t("about.featuredProject.span3")}</span>
               </div>
             </div>
             <div className="project-cta">
@@ -34,7 +39,7 @@ const FeaturedProjectSection = ({ data }) => {
                 className="btn btn-outline glow-effect"
               >
                 <Eye size={20} />
-                Переглянути проект
+                {t("about.featuredProject.viewProject")}
               </Link>
             </div>
           </div>

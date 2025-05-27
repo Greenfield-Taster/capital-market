@@ -85,125 +85,63 @@
     }
   },
   "about": {
-    "title": "About Us",
-    "main": {
-      "paragraph1": "TD Stolytsya Market is a team of professionals specializing in construction of residential and non-residential buildings, infrastructure reconstruction, shelters, and underground complexes. Since 2016, we have successfully implemented projects of any complexity, using modern technologies, quality materials, and innovative approaches. Our experience allows us to ensure high quality and reliability for each facility, from small structures to large-scale infrastructure solutions.",
-      "paragraph2": "One of our key areas is the production of metal structures and concrete solutions that provide safety and durability. We work responsibly and adhere to international standards, which is confirmed by our certified management system: ISO 9001(2015), ISO 45001(2019), and 14001(2015).",
-      "paragraph3": "Our team consists of over 100 qualified employees who work daily to implement the most challenging tasks. We have all necessary licenses to conduct our business, including EL01:8020-2630-9976-1706, which guarantees our clients transparency and compliance with all regulatory requirements.",
-      "paragraph4": "The company's annual turnover is 1 billion hryvnias, which demonstrates our stability and client trust. We take pride in the fact that each of our projects combines modern technologies, quality materials, and a responsible approach. Our goal is to create spaces that provide comfort, safety, and durability for everyone."
+    "hero": {
+      "title": "TD Capital Market",
+      "mainQuote": "We don't just build structures — we create a reliable future",
+      "paragraph1": "«TD Capital Market» is a team of professionals specializing in the construction of residential and non-residential facilities, infrastructure reconstruction, construction of shelters and underground complexes. Since 2016, we have successfully implemented projects of any complexity, using modern technologies, quality materials and innovative approaches.",
+      "viewProjects": "View projects"
     },
-    "mainQuote": "We build not just structures — we create a reliable future",
-    "stats": {
-      "years": "Years of experience",
-      "specialists": "Specialists",
-      "revenue": "billion UAH turnover",
-      "certificates": "Quality certificates"
-    },
-    "featuredProject": {
-      "title": "Our Flagship Project",
-      "description": "A complex of protective structures and shelters, implemented in 2023 for the defense sector. The project included the construction of underground facilities using innovative materials that provide maximum level of protection and comfort simultaneously."
+    "mainContentSection": {
+      "title": "About our company",
+      "paragraph1": "«TD Capital Market» is a team of professionals specializing in the construction of residential and non-residential facilities, infrastructure reconstruction, construction of shelters and underground complexes. Since 2016, we have successfully implemented projects of any complexity, using modern technologies, quality materials and innovative approaches.",
+      "paragraph2": "One of our key areas is the production of metal structures and concrete solutions that ensure safety and durability. We work responsibly and adhere to international standards, which is confirmed by our certified management system: ISO 9001(2015), ISO 45001(2019), 14001(2015).",
+      "certificates": "ISO certificates",
+      "yearsOnMarket": "years of experience",
+      "specialists": "specialists"
     },
     "process": {
-      "title": "How We Work",
-      "steps": {
-        "step1": {
-          "title": "Analysis and Planning",
-          "description": "Detailed study of client needs, concept development, and cost estimation."
-        },
-        "step2": {
-          "title": "Design",
-          "description": "Creation of technical documentation, 3D modeling of objects, and coordination of all details."
-        },
-        "step3": {
-          "title": "Production and Construction",
-          "description": "Manufacturing of metal structures, preparation of materials, and construction of the facility under engineer supervision."
-        },
-        "step4": {
-          "title": "Quality Control and Delivery",
-          "description": "Strict control of each stage of work and facility delivery with complete documentation and warranty."
-        }
-      }
+      "titleMain": "How we work",
+      "titleOne": "Analysis and planning",
+      "descriptionOne": "Detailed study of client needs, concept development and cost estimation of work.",
+      "titleTwo": "Design",
+      "descriptionTwo": "Creation of technical documentation, 3D modeling of objects and coordination of all details.",
+      "titleThree": "Manufacturing and construction",
+      "descriptionThree": "Manufacturing of metal structures, material preparation and construction of the facility under engineer supervision.",
+      "titleFour": "Quality control and delivery",
+      "descriptionFour": "Strict control of each stage of work and delivery of the facility with complete documentation and warranty."
     },
-    "history": {
-      "title": "Company History",
-      "paragraph1": "TD Stolytsya Market was founded in 2016 by a group of civil engineers who aimed to create high-quality and reliable facilities using modern technologies. Initially, we implemented small commercial and residential projects, but thanks to clear planning and a responsible approach, we quickly expanded our scope of activities.",
-      "paragraph2": "By 2019, the company had already established itself as a reliable executor of complex construction works, received ISO 9001(2015), ISO 45001(2019), and 14001(2015) certificates, and launched its own production of metal structures and concrete solutions. Further development was accompanied by participation in government tenders, infrastructure reconstruction, and construction of defensive structures after the beginning of the full-scale war.",
-      "paragraph3": "Today, TD Stolytsya Market is a team of over 100 specialists implementing projects of any complexity. Our experience, modern technologies, and adherence to international standards allow us to guarantee the quality and durability of each facility. We continue to develop while maintaining our key values — reliability, innovation, and responsibility to clients and society."
+    "featuredProject": {
+      "title": "Our landmark project",
+      "description": "Complex of protective structures and shelters, implemented in 2023 for the defense sector. The project included reconstruction of a historic building on Soborna Street, 151. Restoration of the facade and interior spaces while preserving the historical value of the building.",
+      "span1": "Innovative materials",
+      "span2": "Maximum protection",
+      "span3": "Modern technologies",
+      "viewProject": "View project"
     },
-    "philosophy": {
-      "title": "Company Philosophy",
-      "paragraph1": "We believe that construction is not just about creating objects, but forming spaces that affect people's quality of life. Each of our projects combines innovation, reliability, and responsibility. We strive not only to meet client needs but to exceed expectations by creating solutions that withstand time and challenges.",
-      "paragraph2": "Our mission is to build a future where each facility becomes a testament to quality, safety, and durability. We understand that our work affects people's lives, so we approach each project with maximum dedication and attention to detail.",
-      "paragraph3": "For us, not only technical parameters are important, but also client trust, environmental responsibility, and social significance. We build not just buildings — we create conditions for development, protection, and comfort.",
-      "paragraph4": "Our philosophy is a combination of professional experience, modern technologies, and belief that each project matters. We build not just objects — we build trust."
-    },
-    "team": {
-      "title": "Our Team",
-      "quote": "Our success is based on the professionalism, dedication, and innovative thinking of each team member.",
-      "paragraph1": "Our team consists of over 100 qualified employees who work daily to implement the most challenging tasks. These are professionals in various fields: engineers, architects, technologists, managers, safety and logistics specialists.",
-      "paragraph2": "We continuously improve the qualifications of our specialists, implement new approaches to work, and provide comfortable conditions for the development of each team member. Our employees have access to modern technologies and the opportunity to realize their potential in significant projects."
-    },
-    "strategy": {
-      "title": "Strategy",
-      "intro": "Our strategy is aimed at achieving leadership in construction, manufacturing, and infrastructure reconstruction through innovation, quality, and a responsible approach. We strive to become a reliable partner for our clients by offering comprehensive solutions that ensure safety, durability, and efficiency.",
-      "goalsTitle": "Main Goals:",
-      "goals": {
-        "goal1": {
-          "title": "Expanding Service Range",
-          "items": [
-            "Implementation of new directions such as smart construction and environmentally oriented projects.",
-            "Development of production of innovative fortification materials."
-          ]
-        },
-        "goal2": {
-          "title": "Improving Quality and Efficiency",
-          "items": [
-            "Implementation of modern technologies (BIM modeling, process automation).",
-            "Continuous training and professional development of employees."
-          ]
-        },
-        "goal3": {
-          "title": "Strengthening Market Position",
-          "items": [
-            "Active participation in government and private tenders.",
-            "Expanding geography of activities and entering new markets."
-          ]
-        },
-        "goal4": {
-          "title": "Developing Partnership Relations",
-          "items": [
-            "Creating strategic alliances with reliable suppliers and contractors.",
-            "Expanding the network of partners to optimize logistics and reduce costs."
-          ]
-        },
-        "goal5": {
-          "title": "Social and Environmental Responsibility",
-          "items": [
-            "Implementation of environmentally friendly technologies in construction.",
-            "Supporting social initiatives aimed at infrastructure restoration and assistance to those affected by the war."
-          ]
-        }
+    "values": {
+      "title": "Our values",
+      "reliability": {
+        "title": "Reliability",
+        "description": "We keep our promises and guarantee quality"
       },
-      "valuesTitle": "Our Strategic Values:",
-      "values": {
-        "value1": {
-          "title": "Reliability",
-          "description": "We keep our promises and guarantee quality."
-        },
-        "value2": {
-          "title": "Innovation",
-          "description": "We continuously improve processes and technologies."
-        },
-        "value3": {
-          "title": "Responsibility",
-          "description": "We work considering the interests of clients, society, and the environment."
-        }
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly improve processes and technologies"
+      },
+      "responsibility": {
+        "title": "Responsibility",
+        "description": "We work taking into account the interests of clients, society and the environment"
       }
     },
     "cta": {
-      "title": "Ready to Implement Your Project?",
-      "text": "Entrust us with the implementation of your construction ideas. Our team will ensure high-quality execution of work in compliance with all standards and deadlines.",
-      "button": "Contact Us"
+      "title": "Ready to implement your project?",
+      "text": "Trust us to implement your construction ideas. Our team will ensure quality work execution while adhering to all standards and deadlines.",
+      "button": "Contact us",
+      "viewPortfolio": "View portfolio",
+      "yearsOnMarket": "YEARS OF EXPERIENCE",
+      "specialists": "SPECIALISTS",
+      "oborot": "BILLION UAH TURNOVER",
+      "certificates": "QUALITY CERTIFICATES"
     }
   },
   "faq": {
@@ -211,7 +149,7 @@
     "items": [
       {
         "id": 1,
-        "question": "How does \"TD Stolytsia Market\" differ from other construction companies?",
+        "question": "How does \"TD Capital Market\" differ from other construction companies?",
         "answer": "We combine 9+ years of experience with modern technologies (BIM-modeling, in-house production of materials) and adhere to international standards (ISO 9001, ISO 45001). Our key advantages are turnkey solutions, individual approach to each project, and participation in Ukraine's infrastructure restoration."
       },
       {
