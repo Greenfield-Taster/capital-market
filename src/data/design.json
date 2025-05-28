@@ -1730,5 +1730,125 @@
         "alt": "ШБСМ в Запоріжжі"
       }
     ]
+  },
+  {
+    "id": 29,
+    "title": "Сквер Театральний",
+    "slug": "theater-square",
+    "description": "Сквер Театральний у м. Запоріжжя вражає сучасним і гармонійним дизайном, що поєднує природну красу з функціональністю. Центральною частиною є простора пішохідна зона з викладеною кам’яною плиткою, оточена розкішними деревами з яскравими рожевими та пурпуровими квітами, які створюють живописну атмосферу. У центрі розташовано декоративний водний елемент — басейн із водоспадом, що додає свіжості та спокою. Зони відпочинку обладнані сучасними дерев’яними платформами та ергономічними лавками, де можна насолоджуватися природою. Ландшафт прикрашають доглянуті газони, кущі та багаторічні рослини, а зручні сходи та доріжки забезпечують комфортний доступ. Сквер ідеально підходить для прогулянок, відпочинку та сімейного дозвілля, відображаючи сучасний стиль і естетику міста.",
+    "mainImage": "assets/design/theater-square/photo-1.jpg",
+    "status": "not implemented",
+    "photos": [
+      {
+        "url": "assets/design/theater-square/photo-1.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-2.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-3.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-4.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-5.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-6.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-7.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-8.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-9.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-10.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-11.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-12.jpg",
+        "alt": "Сквер Театральний"
+      },
+      {
+        "url": "assets/design/theater-square/photo-13.jpg",
+        "alt": "Сквер Театральний"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Сквер Прикордонників",
+    "slug": "prykordonnykiv-square",
+    "description": "Сквер Прикордонників у м. Запоріжжя — це сучасний простір, що поєднує природну красу та функціональність. Центральний елемент — символічна металева композиція у формі тризуба, оточена квітучими деревами з яскравими рожевими квітами. Широкі пішохідні доріжки, викладені кам’яною плиткою, оточені доглянутими газонами та декоративними кущами. Зони відпочинку облаштовані стильними лавками та дерев’яними платформами, а дитячий майданчик із дерев’яними конструкціями та гірками приваблює малечу. Басейн, створює атмосферу спокою. Сквер доповнений прапорами України та Запоріжжя, підкреслюючи його патріотичне значення.",
+    "mainImage": "assets/design/prykordonnykiv-square/photo-1.jpg",
+    "status": "not implemented",
+    "photos": [
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-1.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-2.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-3.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-4.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-5.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-6.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-7.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-8.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-9.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-10.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-11.jpg",
+        "alt": "Сквер Прикордонників"
+      },
+      {
+        "url": "assets/design/prykordonnykiv-square/photo-12.jpg",
+        "alt": "Сквер Прикордонників"
+      }
+    ]
   }
 ]
