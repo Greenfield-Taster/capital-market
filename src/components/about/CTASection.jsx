@@ -16,7 +16,7 @@ const CTASection = () => {
           <div className="cta-buttons">
             <Link
               to="/contact"
-              className="btn btn-primary btn-large glow-effect pulse-animation"
+              className="btn btn-primary btn-large glow-effect "
             >
               <span>{t("about.cta.button")}</span>
               <ArrowRight size={20} />
