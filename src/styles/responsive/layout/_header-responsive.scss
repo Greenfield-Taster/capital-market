@@ -1,0 +1,437 @@
+@use "../../variables" as v;
+
+// === АДАПТИВНЫЕ СТИЛИ ДЛЯ ХЕДЕРА ===
+
+// === ОБЩИЕ АДАПТИВНЫЕ СТИЛИ ===
+@media (max-width: v.$breakpoint-lg) {
+  .header .container {
+    padding: 0 v.$spacing-lg;
+  }
+}
+
+@media (max-width: v.$breakpoint-sm) {
+  .header .container {
+    padding: 0 v.$spacing-md;
+  }
+}
+
+@media (max-width: v.$breakpoint-md) {
+  .header-content {
+    height: 70px;
+  }
+}
+
+@media (max-width: v.$breakpoint-sm) {
+  .header-content {
+    height: 65px;
+  }
+}
+
+// === АДАПТИВНОСТЬ ЛОГОТИПА ===
+@media (max-width: v.$breakpoint-md) {
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: v.$breakpoint-sm) {
+  .logo {
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+}
+
+// === СКРЫТИЕ/ПОКАЗ НАВИГАЦИИ ===
+@media (max-width: v.$breakpoint-md) {
+  .nav--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: v.$breakpoint-md) {
+  .nav--mobile {
+    display: none;
+  }
+}
+
+// === СКРЫТИЕ/ПОКАЗ ПЕРЕКЛЮЧАТЕЛЯ ЯЗЫКА ===
+@media (max-width: v.$breakpoint-md) {
+  .language-switcher--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: v.$breakpoint-md) {
+  .language-switcher--mobile {
+    display: none;
+  }
+}
+
+// === АДАПТИВНОСТЬ ДЕСКТОПНОЙ НАВИГАЦИИ ===
+@media (max-width: v.$breakpoint-lg) {
+  .nav-list {
+    gap: v.$spacing-lg;
+  }
+}
+
+// === МОБИЛЬНАЯ НАВИГАЦИЯ ===
+.nav--mobile {
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(v.$light-gray, 0.3);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .nav-link {
+    padding: v.$spacing-sm v.$spacing-md;
+    font-size: v.$font-size-base;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 0;
+
+    &::before {
+      display: none;
+    }
+
+    &:hover,
+    &.active {
+      background-color: rgba(v.$terracotta, 0.08);
+      color: v.$terracotta;
+      padding-left: v.$spacing-2xl;
+    }
+  }
+
+  .nav-icon {
+    margin-left: auto;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin: 0;
+    background: rgba(v.$dark-blue, 0.03);
+    border: none;
+    border-radius: 0;
+    box-shadow: inset 0 2px 4px rgba(v.$dark-blue, 0.1);
+  }
+
+  .dropdown-item {
+    padding: v.$spacing-md v.$spacing-2xl;
+    font-size: v.$font-size-sm;
+
+    &:hover {
+      padding-left: v.$spacing-3xl;
+    }
+  }
+}
+
+// === МОБИЛЬНЫЕ ЭЛЕМЕНТЫ УПРАВЛЕНИЯ ===
+@media (min-width: v.$breakpoint-md) {
+  .mobile-controls {
+    display: none;
+  }
+}
+
+@media (max-width: v.$breakpoint-sm) {
+  .burger-menu {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+// === МОБИЛЬНОЕ МЕНЮ ===
+@media (min-width: v.$breakpoint-md) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+// Полноэкранное мобильное меню
+.mobile-menu-content {
+  max-width: 100% !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 v.$spacing-xl;
+}
+
+// Центрированная навигация в мобильном меню
+.nav--mobile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .nav-list {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid rgba(v.$light-gray, 0.1);
+
+    &:first-child {
+      border-top: 1px solid rgba(v.$light-gray, 0.1);
+    }
+  }
+
+  .nav-link {
+    justify-content: center;
+    text-align: center;
+    padding: v.$spacing-xs v.$spacing-xs;
+    font-size: v.$font-size-base;
+    font-weight: v.$font-weight-semibold;
+    position: relative;
+
+    &:hover,
+    &.active {
+      padding-left: v.$spacing-lg;
+      background-color: rgba(v.$dark-blue, 0.05);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, v.$dark-blue, v.$terracotta);
+      }
+    }
+
+    span {
+      letter-spacing: 1px;
+    }
+  }
+
+  .nav-icon {
+    margin-left: v.$spacing-sm;
+  }
+
+  .dropdown-menu {
+    background: rgba(v.$dark-blue, 0.02);
+    border-radius: v.$border-radius-md;
+    margin: v.$spacing-sm 0;
+  }
+
+  .dropdown-item {
+    padding: v.$spacing-lg v.$spacing-xl;
+    font-size: v.$font-size-base;
+    text-align: center;
+
+    &:hover {
+      padding-left: v.$spacing-xl;
+      background-color: rgba(v.$dark-blue, 0.08);
+    }
+  }
+}
+
+// === ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ ===
+@media (max-width: 360px) {
+  .header-content {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 1rem;
+
+    a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 180px;
+    }
+  }
+
+  .mobile-controls {
+    gap: v.$spacing-sm;
+  }
+
+  .language-toggle {
+    padding: v.$spacing-xs v.$spacing-sm;
+    font-size: 0.75rem;
+
+    span {
+      display: none;
+    }
+  }
+
+  .burger-menu {
+    width: 40px;
+    height: 40px;
+  }
+
+  .burger-icon {
+    width: 18px;
+    height: 14px;
+    gap: 3px;
+  }
+
+  // Полноэкранное меню остается полноэкранным даже на очень маленьких экранах
+  .mobile-menu-content {
+    padding: 0 v.$spacing-md;
+  }
+
+  .nav--mobile {
+    .nav-link {
+      font-size: v.$font-size-sm;
+      padding: v.$spacing-sm v.$spacing-xs;
+    }
+
+    .dropdown-item {
+      padding: v.$spacing-sm v.$spacing-xs;
+    }
+  }
+}
+
+// === ПЛАНШЕТЫ В ПОРТРЕТНОЙ ОРИЕНТАЦИИ ===
+@media (max-width: v.$breakpoint-md) and (orientation: portrait) {
+  .header .container {
+    padding: 0 v.$spacing-lg;
+  }
+
+  // Полноэкранное меню для планшетов
+  .nav--mobile {
+    .nav-link {
+      font-size: v.$font-size-xl;
+      padding: v.$spacing-xl v.$spacing-lg;
+    }
+
+    .dropdown-item {
+      font-size: v.$font-size-md;
+      padding: v.$spacing-md v.$spacing-md;
+    }
+  }
+
+  .language-toggle {
+    padding: v.$spacing-xs v.$spacing-sm;
+    font-size: 0.75rem;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+// === ПЛАНШЕТЫ В ЛАНДШАФТНОЙ ОРИЕНТАЦИИ ===
+@media (max-width: v.$breakpoint-lg) and (orientation: landscape) {
+  .header-content {
+    height: 65px;
+  }
+
+  // Адаптация для ландшафтного режима планшетов
+  .nav--mobile {
+    .nav-link {
+      font-size: v.$font-size-lg;
+      padding: v.$spacing-xl v.$spacing-lg;
+    }
+  }
+}
+
+// === УЛУЧШЕНИЯ ДОСТУПНОСТИ ===
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .logo,
+  .nav-link,
+  .burger-menu,
+  .mobile-menu,
+  .mobile-menu-content,
+  .dropdown-menu,
+  .language-dropdown {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .burger-line {
+    transition: none !important;
+  }
+}
+
+// === ВЫСОКАЯ ПЛОТНОСТЬ ПИКСЕЛЕЙ ===
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+    border-bottom-width: 0.5px;
+  }
+
+  .burger-line {
+    height: 1.5px;
+  }
+
+  .dropdown-menu,
+  .language-dropdown {
+    border-width: 0.5px;
+  }
+}
+
+// === ПОДДЕРЖКА ТЕМНОЙ ТЕМЫ ===
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: rgba(v.$graphite-dark, 0.95);
+    border-bottom-color: rgba(v.$light-gray, 0.1);
+
+    &::before {
+      background: linear-gradient(
+        135deg,
+        rgba(v.$graphite-dark, 0.9) 0%,
+        rgba(#1a1a1a, 0.95) 100%
+      );
+    }
+  }
+
+  .logo a {
+    color: v.$almost-white;
+
+    &:hover {
+      color: v.$milk;
+    }
+  }
+
+  .nav-link {
+    color: rgba(v.$almost-white, 0.8);
+
+    &:hover,
+    &.active {
+      color: v.$almost-white;
+      background-color: rgba(v.$almost-white, 0.05);
+    }
+  }
+
+  .dropdown-menu,
+  .language-dropdown,
+  .mobile-menu-content {
+    background: rgba(v.$graphite-dark, 0.98);
+    border-color: rgba(v.$light-gray, 0.1);
+  }
+
+  .language-toggle,
+  .burger-menu {
+    background: rgba(v.$almost-white, 0.05);
+    border-color: rgba(v.$almost-white, 0.1);
+    color: rgba(v.$almost-white, 0.8);
+
+    &:hover {
+      background: rgba(v.$almost-white, 0.1);
+      color: v.$almost-white;
+    }
+  }
+}
