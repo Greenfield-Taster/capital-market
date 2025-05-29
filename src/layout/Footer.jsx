@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../styles/layout/_footer.scss";
+import "../styles/responsive/layout/_footer-responsive.scss";
 import Logo from "../assets/logo.svg";
 
 const Footer = () => {
