@@ -60,6 +60,7 @@
   letter-spacing: 0.5px;
   z-index: v.$z-index-fixed + 1;
   position: relative;
+  margin-right: 50px;
 
   a {
     color: v.$graphite-dark;
@@ -175,8 +176,8 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  min-width: 220px;
+  left: -18px;
+  min-width: 160px;
   background: rgba(v.$almost-white, 0.98);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(v.$light-gray, 0.2);
