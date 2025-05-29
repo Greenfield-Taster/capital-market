@@ -402,3 +402,10 @@
     }
   }
 }
+
+@media (max-width: v.$breakpoint-xs) {
+  .footer-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
