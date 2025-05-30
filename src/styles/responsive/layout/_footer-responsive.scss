@@ -202,7 +202,7 @@
 }
 
 // === ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ ===
-@media (max-width: 360px) {
+@media (max-width: v.$breakpoint-xxs) {
   .footer-main {
     padding: v.$spacing-lg 0;
   }
