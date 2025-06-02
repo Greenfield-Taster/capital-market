@@ -232,13 +232,14 @@
     }
 
     .hero-content {
-      gap: 2rem;
-      margin-top: v.$spacing-3xl;
+      gap: 1.5rem;
+      margin-top: v.$spacing-md;
     }
 
     .hero-title {
       font-size: 1.5rem; // 24px
       margin-bottom: v.$spacing-sm;
+      margin-top: v.$spacing-2xl;
     }
 
     .hero-description {
@@ -281,7 +282,7 @@
     }
 
     .hero-content {
-      margin-top: 4rem;
+      margin-top: 1rem;
       gap: 2rem;
     }
 

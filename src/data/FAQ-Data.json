@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "category": "general",
+    "question": {
+      "uk": "Чим «ТД Столиця Маркет» відрізняється від інших будівельних компаній?",
+      "en": "How does \"TD Capital Market\" differ from other construction companies?"
+    },
+    "answer": {
+      "uk": "Ми поєднуємо 9+ років досвіду з сучасними технологіями (BIM-моделювання, власне виробництво матеріалів) та дотримуємося міжнародних стандартів (ISO 9001, ISO 45001). Наші ключові переваги — це робота «під ключ», індивідуальний підхід до кожного проекту та участь у відновленні інфраструктури України.",
+      "en": "We combine 9+ years of experience with modern technologies (BIM-modeling, in-house production of materials) and adhere to international standards (ISO 9001, ISO 45001). Our key advantages are turnkey solutions, individual approach to each project, and participation in Ukraine's infrastructure restoration."
+    }
+  },
+  {
+    "id": 2,
+    "category": "general",
+    "question": {
+      "uk": "Які послуги ви пропонуєте?",
+      "en": "What services do you offer?"
+    },
+    "answer": {
+      "uk": "Ми спеціалізуємося на:",
+      "en": "We specialize in:"
+    },
+    "listItems": {
+      "uk": [
+        "Будівництві (житлові/нежитлові об'єкти, укриття, реконструкція);",
+        "Виробництві (металоконструкції, бетонні фортифікаційні елементи);",
+        "Проектуванні (від концепції до реалізації);",
+        "Торгівлі (матеріали, участь у держзакупівлях)."
+      ],
+      "en": [
+        "Construction (residential/non-residential buildings, shelters, reconstruction);",
+        "Manufacturing (metal structures, concrete fortification elements);",
+        "Design (from concept to implementation);",
+        "Trade (materials, participation in government procurement)."
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "category": "quality",
+    "question": {
+      "uk": "Чи маєте сертифікати якості?",
+      "en": "Do you have quality certificates?"
+    },
+    "answer": {
+      "uk": "Так, наша робота відповідає міжнародним стандартам:",
+      "en": "Yes, our work complies with international standards:"
+    },
+    "listItems": {
+      "uk": [
+        "ISO 9001 (якість управління);",
+        "ISO 45001 (безпека праці);",
+        "ISO 14001 (екологічна відповідальність)."
+      ],
+      "en": [
+        "ISO 9001 (quality management);",
+        "ISO 45001 (occupational safety);",
+        "ISO 14001 (environmental responsibility)."
+      ]
+    },
+    "additionalInfo": {
+      "uk": "Уся продукція виробляється згідно з ДСТУ.",
+      "en": "All products are manufactured according to Ukrainian state standards."
+    }
+  },
+  {
+    "id": 4,
+    "category": "quality",
+    "question": {
+      "uk": "Які проекти ви реалізували після 2022 року?",
+      "en": "What projects have you implemented since 2022?"
+    },
+    "answer": {
+      "uk": "Ми брали участь у:",
+      "en": "We have participated in:"
+    },
+    "listItems": {
+      "uk": [
+        "Будівництві захисних споруд і бункерів;",
+        "Відновленні зруйнованої інфраструктури;",
+        "Поставках фортифікаційних конструкцій (бетонні блоки, металеві загородження)."
+      ],
+      "en": [
+        "Construction of protective structures and bunkers;",
+        "Restoration of destroyed infrastructure;",
+        "Supply of fortification structures (concrete blocks, metal barriers)."
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "category": "business",
+    "question": {
+      "uk": "Чи берете участь у тендерах?",
+      "en": "Do you participate in tenders?"
+    },
+    "answer": {
+      "uk": "Так, ми успішно реалізуємо державні та комерційні контракти. Наші переваги — прозорі умови, дотримання строків і підтримка на всіх етапах.",
+      "en": "Yes, we successfully implement government and commercial contracts. Our advantages are transparent conditions, adherence to deadlines, and support at all stages."
+    }
+  },
+  {
+    "id": 6,
+    "category": "business",
+    "question": {
+      "uk": "Чи надаєте гарантію на об'єкти?",
+      "en": "Do you provide guarantees for your projects?"
+    },
+    "answer": {
+      "uk": "Так, усі роботи супроводжуються гарантійними зобов'язаннями. Термін залежить від типу проекту та обговорюється індивідуально.",
+      "en": "Yes, all work is accompanied by warranty obligations. The term depends on the type of project and is discussed individually."
+    }
+  },
+  {
+    "id": 7,
+    "category": "quality",
+    "question": {
+      "uk": "Як організована безпека працівників під час обстрілів?",
+      "en": "How is employee safety organized during artillery attacks?"
+    },
+    "answer": {
+      "uk": "Усі майданчики обладнані:",
+      "en": "All construction sites are equipped with:"
+    },
+    "listItems": {
+      "uk": [
+        "Підземними сховищами з запасом води/їжі;",
+        "Супутниковим зв'язком;",
+        "Медиками-психологами в бригадах."
+      ],
+      "en": [
+        "Underground shelters with water/food supplies;",
+        "Satellite communication;",
+        "Medical and psychological support in teams."
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "category": "innovation",
+    "question": {
+      "uk": "Чи використовуєте зарубіжні технології?",
+      "en": "Do you use foreign technologies?"
+    },
+    "answer": {
+      "uk": "Адаптуємо світовий досвід:",
+      "en": "We adapt international experience:"
+    },
+    "listItems": {
+      "uk": [
+        "Німецькі стандарти енергоефективності;",
+        "Фінські методи швидкого будівництва в зимових умовах;",
+        "Польські тренінги з безпеки праці."
+      ],
+      "en": [
+        "German energy efficiency standards;",
+        "Finnish methods for rapid construction in winter conditions;",
+        "Polish workplace safety training programs."
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "category": "business",
+    "question": {
+      "uk": "Які переваги у співпраці з вами для постачальників будматеріалів?",
+      "en": "What are the advantages of cooperation for construction material suppliers?"
+    },
+    "listItems": {
+      "uk": [
+        "Щомісячний обсяг закупівель — понад 1 млн євро",
+        "Готовність розвивати дилерську мережу бренду в Україні",
+        "Інтеграція матеріалів у проєктні рішення",
+        "Гнучкі умови оплати та логістики",
+        "Популяризація бренду через наші об'єкти"
+      ],
+      "en": [
+        "Monthly procurement volume exceeding 1 million euros",
+        "Readiness to develop brand dealership networks in Ukraine",
+        "Integration of materials into project solutions",
+        "Flexible payment and logistics terms",
+        "Brand promotion through our projects"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "category": "business",
+    "question": {
+      "uk": "Чи готові ви виступати офіційним дистриб'ютором будматеріалів в Україні?",
+      "en": "Are you ready to act as an official distributor of construction materials in Ukraine?"
+    },
+    "answer": {
+      "uk": "Так, ми відкриті до стратегічного партнерства з виробниками та готові розвивати дилерську мережу вашої продукції, забезпечуючи її просування, логістику та присутність у ключових проєктах по всій Україні.",
+      "en": "Yes, we are open to strategic partnerships with manufacturers and ready to develop a dealer network for your products, ensuring their promotion, logistics, and presence in key projects throughout Ukraine."
+    }
+  },
+  {
+    "id": 11,
+    "category": "business",
+    "question": {
+      "uk": "Чи займаєтесь ви проєктуванням?",
+      "en": "Do you provide design services?"
+    },
+    "answer": {
+      "uk": "Так, наші фахівці виконують повний цикл проєктування — від концепції до реалізації, з урахуванням безпеки, енергоефективності та можливості глибокої інтеграції нових матеріалів чи рішень у структуру об'єкта.",
+      "en": "Yes, our specialists perform a full cycle of design — from concept to implementation, taking into account safety, energy efficiency, and the possibility of deep integration of new materials or solutions into the structure of the object."
+    }
+  },
+  {
+    "id": 12,
+    "category": "business",
+    "question": {
+      "uk": "У яких регіонах України ви працюєте?",
+      "en": "In which regions of Ukraine do you operate?"
+    },
+    "answer": {
+      "uk": "Ми працюємо по всій Україні. Наша логістика оптимізована, щоб забезпечити швидку доставку матеріалів і ефективну реалізацію проєктів незалежно від географії.",
+      "en": "We work throughout Ukraine. Our logistics are optimized to ensure fast delivery of materials and efficient project implementation regardless of geography."
+    }
+  },
+  {
+    "id": 13,
+    "category": "business",
+    "question": {
+      "uk": "Який обсяг робіт компанія може виконувати щомісяця?",
+      "en": "What volume of work can the company perform monthly?"
+    },
+    "answer": {
+      "uk": "Наша компанія здатна обробляти проєкти з закупівельним обсягом понад 1 млн євро щомісяця, завдяки наявності власного виробництва, логістики та досвідченої команди.",
+      "en": "Our company is capable of processing projects with a procurement volume of over 1 million euros per month, thanks to our own production facilities, logistics, and experienced team."
+    }
+  },
+  {
+    "id": 14,
+    "category": "business",
+    "question": {
+      "uk": "Скільки співробітників працює у вашій компанії?",
+      "en": "How many employees work in your company?"
+    },
+    "answer": {
+      "uk": "Наша команда складається з понад 100 кваліфікованих спеціалістів, серед яких — інженери, архітектори, проєктувальники, логісти, технічні працівники та адміністративний персонал.",
+      "en": "Our team consists of over 100 qualified specialists, including engineers, architects, designers, logistics experts, technical workers, and administrative staff."
+    }
+  },
+  {
+    "id": 15,
+    "category": "business",
+    "question": {
+      "uk": "Чи берете участь у публічних закупівлях?",
+      "en": "Do you participate in public procurement?"
+    },
+    "answer": {
+      "uk": "Так. Ми активно працюємо в системі Prozorro, беремо участь у відкритих тендерах та маємо успішні кейси реалізації державних контрактів у сфері будівництва та реконструкції.",
+      "en": "Yes. We actively work with the Prozorro system, participate in open tenders, and have successful cases of implementing government contracts in construction and reconstruction."
+    }
+  },
+  {
+    "id": 16,
+    "category": "business",
+    "question": {
+      "uk": "Які товари та матеріали ви закуповуєте найчастіше?",
+      "en": "What goods and materials do you purchase most often?"
+    },
+    "answer": {
+      "uk": "Ми регулярно закуповуємо:",
+      "en": "We regularly purchase:"
+    },
+    "listItems": {
+      "uk": [
+        "цемент та бетонні суміші",
+        "арматуру, металопрокат",
+        "гідроізоляційні та теплоізоляційні матеріали",
+        "електротехнічну продукцію",
+        "матеріали для фортифікаційних споруд",
+        "облицювання та фасадні системи"
+      ],
+      "en": [
+        "cement and concrete mixtures",
+        "reinforcement steel, metal products",
+        "waterproofing and thermal insulation materials",
+        "electrical equipment",
+        "materials for fortification structures",
+        "cladding and facade systems"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "category": "business",
+    "question": {
+      "uk": "Чи працюєте ви за системою «будівництво під ключ»?",
+      "en": "Do you work on a \"turnkey construction\" basis?"
+    },
+    "answer": {
+      "uk": "Так. Ми надаємо повний цикл послуг: від проектування та узгоджень — до реалізації, контролю якості, здачі об'єкта та його подальшої підтримки.",
+      "en": "Yes. We provide a full cycle of services: from design and approvals — to implementation, quality control, project handover, and its further support."
+    }
+  },
+  {
+    "id": 18,
+    "category": "business",
+    "question": {
+      "uk": "Як стати вашим постачальником або партнером?",
+      "en": "How to become your supplier or partner?"
+    },
+    "answer": {
+      "uk": "Просто надішліть нам коротку презентацію або комерційну пропозицію. Ми розглядаємо всі запити та відкриті до довгострокових відносин з постачальниками, дистриб'юторами й виробниками, орієнтованими на якість та надійність.",
+      "en": "Simply send us a brief presentation or commercial proposal. We review all requests and are open to long-term relationships with suppliers, distributors, and manufacturers focused on quality and reliability."
+    }
+  },
+  {
+    "id": 19,
+    "category": "business",
+    "question": {
+      "uk": "Чи надаєте ви послуги з реконструкції об'єктів, пошкоджених війною?",
+      "en": "Do you provide reconstruction services for war-damaged objects?"
+    },
+    "answer": {
+      "uk": "Так. Один із наших пріоритетів — відновлення інфраструктури. Ми маємо досвід реконструкції житлових будинків, адміністративних та соціальних об'єктів, включаючи укріплення фундаментів і несучих конструкцій.",
+      "en": "Yes. One of our priorities is infrastructure restoration. We have experience in reconstructing residential buildings, administrative and social facilities, including reinforcement of foundations and load-bearing structures."
+    }
+  }
+]
