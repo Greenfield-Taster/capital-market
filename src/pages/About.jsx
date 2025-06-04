@@ -4,6 +4,7 @@ import ProcessSection from "../components/about/ProcessSection";
 import MainContentSection from "../components/about/MainContentSection";
 import FeaturedProjectSection from "../components/about/FeaturedProjectSection";
 import ValuesSection from "../components/about/ValuesSection";
+import QualitySection from "../components/about/QualitySection";
 import CTASection from "../components/about/CTASection";
 import FooterSection from "../components/about/FooterSection";
 import useAboutScrollAnimation from "../utils/useAboutScrollAnimation";
@@ -33,6 +34,7 @@ const About = () => {
   return (
     <div className="about-page">
       <HeroSection />
+      <QualitySection />
       <ProcessSection />
       <MainContentSection />
       <FeaturedProjectSection />

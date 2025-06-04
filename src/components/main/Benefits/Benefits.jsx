@@ -1,32 +1,38 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  Lightbulb,
+  Users,
+  Handshake,
+  Award,
+  Key,
+  Cpu,
+  Trophy,
+  Truck,
+  ShieldCheck,
+  Eye,
+  Settings,
+} from "lucide-react";
 import "./Benefits.scss";
 import benefitsImage from "../../../assets/benefitsImage.png";
-import experienceImage from "../../../assets/experience.png";
-import certificatesImage from "../../../assets/Certificates.png";
-import financialSuccessImage from "../../../assets/financial-success-100.png";
-import individualApproachImage from "../../../assets/Individual-approach.png";
-import modernTechnologiesImage from "../../../assets/modern-technologies.png";
-import keyImage from "../../../assets/key.png";
-import fastLogisticImage from "../../../assets/fast-logistic.png";
-import partnerNetworkImage from "../../../assets/partner-network.png";
 
 const Benefits = () => {
   const { t } = useTranslation();
 
-  // Маппинг ID преимуществ с их иконками
   const benefitIcons = {
-    experience: experienceImage,
-    approach: individualApproachImage,
-    partners: partnerNetworkImage,
-    certificates: certificatesImage,
-    turnkey: keyImage,
-    technologies: modernTechnologiesImage,
-    tenders: financialSuccessImage,
-    logistics: fastLogisticImage,
+    experience: Lightbulb,
+    approach: Users,
+    partners: Handshake,
+    certificates: Award,
+    turnkey: Key,
+    technologies: Cpu,
+    tenders: Trophy,
+    logistics: Truck,
+    qualityGuarantee: ShieldCheck,
+    financialTransparency: Eye,
+    flexibility: Settings,
   };
 
-  // Получаем список идентификаторов из объекта переводов
   const benefitIds = [
     "experience",
     "approach",
@@ -36,6 +42,9 @@ const Benefits = () => {
     "technologies",
     "tenders",
     "logistics",
+    "qualityGuarantee",
+    "financialTransparency",
+    "flexibility",
   ];
 
   return (
@@ -49,36 +58,54 @@ const Benefits = () => {
           </div>
 
           <div className="benefits-content">
-            <div className="benefits-grid">
-              {benefitIds.slice(0, 6).map((id) => (
-                <div key={id} className="benefit-item">
-                  <div className="benefit-icon">
-                    <img
-                      src={benefitIcons[id]}
-                      alt={t(`main.benefits.items.${id}.title`, "")}
-                    />
-                  </div>
-                  <div className="benefit-title">
-                    {t(`main.benefits.items.${id}.title`, "")}
-                  </div>
-                </div>
-              ))}
-            </div>
+            <div className="benefits-grid-wide">
+              <div className="benefits-row benefits-row-4">
+                {benefitIds.slice(0, 4).map((id) => {
+                  const IconComponent = benefitIcons[id];
+                  return (
+                    <div key={id} className="benefit-item">
+                      <div className="benefit-icon">
+                        <IconComponent size={28} />
+                      </div>
+                      <div className="benefit-title">
+                        {t(`main.benefits.items.${id}.title`, "")}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
 
-            <div className="benefits-bottom">
-              {benefitIds.slice(6, 8).map((id) => (
-                <div key={id} className="benefit-item">
-                  <div className="benefit-icon">
-                    <img
-                      src={benefitIcons[id]}
-                      alt={t(`main.benefits.items.${id}.title`, "")}
-                    />
-                  </div>
-                  <div className="benefit-title">
-                    {t(`main.benefits.items.${id}.title`, "")}
-                  </div>
-                </div>
-              ))}
+              <div className="benefits-row benefits-row-4">
+                {benefitIds.slice(4, 8).map((id) => {
+                  const IconComponent = benefitIcons[id];
+                  return (
+                    <div key={id} className="benefit-item">
+                      <div className="benefit-icon">
+                        <IconComponent size={28} />
+                      </div>
+                      <div className="benefit-title">
+                        {t(`main.benefits.items.${id}.title`, "")}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="benefits-row benefits-row-3">
+                {benefitIds.slice(8).map((id) => {
+                  const IconComponent = benefitIcons[id];
+                  return (
+                    <div key={id} className="benefit-item">
+                      <div className="benefit-icon">
+                        <IconComponent size={28} />
+                      </div>
+                      <div className="benefit-title">
+                        {t(`main.benefits.items.${id}.title`, "")}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

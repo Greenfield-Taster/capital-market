@@ -1,4 +1,3 @@
-// src/utils/useAboutScrollAnimation.js
 import { useEffect } from "react";
 
 const useAboutScrollAnimation = () => {
@@ -17,9 +16,7 @@ const useAboutScrollAnimation = () => {
       }
     );
 
-    // Функция для добавления анимации к элементам
     const addAnimationToElements = () => {
-      // Основные анимируемые элементы
       const animatedElements = document.querySelectorAll(
         [
           ".hero-title",
@@ -27,6 +24,7 @@ const useAboutScrollAnimation = () => {
           ".hero-description",
           ".hero-cta",
           ".hero-image",
+          ".quality-content", // ДОБАВИЛИ НОВЫЙ ЭЛЕМЕНТ
           ".section-title",
           ".process-card",
           ".content-text",
@@ -45,10 +43,8 @@ const useAboutScrollAnimation = () => {
       );
 
       animatedElements.forEach((element, index) => {
-        // Добавляем класс анимации
         element.classList.add("animate-on-scroll");
 
-        // Определяем тип анимации в зависимости от элемента
         if (element.classList.contains("hero-title")) {
           element.classList.add("fade-in-up");
           element.style.setProperty("--animation-delay", "100ms");
@@ -64,6 +60,10 @@ const useAboutScrollAnimation = () => {
         } else if (element.classList.contains("hero-image")) {
           element.classList.add("fade-in-right");
           element.style.setProperty("--animation-delay", "500ms");
+        } else if (element.classList.contains("quality-content")) {
+          // ДОБАВИЛИ ОБРАБОТКУ НОВОГО ЭЛЕМЕНТА
+          element.classList.add("fade-in-up");
+          element.style.setProperty("--animation-delay", "200ms");
         } else if (element.classList.contains("section-title")) {
           element.classList.add("fade-in-up");
           element.style.setProperty("--animation-delay", "100ms");
@@ -125,7 +125,6 @@ const useAboutScrollAnimation = () => {
           element.classList.add("fade-in-left");
           element.style.setProperty("--animation-delay", "600ms");
         } else {
-          // Базовая анимация для остальных элементов
           element.classList.add("fade-in-up");
           element.style.setProperty("--animation-delay", `${index * 50}ms`);
         }
@@ -133,7 +132,6 @@ const useAboutScrollAnimation = () => {
         observer.observe(element);
       });
 
-      // Добавляем анимацию для отдельных feature элементов
       const featureItems = document.querySelectorAll(".feature");
       featureItems.forEach((feature, index) => {
         feature.classList.add("animate-on-scroll", "fade-in-left");
@@ -141,7 +139,6 @@ const useAboutScrollAnimation = () => {
         observer.observe(feature);
       });
 
-      // Добавляем анимацию для статистики CTA
       const ctaStats = document.querySelectorAll(".cta-stat");
       ctaStats.forEach((stat, index) => {
         stat.classList.add("animate-on-scroll", "fade-in-up");
@@ -150,7 +147,6 @@ const useAboutScrollAnimation = () => {
       });
     };
 
-    // Запускаем после небольшой задержки, чтобы DOM полностью загрузился
     const timeoutId = setTimeout(addAnimationToElements, 100);
 
     return () => {
