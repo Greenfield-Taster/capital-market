@@ -44,7 +44,7 @@ const FeaturedProjectSection = () => {
             </div>
           </div>
           <div className="project-image">
-            <div className="image-placeholder large">
+            <div className="image-placeholder">
               <img src={sobornyPhoto} alt="sobornyPhoto" />
             </div>
           </div>
