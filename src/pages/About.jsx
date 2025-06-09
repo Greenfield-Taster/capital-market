@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import HeroSection from "../components/about/HeroSection";
 import ProcessSection from "../components/about/ProcessSection";
-import MainContentSection from "../components/about/MainContentSection";
 import FeaturedProjectSection from "../components/about/FeaturedProjectSection";
 import ValuesSection from "../components/about/ValuesSection";
 import QualitySection from "../components/about/QualitySection";
@@ -36,7 +35,6 @@ const About = () => {
       <HeroSection />
       <QualitySection />
       <ProcessSection />
-      <MainContentSection />
       <FeaturedProjectSection />
       <ValuesSection />
       <CTASection />
