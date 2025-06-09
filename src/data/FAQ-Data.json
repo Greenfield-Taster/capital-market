@@ -261,30 +261,12 @@
     "id": 16,
     "category": "business",
     "question": {
-      "uk": "Які товари та матеріали ви закуповуєте найчастіше?",
-      "en": "What goods and materials do you purchase most often?"
+      "uk": "Чи надаєте ви послуги з реконструкції об'єктів, пошкоджених війною?",
+      "en": "Do you provide reconstruction services for war-damaged objects?"
     },
     "answer": {
-      "uk": "Ми регулярно закуповуємо:",
-      "en": "We regularly purchase:"
-    },
-    "listItems": {
-      "uk": [
-        "цемент та бетонні суміші",
-        "арматуру, металопрокат",
-        "гідроізоляційні та теплоізоляційні матеріали",
-        "електротехнічну продукцію",
-        "матеріали для фортифікаційних споруд",
-        "облицювання та фасадні системи"
-      ],
-      "en": [
-        "cement and concrete mixtures",
-        "reinforcement steel, metal products",
-        "waterproofing and thermal insulation materials",
-        "electrical equipment",
-        "materials for fortification structures",
-        "cladding and facade systems"
-      ]
+      "uk": "Так. Один із наших пріоритетів — відновлення інфраструктури. Ми маємо досвід реконструкції житлових будинків, адміністративних та соціальних об'єктів, включаючи укріплення фундаментів і несучих конструкцій.",
+      "en": "Yes. One of our priorities is infrastructure restoration. We have experience in reconstructing residential buildings, administrative and social facilities, including reinforcement of foundations and load-bearing structures."
     }
   },
   {
@@ -309,18 +291,6 @@
     "answer": {
       "uk": "Просто надішліть нам коротку презентацію або комерційну пропозицію. Ми розглядаємо всі запити та відкриті до довгострокових відносин з постачальниками, дистриб'юторами й виробниками, орієнтованими на якість та надійність.",
       "en": "Simply send us a brief presentation or commercial proposal. We review all requests and are open to long-term relationships with suppliers, distributors, and manufacturers focused on quality and reliability."
-    }
-  },
-  {
-    "id": 19,
-    "category": "business",
-    "question": {
-      "uk": "Чи надаєте ви послуги з реконструкції об'єктів, пошкоджених війною?",
-      "en": "Do you provide reconstruction services for war-damaged objects?"
-    },
-    "answer": {
-      "uk": "Так. Один із наших пріоритетів — відновлення інфраструктури. Ми маємо досвід реконструкції житлових будинків, адміністративних та соціальних об'єктів, включаючи укріплення фундаментів і несучих конструкцій.",
-      "en": "Yes. One of our priorities is infrastructure restoration. We have experience in reconstructing residential buildings, administrative and social facilities, including reinforcement of foundations and load-bearing structures."
     }
   }
 ]
