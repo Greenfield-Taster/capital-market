@@ -52,9 +52,6 @@
     "benefits": {
       "title": "Our Benefits",
       "items": {
-        "experience": {
-          "title": "8+ years of experience"
-        },
         "approach": {
           "title": "Individual approach"
         },
@@ -70,20 +67,8 @@
         "technologies": {
           "title": "Modern technologies and materials"
         },
-        "tenders": {
-          "title": "Success in tenders"
-        },
-        "logistics": {
-          "title": "Fast logistics"
-        },
         "qualityGuarantee": {
           "title": "Quality assurance"
-        },
-        "financialTransparency": {
-          "title": "Financial transparency"
-        },
-        "flexibility": {
-          "title": "Flexibility in decisions"
         }
       }
     },

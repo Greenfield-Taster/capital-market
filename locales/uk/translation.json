@@ -51,9 +51,6 @@
     "benefits": {
       "title": "Наші переваги",
       "items": {
-        "experience": {
-          "title": "8+ років досвіду"
-        },
         "approach": {
           "title": "Індивідуальний підхід"
         },
@@ -69,20 +66,8 @@
         "technologies": {
           "title": "Сучасні технології та матеріали"
         },
-        "tenders": {
-          "title": "Успіхи в тендерах"
-        },
-        "logistics": {
-          "title": "Швидка логістика"
-        },
         "qualityGuarantee": {
           "title": "Гарантія якості"
-        },
-        "financialTransparency": {
-          "title": "Фінансова прозорість"
-        },
-        "flexibility": {
-          "title": "Гнучкість у рішеннях"
         }
       }
     },
