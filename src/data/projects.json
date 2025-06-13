@@ -12,7 +12,7 @@
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-2.png",
+        "url": "assets/constructions/soborny-151/photo-2.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
@@ -24,11 +24,11 @@
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-5.png",
+        "url": "assets/constructions/soborny-151/photo-5.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-6.png",
+        "url": "assets/constructions/soborny-151/photo-6.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
@@ -40,7 +40,7 @@
         "alt": "Фото проекту Соборний 151"
       },
       {
-        "url": "assets/constructions/soborny-151/photo-9.png",
+        "url": "assets/constructions/soborny-151/photo-9.jpg",
         "alt": "Фото проекту Соборний 151"
       },
       {
@@ -57,10 +57,6 @@
       },
       {
         "url": "assets/constructions/soborny-151/photo-13.jpg",
-        "alt": "Фото проекту Соборний 151"
-      },
-      {
-        "url": "assets/constructions/soborny-151/photo-14.jpg",
         "alt": "Фото проекту Соборний 151"
       }
     ]
@@ -142,50 +138,6 @@
       {
         "url": "assets/constructions/bolnitsa-1/photo-10.jpg",
         "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-11.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-12.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-13.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-14.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-15.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-16.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-17.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-18.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-19.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-20.jpg",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-21.jpg",
-        "alt": "Фото проекту лікарні №1"
       }
     ]
   },
@@ -202,27 +154,15 @@
         "alt": "Фото проекту школи №62"
       },
       {
+        "url": "assets/constructions/school-62/photo-2.jpg",
+        "alt": "Фото проекту школи №62"
+      },
+      {
         "url": "assets/constructions/school-62/photo-3.jpg",
         "alt": "Фото проекту школи №62"
       },
       {
         "url": "assets/constructions/school-62/photo-4.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-5.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-6.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-7.jpg",
-        "alt": "Фото проекту школи №62"
-      },
-      {
-        "url": "assets/constructions/school-62/photo-8.jpg",
         "alt": "Фото проекту школи №62"
       }
     ]
@@ -270,42 +210,6 @@
       {
         "url": "assets/constructions/bolnitsa-5/photo-9.jpg",
         "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-10.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-11.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-12.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-13.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-14.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-15.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-16.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-17.jpg",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-18.jpg",
-        "alt": "Фото проекту лікарні №5"
       }
     ]
   },
@@ -334,35 +238,11 @@
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-5.jpg",
+        "url": "assets/constructions/school-76/photo-5.png",
         "alt": "Фото проекту школи №76"
       },
       {
-        "url": "assets/constructions/school-76/photo-6.jpg",
-        "alt": "Фото проекту школи №76"
-      },
-      {
-        "url": "assets/constructions/school-76/photo-7.jpg",
-        "alt": "Фото проекту школи №76"
-      },
-      {
-        "url": "assets/constructions/school-76/photo-8.jpg",
-        "alt": "Фото проекту школи №76"
-      },
-      {
-        "url": "assets/constructions/school-76/photo-9.jpg",
-        "alt": "Фото проекту школи №76"
-      },
-      {
-        "url": "assets/constructions/school-76/photo-10.jpg",
-        "alt": "Фото проекту школи №76"
-      },
-      {
-        "url": "assets/constructions/school-76/photo-11.jpg",
-        "alt": "Фото проекту школи №76"
-      },
-      {
-        "url": "assets/constructions/school-76/photo-12.jpg",
+        "url": "assets/constructions/school-76/photo-6.png",
         "alt": "Фото проекту школи №76"
       }
     ]
@@ -389,46 +269,6 @@
       },
       {
         "url": "assets/constructions/DBC/photo-4.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-5.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-6.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-7.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-8.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-9.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-10.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-11.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-12.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-13.jpg",
-        "alt": "Фото проекту бізнес-центру"
-      },
-      {
-        "url": "assets/constructions/DBC/photo-14.jpg",
         "alt": "Фото проекту бізнес-центру"
       }
     ]
