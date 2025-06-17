@@ -2,7 +2,7 @@ import React from "react";
 import { CheckCircle, Eye, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import sobornyPhoto from "../../assets/about-us/soborny-photo.jpg";
+import sobornyPhoto from "../../assets/about-us/soborny-photo.webp";
 import "../../styles/components/about/FeaturedProjectSection.scss";
 
 const FeaturedProjectSection = () => {
