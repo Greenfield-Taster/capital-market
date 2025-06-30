@@ -38,5 +38,45 @@
   {
     "id": 10,
     "logo": "assets/partners/pershii-dim.png"
+  },
+  {
+    "id": 11,
+    "logo": "assets/partners/zzcm.png"
+  },
+  {
+    "id": 12,
+    "logo": "assets/partners/vikant.svg"
+  },
+  {
+    "id": 13,
+    "logo": "assets/partners/otis.png"
+  },
+  {
+    "id": 14,
+    "logo": "assets/partners/hilti.svg"
+  },
+  {
+    "id": 15,
+    "logo": "assets/partners/sweetondale.png"
+  },
+  {
+    "id": 16,
+    "logo": "assets/partners/ceresit.png"
+  },
+  {
+    "id": 17,
+    "logo": "assets/partners/wilo.png"
+  },
+  {
+    "id": 18,
+    "logo": "assets/partners/aerostar.png"
+  },
+  {
+    "id": 19,
+    "logo": "assets/partners/dkc.png"
+  },
+  {
+    "id": 20,
+    "logo": "assets/partners/ccktm.png"
   }
 ]
