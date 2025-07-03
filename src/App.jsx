@@ -4,7 +4,6 @@ import Footer from "./layout/Footer";
 import Main from "./pages/Main";
 import Construction from "./pages/Construction";
 import ConstructionDetail from "./pages/ConstructionDetail";
-import Manufacturing from "./pages/Manufacturing";
 import Design from "./pages/Design";
 import DesignDetail from "./pages/DesignDetail";
 import FAQ from "./pages/FAQ";
@@ -13,6 +12,7 @@ import About from "./pages/About";
 import ScrollToTop from "./utils/ScrollToTop";
 import Preloader from "./components/common/Preloader";
 import NotFound from "./components/common/NotFound/NotFound";
+import ExternalRedirect from "./utils/ExternalRedirect";
 
 import "./styles/main.scss";
 
@@ -29,7 +29,10 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
-            <Route path="/manufacturing" element={<Manufacturing />} />
+            <Route
+              path="/manufacturing"
+              element={<ExternalRedirect to="https://ctadel.netlify.app/" />}
+            />
 
             <Route path="/construction" element={<Construction />} />
             <Route
