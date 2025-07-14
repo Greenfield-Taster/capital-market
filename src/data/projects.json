@@ -58,6 +58,10 @@
       {
         "url": "assets/constructions/soborny-151/photo-13.webp",
         "alt": "Фото проекту Соборний 151"
+      },
+      {
+        "url": "assets/constructions/soborny-151/photo-14.webp",
+        "alt": "Фото проекту Соборний 151"
       }
     ]
   },
@@ -87,6 +91,26 @@
       },
       {
         "url": "assets/constructions/park-sadskogo/photo-5.webp",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-6.webp",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-7.webp",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-8.webp",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-9.webp",
+        "alt": "Фото парку Садського"
+      },
+      {
+        "url": "assets/constructions/park-sadskogo/photo-10.webp",
         "alt": "Фото парку Садського"
       }
     ]
@@ -129,14 +153,6 @@
       },
       {
         "url": "assets/constructions/bolnitsa-1/photo-8.webp",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-9.webp",
-        "alt": "Фото проекту лікарні №1"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-1/photo-10.webp",
         "alt": "Фото проекту лікарні №1"
       }
     ]
@@ -205,10 +221,6 @@
       },
       {
         "url": "assets/constructions/bolnitsa-5/photo-8.webp",
-        "alt": "Фото проекту лікарні №5"
-      },
-      {
-        "url": "assets/constructions/bolnitsa-5/photo-9.webp",
         "alt": "Фото проекту лікарні №5"
       }
     ]
