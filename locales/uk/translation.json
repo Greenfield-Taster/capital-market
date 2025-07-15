@@ -170,7 +170,11 @@
   "construction": {
     "title": "Наші проекти",
     "statusCompleted": "Будівництво завершено",
-    "statusInProgress": "Будівництво триває"
+    "statusInProgress": "Будівництво триває",
+    "filterAll": "Всі проекти",
+    "filterCompleted": "Завершені",
+    "filterInProgress": "В процесі",
+    "noProjects": "Немає проектів для відображення"
   },
   "design": {
     "title": "Наші проекти дизайну",

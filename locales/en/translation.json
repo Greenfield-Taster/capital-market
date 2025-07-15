@@ -171,7 +171,11 @@
   "construction": {
     "title": "Our projects",
     "statusCompleted": "Construction is completed",
-    "statusInProgress": "Construction is ongoing"
+    "statusInProgress": "Construction is ongoing",
+    "filterAll": "All projects",
+    "filterCompleted": "Completed",
+    "filterInProgress": "In progress",
+    "noProjects": "No projects to display"
   },
   "design": {
     "title": "Our design projects",
