@@ -284,5 +284,249 @@
         "alt": "Фото проекту бізнес-центру"
       }
     ]
+  },
+  {
+    "id": 8,
+    "title": "Гімназія №25",
+    "slug": "gimnaziya-25",
+    "description": "Text about the project of the gymnasium 25.",
+    "mainImage": "assets/constructions/gimnaziya-25/photo-1.webp",
+    "status": "completed",
+    "photos": [
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-1.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-2.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-3.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-4.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-5.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-6.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-7.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-8.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-9.webp",
+        "alt": "Фото проекту Гімназія №25"
+      },
+      {
+        "url": "assets/constructions/gimnaziya-25/photo-10.webp",
+        "alt": "Фото проекту Гімназія №25"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Школа №103",
+    "slug": "school-103",
+    "description": "Text about the project of the school 103.",
+    "mainImage": "assets/constructions/school-103/photo-1.webp",
+    "status": "completed",
+    "photos": [
+      {
+        "url": "assets/constructions/school-103/photo-1.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-2.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-3.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-4.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-5.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-6.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-7.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-8.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-9.webp",
+        "alt": "Фото проекту Школа №103"
+      },
+      {
+        "url": "assets/constructions/school-103/photo-10.webp",
+        "alt": "Фото проекту Школа №103"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Школа №104",
+    "slug": "school-104",
+    "description": "Text about the project of the school 104.",
+    "mainImage": "assets/constructions/school-104/photo-1.webp",
+    "status": "completed",
+    "photos": [
+      {
+        "url": "assets/constructions/school-104/photo-1.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-2.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-3.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-4.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-5.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-6.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-7.webp",
+        "alt": "Фото проекту Школа №104"
+      },
+      {
+        "url": "assets/constructions/school-104/photo-8.webp",
+        "alt": "Фото проекту Школа №104"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Школа №22",
+    "slug": "school-22",
+    "description": "Text about the project of the school 22.",
+    "mainImage": "assets/constructions/school-22/photo-1.webp",
+    "status": "proccessing",
+    "photos": [
+      {
+        "url": "assets/constructions/school-22/photo-1.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-2.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-3.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-4.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-5.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-6.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-7.webp",
+        "alt": "Фото проекту Школа №22"
+      },
+      {
+        "url": "assets/constructions/school-22/photo-8.webp",
+        "alt": "Фото проекту Школа №22"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "УКС",
+    "slug": "UKS",
+    "description": "Text about the project of the UKS",
+    "mainImage": "assets/constructions/UKS/photo-1.webp",
+    "status": "completed",
+    "photos": [
+      {
+        "url": "assets/constructions/UKS/photo-1.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/UKS/photo-2.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/UKS/photo-3.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/UKS/photo-4.webp",
+        "alt": "Фото проекту Школа №23"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Конферентна зала Славутич Арена",
+    "slug": "slavytich-arena",
+    "description": "Text about the project of the slavytich arena.",
+    "mainImage": "assets/constructions/slavytich-arena/photo-1.webp",
+    "status": "proccessing",
+    "photos": [
+      {
+        "url": "assets/constructions/slavytich-arena/photo-1.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/slavytich-arena/photo-2.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/slavytich-arena/photo-3.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/slavytich-arena/photo-4.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/slavytich-arena/photo-5.webp",
+        "alt": "Фото проекту Школа №23"
+      },
+      {
+        "url": "assets/constructions/slavytich-arena/photo-6.webp",
+        "alt": "Фото проекту Школа №23"
+      }
+    ]
   }
 ]
