@@ -85,23 +85,15 @@ const Gallery = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
+    const timer = setTimeout(() => {
       const elements = document.querySelectorAll(".project-appear");
       elements.forEach((element) => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        if (elementPosition < windowHeight * 0.85) {
-          element.classList.add("visible");
-        }
+        element.classList.add("visible");
       });
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
+    }, 100); // Небольшая задержка для плавности
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timer);
     };
   }, [filteredProjects]);
 
