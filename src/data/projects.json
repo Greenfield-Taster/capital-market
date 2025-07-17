@@ -289,7 +289,7 @@
     "id": 8,
     "title": "Гімназія №25",
     "slug": "gimnaziya-25",
-    "description": "Text about the project of the gymnasium 25.",
+    "description": "Реконстукція бомбосховища гімназії №25 з метою створення сучасного освітнього середовища. Проект включав створення учнівських кабінетів, з метою забезпечення навчання у безпечному місці.",
     "mainImage": "assets/constructions/gimnaziya-25/photo-1.webp",
     "status": "completed",
     "photos": [
@@ -339,7 +339,7 @@
     "id": 9,
     "title": "Школа №103",
     "slug": "school-103",
-    "description": "Text about the project of the school 103.",
+    "description": "Реконстукція бомбосховища школи №103 з метою створення безпечного освітнього середовища. Проект включав ремонт класів, створення нових місць для безпечного навчання.",
     "mainImage": "assets/constructions/school-103/photo-1.webp",
     "status": "completed",
     "photos": [
@@ -389,7 +389,7 @@
     "id": 10,
     "title": "Школа №104",
     "slug": "school-104",
-    "description": "Text about the project of the school 104.",
+    "description": "Реконстукція бомбосховища школи №104 з метою створення безпечного освітнього середовища. Проект включав ремонт класів, створення нових місць для безпечного навчання.",
     "mainImage": "assets/constructions/school-104/photo-1.webp",
     "status": "completed",
     "photos": [
@@ -431,7 +431,7 @@
     "id": 11,
     "title": "Школа №22",
     "slug": "school-22",
-    "description": "Text about the project of the school 22.",
+    "description": "Реконстукція бомбосховища школи №22 з метою створення сучасного освітнього середовища. Проект включав створення учнівських кабінетів, з метою забезпечення навчання у безпечному місці.",
     "mainImage": "assets/constructions/school-22/photo-1.webp",
     "status": "proccessing",
     "photos": [
@@ -473,7 +473,7 @@
     "id": 12,
     "title": "УКС",
     "slug": "UKS",
-    "description": "Text about the project of the UKS",
+    "description": "Реконстукція споруди після ворожого обстрілу з боку російської федерації.",
     "mainImage": "assets/constructions/UKS/photo-1.webp",
     "status": "completed",
     "photos": [
@@ -499,7 +499,7 @@
     "id": 13,
     "title": "Конферентна зала Славутич Арена",
     "slug": "slavytich-arena",
-    "description": "Text about the project of the slavytich arena.",
+    "description": "Виконання поточного ремонту залу приміщення для комфортного проведення різних видів заходів.",
     "mainImage": "assets/constructions/slavytich-arena/photo-1.webp",
     "status": "proccessing",
     "photos": [
